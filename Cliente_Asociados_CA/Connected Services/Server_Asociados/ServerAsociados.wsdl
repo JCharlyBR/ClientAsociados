@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServerAsociados" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" />
+      <xsd:import schemaLocation="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServerAsociados_cargarComboEstados_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboEstados" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboEstados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboMunicipios_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboMunicipios" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboMunicipios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboMunicipiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboLocalidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboLocalidades" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboLocalidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboLocalidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarLogin" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBynoSocio_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBynoSocio" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBynoSocio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBynoSocioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarSocio_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarSocio" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarSocio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarSocioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarBeneficiario_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarBeneficiario" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarBeneficiario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarBeneficiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDireccion_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDireccion" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDireccion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDireccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getSocio_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSocio" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getSocio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSocioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBeneficiario_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBeneficiario" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBeneficiario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBeneficiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getSocioDetalle_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSocioDetalle" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getSocioDetalle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSocioDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_allSocios_InputMessage">
+    <wsdl:part name="parameters" element="tns:allSocios" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_allSocios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:allSociosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServerAsociados">
+    <wsdl:operation name="cargarComboEstados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboEstados" message="tns:IServerAsociados_cargarComboEstados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboEstadosResponse" message="tns:IServerAsociados_cargarComboEstados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboMunicipios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboMunicipios" message="tns:IServerAsociados_cargarComboMunicipios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboMunicipiosResponse" message="tns:IServerAsociados_cargarComboMunicipios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboLocalidades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboLocalidades" message="tns:IServerAsociados_cargarComboLocalidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboLocalidadesResponse" message="tns:IServerAsociados_cargarComboLocalidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarLogin" message="tns:IServerAsociados_registrarLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarLoginResponse" message="tns:IServerAsociados_registrarLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBynoSocio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getBynoSocio" message="tns:IServerAsociados_getBynoSocio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getBynoSocioResponse" message="tns:IServerAsociados_getBynoSocio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarSocio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarSocio" message="tns:IServerAsociados_registrarSocio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarSocioResponse" message="tns:IServerAsociados_registrarSocio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarBeneficiario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarBeneficiario" message="tns:IServerAsociados_registrarBeneficiario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarBeneficiarioResponse" message="tns:IServerAsociados_registrarBeneficiario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarDireccion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarDireccion" message="tns:IServerAsociados_registrarDireccion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarDireccionResponse" message="tns:IServerAsociados_registrarDireccion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSocio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocio" message="tns:IServerAsociados_getSocio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioResponse" message="tns:IServerAsociados_getSocio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiario" message="tns:IServerAsociados_getBeneficiario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiarioResponse" message="tns:IServerAsociados_getBeneficiario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSocioDetalle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocioDetalle" message="tns:IServerAsociados_getSocioDetalle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioDetalleResponse" message="tns:IServerAsociados_getSocioDetalle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="allSocios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/allSocios" message="tns:IServerAsociados_allSocios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/allSociosResponse" message="tns:IServerAsociados_allSocios_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServerAsociados" type="tns:IServerAsociados">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cargarComboEstados">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboEstados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboMunicipios">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboMunicipios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboLocalidades">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboLocalidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarLogin">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBynoSocio">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getBynoSocio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarSocio">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarSocio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarBeneficiario">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarBeneficiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarDireccion">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarDireccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSocio">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getSocio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiario">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getBeneficiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSocioDetalle">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getSocioDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="allSocios">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/allSocios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServerAsociados">
+    <wsdl:port name="BasicHttpBinding_IServerAsociados" binding="tns:BasicHttpBinding_IServerAsociados">
+      <soap:address location="http://192.168.0.125/ServerAsociados/ServerAsociados.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

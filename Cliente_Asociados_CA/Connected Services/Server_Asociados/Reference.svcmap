@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="57a26900-8550-4dd3-ae6d-481025acc00c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.125/ServerAsociados/ServerAsociados.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServerAsociados.wsdl" MetadataType="Wsdl" ID="85ae6c9d-e753-46f2-afbd-f4c3222ef8f1" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?wsdl" />
+    <MetadataFile FileName="ServerAsociados.xsd" MetadataType="Schema" ID="5faac53c-90c9-4798-b009-baee3eead199" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServerAsociados1.xsd" MetadataType="Schema" ID="0e260ef9-4d44-4131-94ef-843c86d6eaba" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServerAsociados2.xsd" MetadataType="Schema" ID="8c8ffc93-9ad3-4dc0-99b2-c3d6153acc11" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServerAsociados3.xsd" MetadataType="Schema" ID="83a27a84-36c4-4f23-a56a-9f6679ddac3d" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServerAsociados.disco" MetadataType="Disco" ID="71541061-287d-460f-ac11-8600ec69066d" SourceId="1" SourceUrl="http://192.168.0.125/ServerAsociados/ServerAsociados.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
