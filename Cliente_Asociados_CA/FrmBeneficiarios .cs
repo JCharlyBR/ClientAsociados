@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,7 +38,7 @@ namespace Cliente_Asociados_CA
             var municipioD = cmbMunicipio.SelectedIndex.ToString();
             var localidadD = txtColonia.Text;
             var calleD = txtCalle.Text;
-            var idSocio = Convert.ToInt32(this.txtNoSocioE.Text);
+            var idSocio = Convert.ToInt32(this.txtidSocio.Text);
 
             using (Server_Asociados.ServerAsociadosClient socio = new Server_Asociados.ServerAsociadosClient())
             {
@@ -102,21 +103,92 @@ namespace Cliente_Asociados_CA
                 txtEdadE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[5].Value.ToString());
                 txtCelularE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[6].Value.ToString());
                 txtTelefonoE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[7].Value.ToString());
-                txtStatusE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[8].Value.ToString());              
-                cmbTipoSangreE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[9].Value.ToString());
-                txtNoImssE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[10].Value.ToString());
-                txtCurpE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[11].Value.ToString());
-                cmbEstado.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[12].Value.ToString());
-                cmbEstado.DisplayMember = "nombre";
-                cmbMunicipio.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[13].Value.ToString());
-                txtColonia.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[14].Value.ToString());
-                txtCalle.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[15].Value.ToString());
-                txtNoSocioE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[16].Value.ToString());
-                
+                cmbTipoSangreE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[8].Value.ToString());
+                txtNoImssE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[9].Value.ToString());
+                txtCurpE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[10].Value.ToString());
+                cmbEstado.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[11].Value.ToString());
+                cmbMunicipio.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[12].Value.ToString());
+                txtColonia.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[13].Value.ToString());
+                txtCalle.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[14].Value.ToString());
+                txtStatusE.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[15].Value.ToString());
+                txtidSocio.Text = (dgvConsultaBeneficiario.CurrentRow.Cells[16].Value.ToString());
+
                 btnGuardar.Text = "ACTUALIZAR";
                 cargarGrid();
+                CargarNoSocio();
+                CargarGridSocios2();
             }
 
         }
+        void CargarGridSocios()
+        {
+            var num = txtBucarNum.Text;
+            Server_Asociados.ServerAsociadosClient socio = new Server_Asociados.ServerAsociadosClient();
+            Server_Asociados.getSocioByNoSocio s = new Server_Asociados.getSocioByNoSocio();
+            s = socio.getSocioDetalle(num);
+            DataTable dt = new DataTable();
+            dt = s.socioTab;
+            dgvConsultaSocio.DataSource = dt;
         }
+        void CargarGridSocios2()
+        {
+            var num = txtNoSocioE.Text;
+            Server_Asociados.ServerAsociadosClient socio = new Server_Asociados.ServerAsociadosClient();
+            Server_Asociados.getSocioByNoSocio s = new Server_Asociados.getSocioByNoSocio();
+            s = socio.getSocioDetalle(num);
+            DataTable dt = new DataTable();
+            dt = s.socioTab;
+            dgvConsultaSocio.DataSource = dt;
+        }
+
+        private void dateFecha_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fechanac = dateFecha.Value;
+            int años = System.DateTime.Now.Year - fechanac.Year;
+            if (System.DateTime.Now.Subtract(fechanac.AddYears(años)).TotalDays < 0)
+
+                txtEdadE.Text = Convert.ToString(años - 1);
+
+            else
+                txtEdadE.Text = Convert.ToString(años);
+        }
+
+        private void btnBuscarNumero_Click(object sender, EventArgs e)
+        {
+            CargarGridSocios();
+        }
+
+        private void dgvConsultaSocio_DoubleClick(object sender, EventArgs e)
+        {
+            txtidSocio.Text = (dgvConsultaSocio.CurrentRow.Cells[0].Value.ToString());
+            txtNoSocioE.Text = (dgvConsultaSocio.CurrentRow.Cells[1].Value.ToString());
+        }
+        const string MySqlConnecionString = "Server=192.168.0.125; Database=asociadosbd; Username=jubiladoUser; Password=1234;";
+        static MySqlConnection GetNewConnection()
+        {
+            var conn = new MySqlConnection(MySqlConnecionString);
+            conn.Open();
+            return conn;
+        }
+        void CargarNoSocio()
+        {
+            var id = txtidSocio.Text;
+            using (MySqlConnection conn = GetNewConnection())
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT noSocio FROM socio WHERE idSocio=@idSocio";
+                    cmd.Parameters.AddWithValue("@idSocio", id);
+                    MySqlDataReader consulta = cmd.ExecuteReader();
+                    if (consulta.Read())
+                    {
+                        txtNoSocioE.Text = consulta["noSocio"].ToString();
+                    }
+                    conn.Close();
+
+                }
+            }
+        }
+    }
 }

@@ -142,7 +142,7 @@ namespace Cliente_Asociados_CA
             cargarComboMunicipios();
         }
 
-        const string MySqlConnecionString = "Server=192.168.1.2; Database=asociadosbd; Username=jubiladoUser; Password=1234;";
+        const string MySqlConnecionString = "Server=192.168.0.125; Database=asociadosbd; Username=jubiladoUser; Password=1234;";
 
         static MySqlConnection GetNewConnection()
         {
@@ -214,6 +214,18 @@ namespace Cliente_Asociados_CA
                 //btnSubirImagen.Text = "Cambiar Foto";
                 //cargarGrid();
             }
+        }
+
+        private void dateFecha_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fechanac = dateFecha.Value;
+            int años = System.DateTime.Now.Year - fechanac.Year;
+            if (System.DateTime.Now.Subtract(fechanac.AddYears(años)).TotalDays < 0)
+
+                txtEdad.Text = Convert.ToString(años - 1);
+
+            else
+                txtEdad.Text = Convert.ToString(años);
         }
     }
 }
