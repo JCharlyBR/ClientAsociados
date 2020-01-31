@@ -151,6 +151,29 @@ namespace Cliente_Asociados_CA
             return conn;
         }
 
+        //void  CargarNoSocio()
+        //{
+        //    var id = txtApellidoPaterno.Text;
+        //    using (MySqlConnection conn = GetNewConnection())
+        //    {
+        //        using (MySqlCommand cmd = new MySqlCommand())
+        //        {
+        //            cmd.Connection = conn;
+        //            cmd.CommandText = "SELECT noSocio FROM socio WHERE idSocio=@idSocio";
+        //            cmd.Parameters.AddWithValue("@idSocio", id);
+        //            MySqlDataReader consulta = cmd.ExecuteReader();
+        //            if (consulta.Read())
+        //            {
+        //                txtApellidoMaterno.Text = consulta["noSocio"].ToString();
+        //            }              
+                 
+        //            conn.Close();
+                    
+
+        //        }
+        //    }
+        //}
+
         public Image CargarImagen(int id)
         {
             using (MySqlConnection conn = GetNewConnection())
