@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarSocio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(908, 34);
+            this.label5.Location = new System.Drawing.Point(906, 34);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 5;
@@ -198,6 +198,7 @@
             this.dateFecha.Name = "dateFecha";
             this.dateFecha.Size = new System.Drawing.Size(145, 20);
             this.dateFecha.TabIndex = 17;
+            this.dateFecha.ValueChanged += new System.EventHandler(this.dateFecha_ValueChanged);
             // 
             // pictureImage
             // 
@@ -482,8 +483,9 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.Enabled = false;
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.Location = new System.Drawing.Point(911, 54);
+            this.txtEdad.Location = new System.Drawing.Point(909, 49);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(54, 24);
             this.txtEdad.TabIndex = 34;
@@ -615,12 +617,12 @@
             this.dgvSocio.Location = new System.Drawing.Point(10, 380);
             this.dgvSocio.Name = "dgvSocio";
             this.dgvSocio.ReadOnly = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSocio.Size = new System.Drawing.Size(1129, 305);
             this.dgvSocio.TabIndex = 30;
             this.dgvSocio.DoubleClick += new System.EventHandler(this.dgvSocio_DoubleClick);

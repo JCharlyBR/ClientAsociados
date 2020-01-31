@@ -30,16 +30,16 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBeneficiarios));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnBuscarNumero = new System.Windows.Forms.Button();
+            this.txtBucarNum = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscarNom = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtidSocio = new System.Windows.Forms.TextBox();
             this.cmbTipoSangreE = new System.Windows.Forms.ComboBox();
             this.txtIdBeneficiario = new System.Windows.Forms.TextBox();
             this.dateFecha = new System.Windows.Forms.DateTimePicker();
@@ -114,10 +114,10 @@
             this.panel1.BackColor = System.Drawing.Color.Moccasin;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.btnBuscarNumero);
+            this.panel1.Controls.Add(this.txtBucarNum);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBuscarNom);
             this.panel1.Location = new System.Drawing.Point(575, 48);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(564, 81);
@@ -135,22 +135,23 @@
             this.label18.TabIndex = 43;
             this.label18.Text = "CONSULTAR SOCIO ";
             // 
-            // button2
+            // btnBuscarNumero
             // 
-            this.button2.Location = new System.Drawing.Point(444, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Buscar por Numero";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarNumero.Location = new System.Drawing.Point(444, 43);
+            this.btnBuscarNumero.Name = "btnBuscarNumero";
+            this.btnBuscarNumero.Size = new System.Drawing.Size(116, 23);
+            this.btnBuscarNumero.TabIndex = 3;
+            this.btnBuscarNumero.Text = "Buscar por Numero";
+            this.btnBuscarNumero.UseVisualStyleBackColor = true;
+            this.btnBuscarNumero.Click += new System.EventHandler(this.btnBuscarNumero_Click);
             // 
-            // textBox2
+            // txtBucarNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(299, 43);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 23);
-            this.textBox2.TabIndex = 2;
+            this.txtBucarNum.Location = new System.Drawing.Point(299, 43);
+            this.txtBucarNum.Multiline = true;
+            this.txtBucarNum.Name = "txtBucarNum";
+            this.txtBucarNum.Size = new System.Drawing.Size(141, 23);
+            this.txtBucarNum.TabIndex = 2;
             // 
             // button1
             // 
@@ -161,18 +162,19 @@
             this.button1.Text = "Buscar por Nombre";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBuscarNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 43);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtBuscarNom.Location = new System.Drawing.Point(4, 43);
+            this.txtBuscarNom.Multiline = true;
+            this.txtBuscarNom.Name = "txtBuscarNom";
+            this.txtBuscarNom.Size = new System.Drawing.Size(141, 23);
+            this.txtBuscarNom.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Moccasin;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtidSocio);
             this.panel3.Controls.Add(this.cmbTipoSangreE);
             this.panel3.Controls.Add(this.txtIdBeneficiario);
             this.panel3.Controls.Add(this.dateFecha);
@@ -203,6 +205,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(557, 268);
             this.panel3.TabIndex = 32;
+            // 
+            // txtidSocio
+            // 
+            this.txtidSocio.Enabled = false;
+            this.txtidSocio.Location = new System.Drawing.Point(504, 232);
+            this.txtidSocio.Name = "txtidSocio";
+            this.txtidSocio.Size = new System.Drawing.Size(24, 20);
+            this.txtidSocio.TabIndex = 69;
+            this.txtidSocio.Visible = false;
             // 
             // cmbTipoSangreE
             // 
@@ -238,14 +249,17 @@
             this.dateFecha.Name = "dateFecha";
             this.dateFecha.Size = new System.Drawing.Size(139, 20);
             this.dateFecha.TabIndex = 64;
+            this.dateFecha.ValueChanged += new System.EventHandler(this.dateFecha_ValueChanged);
             // 
             // txtStatusE
             // 
+            this.txtStatusE.Enabled = false;
             this.txtStatusE.Location = new System.Drawing.Point(348, 175);
             this.txtStatusE.Multiline = true;
             this.txtStatusE.Name = "txtStatusE";
             this.txtStatusE.Size = new System.Drawing.Size(139, 24);
             this.txtStatusE.TabIndex = 63;
+            this.txtStatusE.Text = "Activo";
             // 
             // label17
             // 
@@ -253,9 +267,9 @@
             this.label17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.label17.Location = new System.Drawing.Point(348, 152);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(47, 15);
+            this.label17.Size = new System.Drawing.Size(53, 15);
             this.label17.TabIndex = 62;
-            this.label17.Text = "Status:";
+            this.label17.Text = "Estatus:";
             // 
             // txtCelularE
             // 
@@ -291,6 +305,7 @@
             // 
             // txtEdadE
             // 
+            this.txtEdadE.Enabled = false;
             this.txtEdadE.Location = new System.Drawing.Point(183, 120);
             this.txtEdadE.Multiline = true;
             this.txtEdadE.Name = "txtEdadE";
@@ -399,6 +414,7 @@
             // 
             // txtNoSocioE
             // 
+            this.txtNoSocioE.Enabled = false;
             this.txtNoSocioE.Location = new System.Drawing.Point(348, 232);
             this.txtNoSocioE.Multiline = true;
             this.txtNoSocioE.Name = "txtNoSocioE";
@@ -615,12 +631,12 @@
             this.dgvConsultaSocio.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsultaSocio.Size = new System.Drawing.Size(564, 293);
             this.dgvConsultaSocio.TabIndex = 31;
+            this.dgvConsultaSocio.DoubleClick += new System.EventHandler(this.dgvConsultaSocio_DoubleClick);
             // 
             // FrmBeneficiarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1151, 700);
             this.Controls.Add(this.dgvConsultaBeneficiario);
             this.Controls.Add(this.panel5);
@@ -689,15 +705,16 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnBuscarNumero;
+        private System.Windows.Forms.TextBox txtBucarNum;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscarNom;
         private System.Windows.Forms.DataGridView dgvConsultaSocio;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtStatusE;
         private System.Windows.Forms.DateTimePicker dateFecha;
         private System.Windows.Forms.TextBox txtIdBeneficiario;
         private System.Windows.Forms.ComboBox cmbTipoSangreE;
+        private System.Windows.Forms.TextBox txtidSocio;
     }
 }
