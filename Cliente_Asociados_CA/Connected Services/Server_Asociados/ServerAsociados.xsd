@@ -41,6 +41,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="cargarComboCategoriaT">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargarComboCategoriaTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="cargarComboCategoriaTResult" nillable="true" type="q4:ArrayOfcategoriaTaller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="registrarLogin">
     <xs:complexType>
       <xs:sequence>
@@ -53,7 +65,7 @@
   <xs:element name="registrarLoginResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarLoginResult" nillable="true" type="q4:userLogin" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarLoginResult" nillable="true" type="q5:userLogin" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -67,7 +79,7 @@
   <xs:element name="getBynoSocioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getBynoSocioResult" nillable="true" type="q5:getSocioByNoSocio" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getBynoSocioResult" nillable="true" type="q6:getSocioByNoSocio" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -88,10 +100,10 @@
         <xs:element minOccurs="0" name="tipoSangre" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="noImms" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="curp" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="estadoDireccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="municipioDireccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="localidadDireccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="calleDireccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEstado" type="xs:int" />
+        <xs:element minOccurs="0" name="idMunicipio" type="xs:int" />
+        <xs:element minOccurs="0" name="localidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="calle" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="fotoPerfil" nillable="true" type="xs:base64Binary" />
         <xs:element minOccurs="0" name="nombreCompletoE" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="direccionE" nillable="true" type="xs:string" />
@@ -103,7 +115,7 @@
   <xs:element name="registrarSocioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarSocioResult" nillable="true" type="q6:socio" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarSocioResult" nillable="true" type="q7:socio" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -133,16 +145,16 @@
   <xs:element name="registrarBeneficiarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarBeneficiarioResult" nillable="true" type="q7:beneficiario" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarBeneficiarioResult" nillable="true" type="q8:beneficiario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="registrarDireccion">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="idDireccion" type="xs:int" />
-        <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="municipio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+        <xs:element minOccurs="0" name="idEstado" type="xs:int" />
+        <xs:element minOccurs="0" name="idMunicipio" type="xs:int" />
         <xs:element minOccurs="0" name="localidad" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="calle" nillable="true" type="xs:string" />
       </xs:sequence>
@@ -151,7 +163,57 @@
   <xs:element name="registrarDireccionResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarDireccionResult" nillable="true" type="q8:direccion" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarDireccionResult" nillable="true" type="q9:direccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCategoriaTaller" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarCategoriaResult" nillable="true" type="q10:categoriaTaller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarTaller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="horario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="instructor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarTallerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarTallerResult" nillable="true" type="q11:taller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarDetalleTaller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+        <xs:element minOccurs="0" name="idTaller" type="xs:int" />
+        <xs:element minOccurs="0" name="idSocio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registrarDetalleTallerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="registrarDetalleTallerResult" nillable="true" type="q12:detalleTaller" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -163,7 +225,7 @@
   <xs:element name="getSocioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getSocioResult" nillable="true" type="q9:mostrarSocios" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getSocioResult" nillable="true" type="q13:mostrarSocios" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -175,7 +237,7 @@
   <xs:element name="getBeneficiarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getBeneficiarioResult" nillable="true" type="q10:mostrarBeneficiario" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getBeneficiarioResult" nillable="true" type="q14:mostrarBeneficiario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -189,7 +251,7 @@
   <xs:element name="getSocioDetalleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getSocioDetalleResult" nillable="true" type="q11:getSocioByNoSocio" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getSocioDetalleResult" nillable="true" type="q15:getSocioByNoSocio" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -201,7 +263,67 @@
   <xs:element name="allSociosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="allSociosResult" nillable="true" type="q12:ArrayOfsocio" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="allSociosResult" nillable="true" type="q16:ArrayOfsocio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCategoria">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getCategoriaResult" nillable="true" type="q17:mostrarCategoria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTaller">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getTallerResult" nillable="true" type="q18:mostrarTaller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerDeportivo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerDeportivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getTallerDeportivoResult" nillable="true" type="q19:mostrarTaller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerCultural">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerCulturalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getTallerCulturalResult" nillable="true" type="q20:mostrarTaller" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerRecreativo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTallerRecreativoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA" minOccurs="0" name="getTallerRecreativoResult" nillable="true" type="q21:mostrarTaller" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

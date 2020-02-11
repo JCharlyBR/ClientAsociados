@@ -67,8 +67,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.btnBuscarNombreBen = new System.Windows.Forms.Button();
+            this.txtBuscarBeneficiario = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -235,7 +235,7 @@
             // 
             // txtIdBeneficiario
             // 
-            this.txtIdBeneficiario.Location = new System.Drawing.Point(178, 7);
+            this.txtIdBeneficiario.Location = new System.Drawing.Point(212, 7);
             this.txtIdBeneficiario.Name = "txtIdBeneficiario";
             this.txtIdBeneficiario.Size = new System.Drawing.Size(58, 20);
             this.txtIdBeneficiario.TabIndex = 66;
@@ -408,9 +408,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(3, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 19);
+            this.label4.Size = new System.Drawing.Size(201, 19);
             this.label4.TabIndex = 44;
-            this.label4.Text = "DATOS BENEFICIARIO ";
+            this.label4.Text = "DATOS DEL BENEFICIARIO ";
             // 
             // txtNoSocioE
             // 
@@ -471,29 +471,29 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(169)))), ((int)(((byte)(175)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.textBox15);
+            this.panel4.Controls.Add(this.btnBuscarNombreBen);
+            this.panel4.Controls.Add(this.txtBuscarBeneficiario);
             this.panel4.Location = new System.Drawing.Point(12, 434);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1127, 40);
             this.panel4.TabIndex = 33;
             // 
-            // button5
+            // btnBuscarNombreBen
             // 
-            this.button5.Location = new System.Drawing.Point(947, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 32);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Buscar por Nombre";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBuscarNombreBen.Location = new System.Drawing.Point(947, 3);
+            this.btnBuscarNombreBen.Name = "btnBuscarNombreBen";
+            this.btnBuscarNombreBen.Size = new System.Drawing.Size(129, 32);
+            this.btnBuscarNombreBen.TabIndex = 5;
+            this.btnBuscarNombreBen.Text = "Buscar por Nombre";
+            this.btnBuscarNombreBen.UseVisualStyleBackColor = true;
             // 
-            // textBox15
+            // txtBuscarBeneficiario
             // 
-            this.textBox15.Location = new System.Drawing.Point(767, 5);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(174, 28);
-            this.textBox15.TabIndex = 4;
+            this.txtBuscarBeneficiario.Location = new System.Drawing.Point(767, 5);
+            this.txtBuscarBeneficiario.Multiline = true;
+            this.txtBuscarBeneficiario.Name = "txtBuscarBeneficiario";
+            this.txtBuscarBeneficiario.Size = new System.Drawing.Size(174, 28);
+            this.txtBuscarBeneficiario.TabIndex = 4;
             // 
             // panel5
             // 
@@ -518,9 +518,10 @@
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(456, 60);
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(444, 60);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(92, 34);
+            this.btnGuardar.Size = new System.Drawing.Size(104, 34);
             this.btnGuardar.TabIndex = 44;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -702,8 +703,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dgvConsultaBeneficiario;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Button btnBuscarNombreBen;
+        private System.Windows.Forms.TextBox txtBuscarBeneficiario;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnBuscarNumero;
         private System.Windows.Forms.TextBox txtBucarNum;

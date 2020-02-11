@@ -150,6 +150,67 @@ namespace Cliente_Asociados_CA.Server_Asociados {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="categoriaTaller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class categoriaTaller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="userLogin", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
     [System.SerializableAttribute()]
     public partial class userLogin : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -305,7 +366,7 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private string apellidoPaternoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string calleDireccionField;
+        private string calleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string celularField;
@@ -323,9 +384,6 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private string estadoCivilField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string estadoDireccionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string estatusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -335,13 +393,16 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private byte[] fotoPerfilField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idEstadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idMunicipioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idSocioField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string localidadDireccionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string municipioDireccionField;
+        private string localidadField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string noImmsField;
@@ -414,14 +475,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string calleDireccion {
+        public string calle {
             get {
-                return this.calleDireccionField;
+                return this.calleField;
             }
             set {
-                if ((object.ReferenceEquals(this.calleDireccionField, value) != true)) {
-                    this.calleDireccionField = value;
-                    this.RaisePropertyChanged("calleDireccion");
+                if ((object.ReferenceEquals(this.calleField, value) != true)) {
+                    this.calleField = value;
+                    this.RaisePropertyChanged("calle");
                 }
             }
         }
@@ -492,19 +553,6 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string estadoDireccion {
-            get {
-                return this.estadoDireccionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.estadoDireccionField, value) != true)) {
-                    this.estadoDireccionField = value;
-                    this.RaisePropertyChanged("estadoDireccion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public string estatus {
             get {
                 return this.estatusField;
@@ -544,6 +592,32 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idEstado {
+            get {
+                return this.idEstadoField;
+            }
+            set {
+                if ((this.idEstadoField.Equals(value) != true)) {
+                    this.idEstadoField = value;
+                    this.RaisePropertyChanged("idEstado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idMunicipio {
+            get {
+                return this.idMunicipioField;
+            }
+            set {
+                if ((this.idMunicipioField.Equals(value) != true)) {
+                    this.idMunicipioField = value;
+                    this.RaisePropertyChanged("idMunicipio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int idSocio {
             get {
                 return this.idSocioField;
@@ -557,27 +631,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string localidadDireccion {
+        public string localidad {
             get {
-                return this.localidadDireccionField;
+                return this.localidadField;
             }
             set {
-                if ((object.ReferenceEquals(this.localidadDireccionField, value) != true)) {
-                    this.localidadDireccionField = value;
-                    this.RaisePropertyChanged("localidadDireccion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string municipioDireccion {
-            get {
-                return this.municipioDireccionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.municipioDireccionField, value) != true)) {
-                    this.municipioDireccionField = value;
-                    this.RaisePropertyChanged("municipioDireccion");
+                if ((object.ReferenceEquals(this.localidadField, value) != true)) {
+                    this.localidadField = value;
+                    this.RaisePropertyChanged("localidad");
                 }
             }
         }
@@ -981,13 +1042,13 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private string calleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string estadoField;
+        private int idEstadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idMunicipioField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string localidadField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string municipioField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1013,14 +1074,27 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string estado {
+        public int idEstado {
             get {
-                return this.estadoField;
+                return this.idEstadoField;
             }
             set {
-                if ((object.ReferenceEquals(this.estadoField, value) != true)) {
-                    this.estadoField = value;
-                    this.RaisePropertyChanged("estado");
+                if ((this.idEstadoField.Equals(value) != true)) {
+                    this.idEstadoField = value;
+                    this.RaisePropertyChanged("idEstado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idMunicipio {
+            get {
+                return this.idMunicipioField;
+            }
+            set {
+                if ((this.idMunicipioField.Equals(value) != true)) {
+                    this.idMunicipioField = value;
+                    this.RaisePropertyChanged("idMunicipio");
                 }
             }
         }
@@ -1038,15 +1112,156 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string municipio {
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="taller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class taller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string horarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idCategoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string instructorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
-                return this.municipioField;
+                return this.extensionDataField;
             }
             set {
-                if ((object.ReferenceEquals(this.municipioField, value) != true)) {
-                    this.municipioField = value;
-                    this.RaisePropertyChanged("municipio");
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string horario {
+            get {
+                return this.horarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.horarioField, value) != true)) {
+                    this.horarioField = value;
+                    this.RaisePropertyChanged("horario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idCategoria {
+            get {
+                return this.idCategoriaField;
+            }
+            set {
+                if ((this.idCategoriaField.Equals(value) != true)) {
+                    this.idCategoriaField = value;
+                    this.RaisePropertyChanged("idCategoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string instructor {
+            get {
+                return this.instructorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.instructorField, value) != true)) {
+                    this.instructorField = value;
+                    this.RaisePropertyChanged("instructor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="detalleTaller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class detalleTaller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idSocioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idTallerField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idSocio {
+            get {
+                return this.idSocioField;
+            }
+            set {
+                if ((this.idSocioField.Equals(value) != true)) {
+                    this.idSocioField = value;
+                    this.RaisePropertyChanged("idSocio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idTaller {
+            get {
+                return this.idTallerField;
+            }
+            set {
+                if ((this.idTallerField.Equals(value) != true)) {
+                    this.idTallerField = value;
+                    this.RaisePropertyChanged("idTaller");
                 }
             }
         }
@@ -1151,6 +1366,96 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="mostrarCategoria", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class mostrarCategoria : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable CategoriaTabField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable CategoriaTab {
+            get {
+                return this.CategoriaTabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoriaTabField, value) != true)) {
+                    this.CategoriaTabField = value;
+                    this.RaisePropertyChanged("CategoriaTab");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="mostrarTaller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class mostrarTaller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable TallerTabField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable TallerTab {
+            get {
+                return this.TallerTabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TallerTabField, value) != true)) {
+                    this.TallerTabField = value;
+                    this.RaisePropertyChanged("TallerTab");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Server_Asociados.IServerAsociados")]
     public interface IServerAsociados {
@@ -1172,6 +1477,12 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboLocalidades", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboLocalidadesResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.localidades[]> cargarComboLocalidadesAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaT", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboCategoriaTResponse")]
+        Cliente_Asociados_CA.Server_Asociados.categoriaTaller[] cargarComboCategoriaT();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaT", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboCategoriaTResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.categoriaTaller[]> cargarComboCategoriaTAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarLogin", ReplyAction="http://tempuri.org/IServerAsociados/registrarLoginResponse")]
         Cliente_Asociados_CA.Server_Asociados.userLogin registrarLogin(string nombreUsuario, string contrasenia, string tipoUsuario);
@@ -1201,10 +1512,10 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string tipoSangre, 
                     string noImms, 
                     string curp, 
-                    string estadoDireccion, 
-                    string municipioDireccion, 
-                    string localidadDireccion, 
-                    string calleDireccion, 
+                    int idEstado, 
+                    int idMunicipio, 
+                    string localidad, 
+                    string calle, 
                     byte[] fotoPerfil, 
                     string nombreCompletoE, 
                     string direccionE, 
@@ -1227,10 +1538,10 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string tipoSangre, 
                     string noImms, 
                     string curp, 
-                    string estadoDireccion, 
-                    string municipioDireccion, 
-                    string localidadDireccion, 
-                    string calleDireccion, 
+                    int idEstado, 
+                    int idMunicipio, 
+                    string localidad, 
+                    string calle, 
                     byte[] fotoPerfil, 
                     string nombreCompletoE, 
                     string direccionE, 
@@ -1278,10 +1589,28 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     int idSocio);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDireccion", ReplyAction="http://tempuri.org/IServerAsociados/registrarDireccionResponse")]
-        Cliente_Asociados_CA.Server_Asociados.direccion registrarDireccion(int idDireccion, string estado, string municipio, string localidad, string calle);
+        Cliente_Asociados_CA.Server_Asociados.direccion registrarDireccion(int Id, int idEstado, int idMunicipio, string localidad, string calle);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDireccion", ReplyAction="http://tempuri.org/IServerAsociados/registrarDireccionResponse")]
-        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.direccion> registrarDireccionAsync(int idDireccion, string estado, string municipio, string localidad, string calle);
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.direccion> registrarDireccionAsync(int Id, int idEstado, int idMunicipio, string localidad, string calle);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarCategoria", ReplyAction="http://tempuri.org/IServerAsociados/registrarCategoriaResponse")]
+        Cliente_Asociados_CA.Server_Asociados.categoriaTaller registrarCategoria(int idCategoriaTaller, string nombre, string descripcion);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarCategoria", ReplyAction="http://tempuri.org/IServerAsociados/registrarCategoriaResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.categoriaTaller> registrarCategoriaAsync(int idCategoriaTaller, string nombre, string descripcion);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarTallerResponse")]
+        Cliente_Asociados_CA.Server_Asociados.taller registrarTaller(int Id, string nombre, string horario, string instructor, int idCategoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarTallerResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.taller> registrarTallerAsync(int Id, string nombre, string horario, string instructor, int idCategoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse")]
+        Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idTaller, int idSocio);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idTaller, int idSocio);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getSocio", ReplyAction="http://tempuri.org/IServerAsociados/getSocioResponse")]
         Cliente_Asociados_CA.Server_Asociados.mostrarSocios getSocio();
@@ -1306,6 +1635,36 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/allSocios", ReplyAction="http://tempuri.org/IServerAsociados/allSociosResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.socio[]> allSociosAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getCategoria", ReplyAction="http://tempuri.org/IServerAsociados/getCategoriaResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarCategoria getCategoria();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getCategoria", ReplyAction="http://tempuri.org/IServerAsociados/getCategoriaResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarCategoria> getCategoriaAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTaller", ReplyAction="http://tempuri.org/IServerAsociados/getTallerResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTaller();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTaller", ReplyAction="http://tempuri.org/IServerAsociados/getTallerResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerDeportivo", ReplyAction="http://tempuri.org/IServerAsociados/getTallerDeportivoResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerDeportivo();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerDeportivo", ReplyAction="http://tempuri.org/IServerAsociados/getTallerDeportivoResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerDeportivoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerCultural", ReplyAction="http://tempuri.org/IServerAsociados/getTallerCulturalResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerCultural();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerCultural", ReplyAction="http://tempuri.org/IServerAsociados/getTallerCulturalResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerCulturalAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerRecreativo", ReplyAction="http://tempuri.org/IServerAsociados/getTallerRecreativoResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerRecreativo();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getTallerRecreativo", ReplyAction="http://tempuri.org/IServerAsociados/getTallerRecreativoResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerRecreativoAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1359,6 +1718,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.cargarComboLocalidadesAsync(id);
         }
         
+        public Cliente_Asociados_CA.Server_Asociados.categoriaTaller[] cargarComboCategoriaT() {
+            return base.Channel.cargarComboCategoriaT();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.categoriaTaller[]> cargarComboCategoriaTAsync() {
+            return base.Channel.cargarComboCategoriaTAsync();
+        }
+        
         public Cliente_Asociados_CA.Server_Asociados.userLogin registrarLogin(string nombreUsuario, string contrasenia, string tipoUsuario) {
             return base.Channel.registrarLogin(nombreUsuario, contrasenia, tipoUsuario);
         }
@@ -1390,16 +1757,16 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string tipoSangre, 
                     string noImms, 
                     string curp, 
-                    string estadoDireccion, 
-                    string municipioDireccion, 
-                    string localidadDireccion, 
-                    string calleDireccion, 
+                    int idEstado, 
+                    int idMunicipio, 
+                    string localidad, 
+                    string calle, 
                     byte[] fotoPerfil, 
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
                     string estatus) {
-            return base.Channel.registrarSocio(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, estadoDireccion, municipioDireccion, localidadDireccion, calleDireccion, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
+            return base.Channel.registrarSocio(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
         }
         
         public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.socio> registrarSocioAsync(
@@ -1417,16 +1784,16 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string tipoSangre, 
                     string noImms, 
                     string curp, 
-                    string estadoDireccion, 
-                    string municipioDireccion, 
-                    string localidadDireccion, 
-                    string calleDireccion, 
+                    int idEstado, 
+                    int idMunicipio, 
+                    string localidad, 
+                    string calle, 
                     byte[] fotoPerfil, 
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
                     string estatus) {
-            return base.Channel.registrarSocioAsync(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, estadoDireccion, municipioDireccion, localidadDireccion, calleDireccion, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
+            return base.Channel.registrarSocioAsync(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
         }
         
         public Cliente_Asociados_CA.Server_Asociados.beneficiario registrarBeneficiario(
@@ -1471,12 +1838,36 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.registrarBeneficiarioAsync(idBeneficiario, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, tipoSangre, noImms, curp, estadoDireccion, municipioDireccion, localidadDireccion, calleDireccion, estatus, idSocio);
         }
         
-        public Cliente_Asociados_CA.Server_Asociados.direccion registrarDireccion(int idDireccion, string estado, string municipio, string localidad, string calle) {
-            return base.Channel.registrarDireccion(idDireccion, estado, municipio, localidad, calle);
+        public Cliente_Asociados_CA.Server_Asociados.direccion registrarDireccion(int Id, int idEstado, int idMunicipio, string localidad, string calle) {
+            return base.Channel.registrarDireccion(Id, idEstado, idMunicipio, localidad, calle);
         }
         
-        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.direccion> registrarDireccionAsync(int idDireccion, string estado, string municipio, string localidad, string calle) {
-            return base.Channel.registrarDireccionAsync(idDireccion, estado, municipio, localidad, calle);
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.direccion> registrarDireccionAsync(int Id, int idEstado, int idMunicipio, string localidad, string calle) {
+            return base.Channel.registrarDireccionAsync(Id, idEstado, idMunicipio, localidad, calle);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.categoriaTaller registrarCategoria(int idCategoriaTaller, string nombre, string descripcion) {
+            return base.Channel.registrarCategoria(idCategoriaTaller, nombre, descripcion);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.categoriaTaller> registrarCategoriaAsync(int idCategoriaTaller, string nombre, string descripcion) {
+            return base.Channel.registrarCategoriaAsync(idCategoriaTaller, nombre, descripcion);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.taller registrarTaller(int Id, string nombre, string horario, string instructor, int idCategoria) {
+            return base.Channel.registrarTaller(Id, nombre, horario, instructor, idCategoria);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.taller> registrarTallerAsync(int Id, string nombre, string horario, string instructor, int idCategoria) {
+            return base.Channel.registrarTallerAsync(Id, nombre, horario, instructor, idCategoria);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idTaller, int idSocio) {
+            return base.Channel.registrarDetalleTaller(Id, idTaller, idSocio);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idTaller, int idSocio) {
+            return base.Channel.registrarDetalleTallerAsync(Id, idTaller, idSocio);
         }
         
         public Cliente_Asociados_CA.Server_Asociados.mostrarSocios getSocio() {
@@ -1509,6 +1900,46 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.socio[]> allSociosAsync() {
             return base.Channel.allSociosAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarCategoria getCategoria() {
+            return base.Channel.getCategoria();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarCategoria> getCategoriaAsync() {
+            return base.Channel.getCategoriaAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTaller() {
+            return base.Channel.getTaller();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerAsync() {
+            return base.Channel.getTallerAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerDeportivo() {
+            return base.Channel.getTallerDeportivo();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerDeportivoAsync() {
+            return base.Channel.getTallerDeportivoAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerCultural() {
+            return base.Channel.getTallerCultural();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerCulturalAsync() {
+            return base.Channel.getTallerCulturalAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarTaller getTallerRecreativo() {
+            return base.Channel.getTallerRecreativo();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarTaller> getTallerRecreativoAsync() {
+            return base.Channel.getTallerRecreativoAsync();
         }
     }
 }

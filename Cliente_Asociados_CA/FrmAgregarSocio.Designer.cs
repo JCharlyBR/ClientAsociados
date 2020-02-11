@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarSocio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -106,9 +106,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(14, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 15);
+            this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "No.Socio:";
+            this.label2.Text = "No: Socio:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -177,9 +177,9 @@
             this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.label9.Location = new System.Drawing.Point(402, 90);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 15);
+            this.label9.Size = new System.Drawing.Size(54, 15);
             this.label9.TabIndex = 9;
-            this.label9.Text = "No.IMS";
+            this.label9.Text = "No:IMSS";
             // 
             // label10
             // 
@@ -617,12 +617,12 @@
             this.dgvSocio.Location = new System.Drawing.Point(10, 380);
             this.dgvSocio.Name = "dgvSocio";
             this.dgvSocio.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSocio.Size = new System.Drawing.Size(1129, 305);
             this.dgvSocio.TabIndex = 30;
             this.dgvSocio.DoubleClick += new System.EventHandler(this.dgvSocio_DoubleClick);
@@ -778,9 +778,9 @@
             this.label23.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.label23.Location = new System.Drawing.Point(4, 11);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(47, 15);
+            this.label23.Size = new System.Drawing.Size(53, 15);
             this.label23.TabIndex = 27;
-            this.label23.Text = "Status:";
+            this.label23.Text = "Estatus:";
             // 
             // cmbStatus
             // 

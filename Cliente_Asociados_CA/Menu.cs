@@ -73,5 +73,20 @@ namespace Cliente_Asociados_CA
             SubmenuReportes.Visible = false;
             AbrirFormEnPanel(new FrmDetalleSocio());
         }
+
+        private void btnBajas_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FrmBajas());
+        }
+
+        private void btnCitas_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FrmCitasConsultas());
+        }
+
+        private void btnHistorialClinico_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FrmHistorialClinico());
+        }
     }
 }

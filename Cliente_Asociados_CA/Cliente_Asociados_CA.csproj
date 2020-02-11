@@ -63,17 +63,35 @@
     <Compile Include="FrmAgregarSocio.Designer.cs">
       <DependentUpon>FrmAgregarSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBajas.Designer.cs">
+      <DependentUpon>FrmBajas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBeneficiarios .cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBeneficiarios .Designer.cs">
       <DependentUpon>FrmBeneficiarios .cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCitasConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasConsultas.Designer.cs">
+      <DependentUpon>FrmCitasConsultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDetalleSocio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDetalleSocio.Designer.cs">
       <DependentUpon>FrmDetalleSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistorialClinico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistorialClinico.Designer.cs">
+      <DependentUpon>FrmHistorialClinico.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -104,11 +122,20 @@
     <EmbeddedResource Include="FrmAgregarSocio.resx">
       <DependentUpon>FrmAgregarSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBajas.resx">
+      <DependentUpon>FrmBajas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBeneficiarios .resx">
       <DependentUpon>FrmBeneficiarios .cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasConsultas.resx">
+      <DependentUpon>FrmCitasConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDetalleSocio.resx">
       <DependentUpon>FrmDetalleSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistorialClinico.resx">
+      <DependentUpon>FrmHistorialClinico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -135,6 +162,12 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.beneficiario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.categoriaTaller.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.detalleTaller.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.direccion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -150,13 +183,22 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarBeneficiario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarCategoria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarSocios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarTaller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.municipios.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.socio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.taller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.userLogin.datasource">

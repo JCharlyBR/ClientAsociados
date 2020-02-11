@@ -15,6 +15,18 @@ namespace Cliente_Asociados_CA
         public FrmDetalleSocio()
         {
             InitializeComponent();
+            cargarComboCategoria();
+        }
+        void cargarComboCategoria()
+        {
+            using (Server_Asociados.ServerAsociadosClient cat = new Server_Asociados.ServerAsociadosClient())
+            {
+                this.cmbCategoriaTaller.DataSource = cat.cargarComboCategoriaT();
+                cmbCategoriaTaller.DisplayMember = "nombre";
+
+
+            }
+
         }
     }
 }
