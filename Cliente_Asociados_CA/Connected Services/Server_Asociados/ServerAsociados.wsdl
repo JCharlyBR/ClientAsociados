@@ -26,6 +26,12 @@
   <wsdl:message name="IServerAsociados_cargarComboLocalidades_OutputMessage">
     <wsdl:part name="parameters" element="tns:cargarComboLocalidadesResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboCategoriaT_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboCategoriaT" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboCategoriaT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboCategoriaTResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_registrarLogin_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarLogin" />
   </wsdl:message>
@@ -56,6 +62,24 @@
   <wsdl:message name="IServerAsociados_registrarDireccion_OutputMessage">
     <wsdl:part name="parameters" element="tns:registrarDireccionResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarTaller_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarTaller" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarTaller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarTallerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDetalleTaller_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDetalleTaller" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDetalleTaller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDetalleTallerResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_getSocio_InputMessage">
     <wsdl:part name="parameters" element="tns:getSocio" />
   </wsdl:message>
@@ -80,6 +104,36 @@
   <wsdl:message name="IServerAsociados_allSocios_OutputMessage">
     <wsdl:part name="parameters" element="tns:allSociosResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_getCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTaller_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTaller" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTaller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerDeportivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerDeportivo" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerDeportivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerDeportivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerCultural_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerCultural" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerCultural_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerCulturalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerRecreativo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerRecreativo" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getTallerRecreativo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTallerRecreativoResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServerAsociados">
     <wsdl:operation name="cargarComboEstados">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboEstados" message="tns:IServerAsociados_cargarComboEstados_InputMessage" />
@@ -92,6 +146,10 @@
     <wsdl:operation name="cargarComboLocalidades">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboLocalidades" message="tns:IServerAsociados_cargarComboLocalidades_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboLocalidadesResponse" message="tns:IServerAsociados_cargarComboLocalidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboCategoriaT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaT" message="tns:IServerAsociados_cargarComboCategoriaT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaTResponse" message="tns:IServerAsociados_cargarComboCategoriaT_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="registrarLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarLogin" message="tns:IServerAsociados_registrarLogin_InputMessage" />
@@ -113,6 +171,18 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarDireccion" message="tns:IServerAsociados_registrarDireccion_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarDireccionResponse" message="tns:IServerAsociados_registrarDireccion_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="registrarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarCategoria" message="tns:IServerAsociados_registrarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarCategoriaResponse" message="tns:IServerAsociados_registrarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarTaller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarTaller" message="tns:IServerAsociados_registrarTaller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarTallerResponse" message="tns:IServerAsociados_registrarTaller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarDetalleTaller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller" message="tns:IServerAsociados_registrarDetalleTaller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse" message="tns:IServerAsociados_registrarDetalleTaller_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="getSocio">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocio" message="tns:IServerAsociados_getSocio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioResponse" message="tns:IServerAsociados_getSocio_OutputMessage" />
@@ -128,6 +198,26 @@
     <wsdl:operation name="allSocios">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/allSocios" message="tns:IServerAsociados_allSocios_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/allSociosResponse" message="tns:IServerAsociados_allSocios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getCategoria" message="tns:IServerAsociados_getCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getCategoriaResponse" message="tns:IServerAsociados_getCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTaller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getTaller" message="tns:IServerAsociados_getTaller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getTallerResponse" message="tns:IServerAsociados_getTaller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTallerDeportivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getTallerDeportivo" message="tns:IServerAsociados_getTallerDeportivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getTallerDeportivoResponse" message="tns:IServerAsociados_getTallerDeportivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTallerCultural">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getTallerCultural" message="tns:IServerAsociados_getTallerCultural_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getTallerCulturalResponse" message="tns:IServerAsociados_getTallerCultural_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTallerRecreativo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getTallerRecreativo" message="tns:IServerAsociados_getTallerRecreativo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getTallerRecreativoResponse" message="tns:IServerAsociados_getTallerRecreativo_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServerAsociados" type="tns:IServerAsociados">
@@ -152,6 +242,15 @@
     </wsdl:operation>
     <wsdl:operation name="cargarComboLocalidades">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboLocalidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargarComboCategoriaT">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboCategoriaT" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -204,6 +303,33 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="registrarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarTaller">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarTaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarDetalleTaller">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarDetalleTaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getSocio">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/getSocio" style="document" />
       <wsdl:input>
@@ -233,6 +359,51 @@
     </wsdl:operation>
     <wsdl:operation name="allSocios">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/allSocios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoria">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTaller">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getTaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTallerDeportivo">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getTallerDeportivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTallerCultural">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getTallerCultural" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTallerRecreativo">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getTallerRecreativo" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

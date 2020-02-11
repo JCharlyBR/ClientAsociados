@@ -135,6 +135,12 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.beneficiario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.categoriaTaller.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.detalleTaller.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.direccion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -150,13 +156,22 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarBeneficiario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarCategoria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarSocios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarTaller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.municipios.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.socio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.taller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.userLogin.datasource">

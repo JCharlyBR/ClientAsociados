@@ -36,6 +36,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="localidades" nillable="true" type="tns:localidades" />
+  <xs:complexType name="ArrayOfcategoriaTaller">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="categoriaTaller" nillable="true" type="tns:categoriaTaller" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcategoriaTaller" nillable="true" type="tns:ArrayOfcategoriaTaller" />
+  <xs:complexType name="categoriaTaller">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="categoriaTaller" nillable="true" type="tns:categoriaTaller" />
   <xs:complexType name="userLogin">
     <xs:sequence>
       <xs:element minOccurs="0" name="contrasenia" nillable="true" type="xs:string" />
@@ -68,19 +81,19 @@
       <xs:element minOccurs="0" name="anioJubilacion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="apellidoMaterno" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="apellidoPaterno" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="calleDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="calle" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="celular" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="curp" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direccionE" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="edad" type="xs:int" />
       <xs:element minOccurs="0" name="estadoCivil" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="estadoDireccion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="estatus" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
       <xs:element minOccurs="0" name="fotoPerfil" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="idEstado" type="xs:int" />
+      <xs:element minOccurs="0" name="idMunicipio" type="xs:int" />
       <xs:element minOccurs="0" name="idSocio" type="xs:int" />
-      <xs:element minOccurs="0" name="localidadDireccion" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="municipioDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="localidad" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="noImms" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="noSocio" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
@@ -115,12 +128,28 @@
   <xs:complexType name="direccion">
     <xs:sequence>
       <xs:element minOccurs="0" name="calle" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idEstado" type="xs:int" />
+      <xs:element minOccurs="0" name="idMunicipio" type="xs:int" />
       <xs:element minOccurs="0" name="localidad" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="municipio" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="direccion" nillable="true" type="tns:direccion" />
+  <xs:complexType name="taller">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="horario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+      <xs:element minOccurs="0" name="instructor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taller" nillable="true" type="tns:taller" />
+  <xs:complexType name="detalleTaller">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idSocio" type="xs:int" />
+      <xs:element minOccurs="0" name="idTaller" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="detalleTaller" nillable="true" type="tns:detalleTaller" />
   <xs:complexType name="mostrarSocios">
     <xs:sequence>
       <xs:element minOccurs="0" name="SocioTab" nillable="true">
@@ -163,4 +192,40 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfsocio" nillable="true" type="tns:ArrayOfsocio" />
+  <xs:complexType name="mostrarCategoria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoriaTab" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="mostrarCategoria" nillable="true" type="tns:mostrarCategoria" />
+  <xs:complexType name="mostrarTaller">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TallerTab" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="mostrarTaller" nillable="true" type="tns:mostrarTaller" />
 </xs:schema>
