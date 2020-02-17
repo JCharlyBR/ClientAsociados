@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCitas = new System.Windows.Forms.Button();
             this.btnHistorialClinico = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
@@ -39,7 +40,6 @@
             this.btnRegistroSocio = new System.Windows.Forms.Button();
             this.btnJubilados = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
-            this.btnCitas = new System.Windows.Forms.Button();
             this.btnBajas = new System.Windows.Forms.Button();
             this.btnTaller = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,6 +67,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(216, 693);
             this.panel2.TabIndex = 1;
+            // 
+            // btnCitas
+            // 
+            this.btnCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCitas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCitas.FlatAppearance.BorderSize = 0;
+            this.btnCitas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCitas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCitas.ForeColor = System.Drawing.Color.White;
+            this.btnCitas.Image = ((System.Drawing.Image)(resources.GetObject("btnCitas.Image")));
+            this.btnCitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCitas.Location = new System.Drawing.Point(-3, 403);
+            this.btnCitas.Name = "btnCitas";
+            this.btnCitas.Size = new System.Drawing.Size(218, 50);
+            this.btnCitas.TabIndex = 6;
+            this.btnCitas.Text = "   Citas y Consultas ";
+            this.btnCitas.UseVisualStyleBackColor = false;
+            this.btnCitas.Click += new System.EventHandler(this.btnCitas_Click);
             // 
             // btnHistorialClinico
             // 
@@ -197,25 +216,6 @@
             this.btnPrincipal.TabIndex = 18;
             this.btnPrincipal.UseVisualStyleBackColor = false;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // btnCitas
-            // 
-            this.btnCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnCitas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCitas.FlatAppearance.BorderSize = 0;
-            this.btnCitas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCitas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCitas.ForeColor = System.Drawing.Color.White;
-            this.btnCitas.Image = ((System.Drawing.Image)(resources.GetObject("btnCitas.Image")));
-            this.btnCitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCitas.Location = new System.Drawing.Point(-3, 403);
-            this.btnCitas.Name = "btnCitas";
-            this.btnCitas.Size = new System.Drawing.Size(218, 50);
-            this.btnCitas.TabIndex = 6;
-            this.btnCitas.Text = "   Citas y Consultas ";
-            this.btnCitas.UseVisualStyleBackColor = false;
-            this.btnCitas.Click += new System.EventHandler(this.btnCitas_Click);
             // 
             // btnBajas
             // 

@@ -81,7 +81,7 @@ namespace Cliente_Asociados_CA
 
         private void btnCitas_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new FrmCitasConsultas());
+            AbrirFormEnPanel(new FrmCitasyConsultas());
         }
 
         private void btnHistorialClinico_Click(object sender, EventArgs e)

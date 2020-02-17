@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarSocio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,6 +66,8 @@
             this.txtNoSocio = new System.Windows.Forms.TextBox();
             this.cmbTipoSangre = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtIdMunicipio = new System.Windows.Forms.TextBox();
+            this.txtIdEstado = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtLocalidad = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -90,8 +92,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.txtIdEstado = new System.Windows.Forms.TextBox();
-            this.txtIdMunicipio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -544,6 +544,26 @@
             this.panel1.Size = new System.Drawing.Size(461, 168);
             this.panel1.TabIndex = 29;
             // 
+            // txtIdMunicipio
+            // 
+            this.txtIdMunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdMunicipio.Location = new System.Drawing.Point(184, 89);
+            this.txtIdMunicipio.Name = "txtIdMunicipio";
+            this.txtIdMunicipio.Size = new System.Drawing.Size(18, 24);
+            this.txtIdMunicipio.TabIndex = 47;
+            this.txtIdMunicipio.Text = "0";
+            this.txtIdMunicipio.Visible = false;
+            // 
+            // txtIdEstado
+            // 
+            this.txtIdEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEstado.Location = new System.Drawing.Point(183, 51);
+            this.txtIdEstado.Name = "txtIdEstado";
+            this.txtIdEstado.Size = new System.Drawing.Size(18, 24);
+            this.txtIdEstado.TabIndex = 46;
+            this.txtIdEstado.Text = "0";
+            this.txtIdEstado.Visible = false;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -624,12 +644,12 @@
             this.dgvSocio.Location = new System.Drawing.Point(10, 436);
             this.dgvSocio.Name = "dgvSocio";
             this.dgvSocio.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSocio.Size = new System.Drawing.Size(1129, 249);
             this.dgvSocio.TabIndex = 30;
             this.dgvSocio.DoubleClick += new System.EventHandler(this.dgvSocio_DoubleClick);
@@ -799,24 +819,6 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(129, 21);
             this.cmbStatus.TabIndex = 26;
-            // 
-            // txtIdEstado
-            // 
-            this.txtIdEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdEstado.Location = new System.Drawing.Point(183, 51);
-            this.txtIdEstado.Name = "txtIdEstado";
-            this.txtIdEstado.Size = new System.Drawing.Size(18, 24);
-            this.txtIdEstado.TabIndex = 46;
-            this.txtIdEstado.Text = "0";
-            // 
-            // txtIdMunicipio
-            // 
-            this.txtIdMunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdMunicipio.Location = new System.Drawing.Point(184, 89);
-            this.txtIdMunicipio.Name = "txtIdMunicipio";
-            this.txtIdMunicipio.Size = new System.Drawing.Size(18, 24);
-            this.txtIdMunicipio.TabIndex = 47;
-            this.txtIdMunicipio.Text = "0";
             // 
             // FrmAgregarSocio
             // 

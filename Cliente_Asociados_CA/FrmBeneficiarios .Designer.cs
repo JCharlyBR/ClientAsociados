@@ -489,6 +489,7 @@
             // 
             // txtBuscarBeneficiario
             // 
+            this.txtBuscarBeneficiario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarBeneficiario.Location = new System.Drawing.Point(767, 5);
             this.txtBuscarBeneficiario.Multiline = true;
             this.txtBuscarBeneficiario.Name = "txtBuscarBeneficiario";
