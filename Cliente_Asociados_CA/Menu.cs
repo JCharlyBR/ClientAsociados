@@ -86,7 +86,7 @@ namespace Cliente_Asociados_CA
 
         private void btnHistorialClinico_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new FrmHistorialClinico());
+            AbrirFormEnPanel(new FrmHC());
         }
     }
 }
