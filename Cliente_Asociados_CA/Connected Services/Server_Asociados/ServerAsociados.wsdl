@@ -50,6 +50,12 @@
   <wsdl:message name="IServerAsociados_registrarSocio_OutputMessage">
     <wsdl:part name="parameters" element="tns:registrarSocioResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarHC_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarHC" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarHC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarHCResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_registrarBeneficiario_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarBeneficiario" />
   </wsdl:message>
@@ -86,6 +92,12 @@
   <wsdl:message name="IServerAsociados_getSocio_OutputMessage">
     <wsdl:part name="parameters" element="tns:getSocioResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_getHC_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHC" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getHC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHCResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_getBeneficiario_InputMessage">
     <wsdl:part name="parameters" element="tns:getBeneficiario" />
   </wsdl:message>
@@ -97,6 +109,12 @@
   </wsdl:message>
   <wsdl:message name="IServerAsociados_getSocioDetalle_OutputMessage">
     <wsdl:part name="parameters" element="tns:getSocioDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBeneficiarioDetalle_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBeneficiarioDetalle" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getBeneficiarioDetalle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBeneficiarioDetalleResponse" />
   </wsdl:message>
   <wsdl:message name="IServerAsociados_allSocios_InputMessage">
     <wsdl:part name="parameters" element="tns:allSocios" />
@@ -163,6 +181,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarSocio" message="tns:IServerAsociados_registrarSocio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarSocioResponse" message="tns:IServerAsociados_registrarSocio_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="registrarHC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarHC" message="tns:IServerAsociados_registrarHC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarHCResponse" message="tns:IServerAsociados_registrarHC_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="registrarBeneficiario">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarBeneficiario" message="tns:IServerAsociados_registrarBeneficiario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarBeneficiarioResponse" message="tns:IServerAsociados_registrarBeneficiario_OutputMessage" />
@@ -187,6 +209,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocio" message="tns:IServerAsociados_getSocio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioResponse" message="tns:IServerAsociados_getSocio_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="getHC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getHC" message="tns:IServerAsociados_getHC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getHCResponse" message="tns:IServerAsociados_getHC_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="getBeneficiario">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiario" message="tns:IServerAsociados_getBeneficiario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiarioResponse" message="tns:IServerAsociados_getBeneficiario_OutputMessage" />
@@ -194,6 +220,10 @@
     <wsdl:operation name="getSocioDetalle">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocioDetalle" message="tns:IServerAsociados_getSocioDetalle_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioDetalleResponse" message="tns:IServerAsociados_getSocioDetalle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiarioDetalle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiarioDetalle" message="tns:IServerAsociados_getBeneficiarioDetalle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getBeneficiarioDetalleResponse" message="tns:IServerAsociados_getBeneficiarioDetalle_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="allSocios">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/allSocios" message="tns:IServerAsociados_allSocios_InputMessage" />
@@ -285,6 +315,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="registrarHC">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarHC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="registrarBeneficiario">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarBeneficiario" style="document" />
       <wsdl:input>
@@ -339,6 +378,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getHC">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getHC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getBeneficiario">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/getBeneficiario" style="document" />
       <wsdl:input>
@@ -350,6 +398,15 @@
     </wsdl:operation>
     <wsdl:operation name="getSocioDetalle">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/getSocioDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiarioDetalle">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getBeneficiarioDetalle" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

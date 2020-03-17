@@ -746,6 +746,2035 @@ namespace Cliente_Asociados_CA.Server_Asociados {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="historialClinico", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class historialClinico : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdSocioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OidoIzquierdoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RealizoEvCormobilidadesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string abortosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string actKatzField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string actLawtonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string alcoholismoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string alergiasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string analisisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cadidiasisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cansancioDiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cariesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cartillaVacunacionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cbdAgudoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cbdCronicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cesareasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string criteriosStoppField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cuestionarioFrailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cuidadorPrimarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string dConciliarSueñoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string deterioroGlobalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string disfagiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string duermeDiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string equipoMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaInField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaKarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaMaltratoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaRamField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaSARCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escalaTinnetiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escolaridadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string estudioEnfermedadCronicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string examenMMSEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string exploracionFisicaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string fechaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string fechaPField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string gestasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string horaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string iCharlsonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string indTerapField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string indiceBarthelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string medicacionActualField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string noHorasDuermeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreContactoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string numDientesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ocupacionPrincipalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string oidoDerechoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ojoDerechoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ojoIzquierdoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pClinicosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pEstudiosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pRespiratoriasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string padecimientoActualField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string parentescoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string partosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pronosticoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pruebaRelojField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pruebaSusurroField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvCuidadosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvDesempeñoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvFragilidadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvInField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvMedicField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvSaludField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rEvSarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string rIntensoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string realizoAlteracionesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string realizoCBDAgudoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string realizoCBDCronicoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string realizoEstudioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string realizoEvMaltratoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string resultadosRelevantesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string resumenInterrogatorioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string riesgoASCVDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string riesgoFraminghamField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sDiurnaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgAbusoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgAfasiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgCaidasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgColapsoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgDeficitField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgDelirumField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgDemenciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgDepresionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgDesnutricionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgEncarnizamientoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgEstadoTField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgInconFField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgInconUField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgObesidadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgOsteoporosisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPatologiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPatologiaDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPatologiaSocialField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPerdidaAField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPerdidaVField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgPolifarmaciaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgRegresionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgSxInmovilidadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgSxPiernasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgTranstornoCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgTranstornoEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgTranstornoMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgTranstornoSField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sgUlcerasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sueñoFragmentadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svCinturaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svColesterolField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svEstaturaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svFCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svFRField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svGlucemiaPostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svGlucemiaPreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svIMCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svPesoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svTAField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svTemperaturaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string svTrigliceridosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tabaquismoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string telefonoContactoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string toxicomoniasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string transfusionesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string usoProtesisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string xerostomiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string yesavageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IdSocio {
+            get {
+                return this.IdSocioField;
+            }
+            set {
+                if ((this.IdSocioField.Equals(value) != true)) {
+                    this.IdSocioField = value;
+                    this.RaisePropertyChanged("IdSocio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OidoIzquierdo {
+            get {
+                return this.OidoIzquierdoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OidoIzquierdoField, value) != true)) {
+                    this.OidoIzquierdoField = value;
+                    this.RaisePropertyChanged("OidoIzquierdo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RealizoEvCormobilidades {
+            get {
+                return this.RealizoEvCormobilidadesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RealizoEvCormobilidadesField, value) != true)) {
+                    this.RealizoEvCormobilidadesField = value;
+                    this.RaisePropertyChanged("RealizoEvCormobilidades");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string abortos {
+            get {
+                return this.abortosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.abortosField, value) != true)) {
+                    this.abortosField = value;
+                    this.RaisePropertyChanged("abortos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string actKatz {
+            get {
+                return this.actKatzField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.actKatzField, value) != true)) {
+                    this.actKatzField = value;
+                    this.RaisePropertyChanged("actKatz");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string actLawton {
+            get {
+                return this.actLawtonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.actLawtonField, value) != true)) {
+                    this.actLawtonField = value;
+                    this.RaisePropertyChanged("actLawton");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string alcoholismo {
+            get {
+                return this.alcoholismoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.alcoholismoField, value) != true)) {
+                    this.alcoholismoField = value;
+                    this.RaisePropertyChanged("alcoholismo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string alergias {
+            get {
+                return this.alergiasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.alergiasField, value) != true)) {
+                    this.alergiasField = value;
+                    this.RaisePropertyChanged("alergias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string analisis {
+            get {
+                return this.analisisField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.analisisField, value) != true)) {
+                    this.analisisField = value;
+                    this.RaisePropertyChanged("analisis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cadidiasis {
+            get {
+                return this.cadidiasisField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cadidiasisField, value) != true)) {
+                    this.cadidiasisField = value;
+                    this.RaisePropertyChanged("cadidiasis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cansancioDia {
+            get {
+                return this.cansancioDiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cansancioDiaField, value) != true)) {
+                    this.cansancioDiaField = value;
+                    this.RaisePropertyChanged("cansancioDia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string caries {
+            get {
+                return this.cariesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cariesField, value) != true)) {
+                    this.cariesField = value;
+                    this.RaisePropertyChanged("caries");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cartillaVacunacion {
+            get {
+                return this.cartillaVacunacionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cartillaVacunacionField, value) != true)) {
+                    this.cartillaVacunacionField = value;
+                    this.RaisePropertyChanged("cartillaVacunacion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cbdAgudo {
+            get {
+                return this.cbdAgudoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cbdAgudoField, value) != true)) {
+                    this.cbdAgudoField = value;
+                    this.RaisePropertyChanged("cbdAgudo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cbdCronico {
+            get {
+                return this.cbdCronicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cbdCronicoField, value) != true)) {
+                    this.cbdCronicoField = value;
+                    this.RaisePropertyChanged("cbdCronico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cesareas {
+            get {
+                return this.cesareasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cesareasField, value) != true)) {
+                    this.cesareasField = value;
+                    this.RaisePropertyChanged("cesareas");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string criteriosStopp {
+            get {
+                return this.criteriosStoppField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.criteriosStoppField, value) != true)) {
+                    this.criteriosStoppField = value;
+                    this.RaisePropertyChanged("criteriosStopp");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cuestionarioFrail {
+            get {
+                return this.cuestionarioFrailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cuestionarioFrailField, value) != true)) {
+                    this.cuestionarioFrailField = value;
+                    this.RaisePropertyChanged("cuestionarioFrail");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cuidadorPrimario {
+            get {
+                return this.cuidadorPrimarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cuidadorPrimarioField, value) != true)) {
+                    this.cuidadorPrimarioField = value;
+                    this.RaisePropertyChanged("cuidadorPrimario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string dConciliarSueño {
+            get {
+                return this.dConciliarSueñoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.dConciliarSueñoField, value) != true)) {
+                    this.dConciliarSueñoField = value;
+                    this.RaisePropertyChanged("dConciliarSueño");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string deterioroGlobal {
+            get {
+                return this.deterioroGlobalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.deterioroGlobalField, value) != true)) {
+                    this.deterioroGlobalField = value;
+                    this.RaisePropertyChanged("deterioroGlobal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string disfagia {
+            get {
+                return this.disfagiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.disfagiaField, value) != true)) {
+                    this.disfagiaField = value;
+                    this.RaisePropertyChanged("disfagia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string duermeDia {
+            get {
+                return this.duermeDiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.duermeDiaField, value) != true)) {
+                    this.duermeDiaField = value;
+                    this.RaisePropertyChanged("duermeDia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string equipoM {
+            get {
+                return this.equipoMField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.equipoMField, value) != true)) {
+                    this.equipoMField = value;
+                    this.RaisePropertyChanged("equipoM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaIn {
+            get {
+                return this.escalaInField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaInField, value) != true)) {
+                    this.escalaInField = value;
+                    this.RaisePropertyChanged("escalaIn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaKar {
+            get {
+                return this.escalaKarField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaKarField, value) != true)) {
+                    this.escalaKarField = value;
+                    this.RaisePropertyChanged("escalaKar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaMaltrato {
+            get {
+                return this.escalaMaltratoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaMaltratoField, value) != true)) {
+                    this.escalaMaltratoField = value;
+                    this.RaisePropertyChanged("escalaMaltrato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaRam {
+            get {
+                return this.escalaRamField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaRamField, value) != true)) {
+                    this.escalaRamField = value;
+                    this.RaisePropertyChanged("escalaRam");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaSARC {
+            get {
+                return this.escalaSARCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaSARCField, value) != true)) {
+                    this.escalaSARCField = value;
+                    this.RaisePropertyChanged("escalaSARC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escalaTinneti {
+            get {
+                return this.escalaTinnetiField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escalaTinnetiField, value) != true)) {
+                    this.escalaTinnetiField = value;
+                    this.RaisePropertyChanged("escalaTinneti");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escolaridad {
+            get {
+                return this.escolaridadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escolaridadField, value) != true)) {
+                    this.escolaridadField = value;
+                    this.RaisePropertyChanged("escolaridad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string estudioEnfermedadCronica {
+            get {
+                return this.estudioEnfermedadCronicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.estudioEnfermedadCronicaField, value) != true)) {
+                    this.estudioEnfermedadCronicaField = value;
+                    this.RaisePropertyChanged("estudioEnfermedadCronica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string examenMMSE {
+            get {
+                return this.examenMMSEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.examenMMSEField, value) != true)) {
+                    this.examenMMSEField = value;
+                    this.RaisePropertyChanged("examenMMSE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string exploracionFisica {
+            get {
+                return this.exploracionFisicaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.exploracionFisicaField, value) != true)) {
+                    this.exploracionFisicaField = value;
+                    this.RaisePropertyChanged("exploracionFisica");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string fecha {
+            get {
+                return this.fechaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fechaField, value) != true)) {
+                    this.fechaField = value;
+                    this.RaisePropertyChanged("fecha");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string fechaP {
+            get {
+                return this.fechaPField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fechaPField, value) != true)) {
+                    this.fechaPField = value;
+                    this.RaisePropertyChanged("fechaP");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string gestas {
+            get {
+                return this.gestasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.gestasField, value) != true)) {
+                    this.gestasField = value;
+                    this.RaisePropertyChanged("gestas");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string hora {
+            get {
+                return this.horaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.horaField, value) != true)) {
+                    this.horaField = value;
+                    this.RaisePropertyChanged("hora");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string iCharlson {
+            get {
+                return this.iCharlsonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.iCharlsonField, value) != true)) {
+                    this.iCharlsonField = value;
+                    this.RaisePropertyChanged("iCharlson");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string indTerap {
+            get {
+                return this.indTerapField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.indTerapField, value) != true)) {
+                    this.indTerapField = value;
+                    this.RaisePropertyChanged("indTerap");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string indiceBarthel {
+            get {
+                return this.indiceBarthelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.indiceBarthelField, value) != true)) {
+                    this.indiceBarthelField = value;
+                    this.RaisePropertyChanged("indiceBarthel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string medicacionActual {
+            get {
+                return this.medicacionActualField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.medicacionActualField, value) != true)) {
+                    this.medicacionActualField = value;
+                    this.RaisePropertyChanged("medicacionActual");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string noHorasDuerme {
+            get {
+                return this.noHorasDuermeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.noHorasDuermeField, value) != true)) {
+                    this.noHorasDuermeField = value;
+                    this.RaisePropertyChanged("noHorasDuerme");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombreContacto {
+            get {
+                return this.nombreContactoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreContactoField, value) != true)) {
+                    this.nombreContactoField = value;
+                    this.RaisePropertyChanged("nombreContacto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string numDientes {
+            get {
+                return this.numDientesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.numDientesField, value) != true)) {
+                    this.numDientesField = value;
+                    this.RaisePropertyChanged("numDientes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ocupacionPrincipal {
+            get {
+                return this.ocupacionPrincipalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ocupacionPrincipalField, value) != true)) {
+                    this.ocupacionPrincipalField = value;
+                    this.RaisePropertyChanged("ocupacionPrincipal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string oidoDerecho {
+            get {
+                return this.oidoDerechoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.oidoDerechoField, value) != true)) {
+                    this.oidoDerechoField = value;
+                    this.RaisePropertyChanged("oidoDerecho");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ojoDerecho {
+            get {
+                return this.ojoDerechoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ojoDerechoField, value) != true)) {
+                    this.ojoDerechoField = value;
+                    this.RaisePropertyChanged("ojoDerecho");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ojoIzquierdo {
+            get {
+                return this.ojoIzquierdoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ojoIzquierdoField, value) != true)) {
+                    this.ojoIzquierdoField = value;
+                    this.RaisePropertyChanged("ojoIzquierdo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pClinicos {
+            get {
+                return this.pClinicosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pClinicosField, value) != true)) {
+                    this.pClinicosField = value;
+                    this.RaisePropertyChanged("pClinicos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pEstudios {
+            get {
+                return this.pEstudiosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pEstudiosField, value) != true)) {
+                    this.pEstudiosField = value;
+                    this.RaisePropertyChanged("pEstudios");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pRespiratorias {
+            get {
+                return this.pRespiratoriasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pRespiratoriasField, value) != true)) {
+                    this.pRespiratoriasField = value;
+                    this.RaisePropertyChanged("pRespiratorias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string padecimientoActual {
+            get {
+                return this.padecimientoActualField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.padecimientoActualField, value) != true)) {
+                    this.padecimientoActualField = value;
+                    this.RaisePropertyChanged("padecimientoActual");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string parentesco {
+            get {
+                return this.parentescoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.parentescoField, value) != true)) {
+                    this.parentescoField = value;
+                    this.RaisePropertyChanged("parentesco");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string partos {
+            get {
+                return this.partosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.partosField, value) != true)) {
+                    this.partosField = value;
+                    this.RaisePropertyChanged("partos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pronostico {
+            get {
+                return this.pronosticoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pronosticoField, value) != true)) {
+                    this.pronosticoField = value;
+                    this.RaisePropertyChanged("pronostico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pruebaReloj {
+            get {
+                return this.pruebaRelojField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pruebaRelojField, value) != true)) {
+                    this.pruebaRelojField = value;
+                    this.RaisePropertyChanged("pruebaReloj");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string pruebaSusurro {
+            get {
+                return this.pruebaSusurroField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pruebaSusurroField, value) != true)) {
+                    this.pruebaSusurroField = value;
+                    this.RaisePropertyChanged("pruebaSusurro");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvCuidados {
+            get {
+                return this.rEvCuidadosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvCuidadosField, value) != true)) {
+                    this.rEvCuidadosField = value;
+                    this.RaisePropertyChanged("rEvCuidados");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvDesempeño {
+            get {
+                return this.rEvDesempeñoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvDesempeñoField, value) != true)) {
+                    this.rEvDesempeñoField = value;
+                    this.RaisePropertyChanged("rEvDesempeño");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvFragilidad {
+            get {
+                return this.rEvFragilidadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvFragilidadField, value) != true)) {
+                    this.rEvFragilidadField = value;
+                    this.RaisePropertyChanged("rEvFragilidad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvIn {
+            get {
+                return this.rEvInField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvInField, value) != true)) {
+                    this.rEvInField = value;
+                    this.RaisePropertyChanged("rEvIn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvMedic {
+            get {
+                return this.rEvMedicField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvMedicField, value) != true)) {
+                    this.rEvMedicField = value;
+                    this.RaisePropertyChanged("rEvMedic");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvSalud {
+            get {
+                return this.rEvSaludField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvSaludField, value) != true)) {
+                    this.rEvSaludField = value;
+                    this.RaisePropertyChanged("rEvSalud");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rEvSar {
+            get {
+                return this.rEvSarField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rEvSarField, value) != true)) {
+                    this.rEvSarField = value;
+                    this.RaisePropertyChanged("rEvSar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string rIntenso {
+            get {
+                return this.rIntensoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.rIntensoField, value) != true)) {
+                    this.rIntensoField = value;
+                    this.RaisePropertyChanged("rIntenso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string realizoAlteraciones {
+            get {
+                return this.realizoAlteracionesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.realizoAlteracionesField, value) != true)) {
+                    this.realizoAlteracionesField = value;
+                    this.RaisePropertyChanged("realizoAlteraciones");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string realizoCBDAgudo {
+            get {
+                return this.realizoCBDAgudoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.realizoCBDAgudoField, value) != true)) {
+                    this.realizoCBDAgudoField = value;
+                    this.RaisePropertyChanged("realizoCBDAgudo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string realizoCBDCronico {
+            get {
+                return this.realizoCBDCronicoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.realizoCBDCronicoField, value) != true)) {
+                    this.realizoCBDCronicoField = value;
+                    this.RaisePropertyChanged("realizoCBDCronico");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string realizoEstudio {
+            get {
+                return this.realizoEstudioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.realizoEstudioField, value) != true)) {
+                    this.realizoEstudioField = value;
+                    this.RaisePropertyChanged("realizoEstudio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string realizoEvMaltrato {
+            get {
+                return this.realizoEvMaltratoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.realizoEvMaltratoField, value) != true)) {
+                    this.realizoEvMaltratoField = value;
+                    this.RaisePropertyChanged("realizoEvMaltrato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string resultadosRelevantes {
+            get {
+                return this.resultadosRelevantesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.resultadosRelevantesField, value) != true)) {
+                    this.resultadosRelevantesField = value;
+                    this.RaisePropertyChanged("resultadosRelevantes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string resumenInterrogatorio {
+            get {
+                return this.resumenInterrogatorioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.resumenInterrogatorioField, value) != true)) {
+                    this.resumenInterrogatorioField = value;
+                    this.RaisePropertyChanged("resumenInterrogatorio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string riesgoASCVD {
+            get {
+                return this.riesgoASCVDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.riesgoASCVDField, value) != true)) {
+                    this.riesgoASCVDField = value;
+                    this.RaisePropertyChanged("riesgoASCVD");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string riesgoFramingham {
+            get {
+                return this.riesgoFraminghamField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.riesgoFraminghamField, value) != true)) {
+                    this.riesgoFraminghamField = value;
+                    this.RaisePropertyChanged("riesgoFramingham");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sDiurna {
+            get {
+                return this.sDiurnaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sDiurnaField, value) != true)) {
+                    this.sDiurnaField = value;
+                    this.RaisePropertyChanged("sDiurna");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgAbuso {
+            get {
+                return this.sgAbusoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgAbusoField, value) != true)) {
+                    this.sgAbusoField = value;
+                    this.RaisePropertyChanged("sgAbuso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgAfasia {
+            get {
+                return this.sgAfasiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgAfasiaField, value) != true)) {
+                    this.sgAfasiaField = value;
+                    this.RaisePropertyChanged("sgAfasia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgCaidas {
+            get {
+                return this.sgCaidasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgCaidasField, value) != true)) {
+                    this.sgCaidasField = value;
+                    this.RaisePropertyChanged("sgCaidas");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgColapso {
+            get {
+                return this.sgColapsoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgColapsoField, value) != true)) {
+                    this.sgColapsoField = value;
+                    this.RaisePropertyChanged("sgColapso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgDeficit {
+            get {
+                return this.sgDeficitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgDeficitField, value) != true)) {
+                    this.sgDeficitField = value;
+                    this.RaisePropertyChanged("sgDeficit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgDelirum {
+            get {
+                return this.sgDelirumField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgDelirumField, value) != true)) {
+                    this.sgDelirumField = value;
+                    this.RaisePropertyChanged("sgDelirum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgDemencia {
+            get {
+                return this.sgDemenciaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgDemenciaField, value) != true)) {
+                    this.sgDemenciaField = value;
+                    this.RaisePropertyChanged("sgDemencia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgDepresion {
+            get {
+                return this.sgDepresionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgDepresionField, value) != true)) {
+                    this.sgDepresionField = value;
+                    this.RaisePropertyChanged("sgDepresion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgDesnutricion {
+            get {
+                return this.sgDesnutricionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgDesnutricionField, value) != true)) {
+                    this.sgDesnutricionField = value;
+                    this.RaisePropertyChanged("sgDesnutricion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgEncarnizamiento {
+            get {
+                return this.sgEncarnizamientoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgEncarnizamientoField, value) != true)) {
+                    this.sgEncarnizamientoField = value;
+                    this.RaisePropertyChanged("sgEncarnizamiento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgEstadoT {
+            get {
+                return this.sgEstadoTField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgEstadoTField, value) != true)) {
+                    this.sgEstadoTField = value;
+                    this.RaisePropertyChanged("sgEstadoT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgInconF {
+            get {
+                return this.sgInconFField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgInconFField, value) != true)) {
+                    this.sgInconFField = value;
+                    this.RaisePropertyChanged("sgInconF");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgInconU {
+            get {
+                return this.sgInconUField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgInconUField, value) != true)) {
+                    this.sgInconUField = value;
+                    this.RaisePropertyChanged("sgInconU");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgObesidad {
+            get {
+                return this.sgObesidadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgObesidadField, value) != true)) {
+                    this.sgObesidadField = value;
+                    this.RaisePropertyChanged("sgObesidad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgOsteoporosis {
+            get {
+                return this.sgOsteoporosisField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgOsteoporosisField, value) != true)) {
+                    this.sgOsteoporosisField = value;
+                    this.RaisePropertyChanged("sgOsteoporosis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPatologia {
+            get {
+                return this.sgPatologiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPatologiaField, value) != true)) {
+                    this.sgPatologiaField = value;
+                    this.RaisePropertyChanged("sgPatologia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPatologiaD {
+            get {
+                return this.sgPatologiaDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPatologiaDField, value) != true)) {
+                    this.sgPatologiaDField = value;
+                    this.RaisePropertyChanged("sgPatologiaD");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPatologiaSocial {
+            get {
+                return this.sgPatologiaSocialField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPatologiaSocialField, value) != true)) {
+                    this.sgPatologiaSocialField = value;
+                    this.RaisePropertyChanged("sgPatologiaSocial");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPerdidaA {
+            get {
+                return this.sgPerdidaAField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPerdidaAField, value) != true)) {
+                    this.sgPerdidaAField = value;
+                    this.RaisePropertyChanged("sgPerdidaA");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPerdidaV {
+            get {
+                return this.sgPerdidaVField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPerdidaVField, value) != true)) {
+                    this.sgPerdidaVField = value;
+                    this.RaisePropertyChanged("sgPerdidaV");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgPolifarmacia {
+            get {
+                return this.sgPolifarmaciaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgPolifarmaciaField, value) != true)) {
+                    this.sgPolifarmaciaField = value;
+                    this.RaisePropertyChanged("sgPolifarmacia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgRegresion {
+            get {
+                return this.sgRegresionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgRegresionField, value) != true)) {
+                    this.sgRegresionField = value;
+                    this.RaisePropertyChanged("sgRegresion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgSxInmovilidad {
+            get {
+                return this.sgSxInmovilidadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgSxInmovilidadField, value) != true)) {
+                    this.sgSxInmovilidadField = value;
+                    this.RaisePropertyChanged("sgSxInmovilidad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgSxPiernas {
+            get {
+                return this.sgSxPiernasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgSxPiernasField, value) != true)) {
+                    this.sgSxPiernasField = value;
+                    this.RaisePropertyChanged("sgSxPiernas");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgTranstornoC {
+            get {
+                return this.sgTranstornoCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgTranstornoCField, value) != true)) {
+                    this.sgTranstornoCField = value;
+                    this.RaisePropertyChanged("sgTranstornoC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgTranstornoE {
+            get {
+                return this.sgTranstornoEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgTranstornoEField, value) != true)) {
+                    this.sgTranstornoEField = value;
+                    this.RaisePropertyChanged("sgTranstornoE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgTranstornoM {
+            get {
+                return this.sgTranstornoMField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgTranstornoMField, value) != true)) {
+                    this.sgTranstornoMField = value;
+                    this.RaisePropertyChanged("sgTranstornoM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgTranstornoS {
+            get {
+                return this.sgTranstornoSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgTranstornoSField, value) != true)) {
+                    this.sgTranstornoSField = value;
+                    this.RaisePropertyChanged("sgTranstornoS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sgUlceras {
+            get {
+                return this.sgUlcerasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sgUlcerasField, value) != true)) {
+                    this.sgUlcerasField = value;
+                    this.RaisePropertyChanged("sgUlceras");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sueñoFragmentado {
+            get {
+                return this.sueñoFragmentadoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sueñoFragmentadoField, value) != true)) {
+                    this.sueñoFragmentadoField = value;
+                    this.RaisePropertyChanged("sueñoFragmentado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svCintura {
+            get {
+                return this.svCinturaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svCinturaField, value) != true)) {
+                    this.svCinturaField = value;
+                    this.RaisePropertyChanged("svCintura");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svColesterol {
+            get {
+                return this.svColesterolField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svColesterolField, value) != true)) {
+                    this.svColesterolField = value;
+                    this.RaisePropertyChanged("svColesterol");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svEstatura {
+            get {
+                return this.svEstaturaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svEstaturaField, value) != true)) {
+                    this.svEstaturaField = value;
+                    this.RaisePropertyChanged("svEstatura");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svFC {
+            get {
+                return this.svFCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svFCField, value) != true)) {
+                    this.svFCField = value;
+                    this.RaisePropertyChanged("svFC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svFR {
+            get {
+                return this.svFRField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svFRField, value) != true)) {
+                    this.svFRField = value;
+                    this.RaisePropertyChanged("svFR");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svGlucemiaPost {
+            get {
+                return this.svGlucemiaPostField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svGlucemiaPostField, value) != true)) {
+                    this.svGlucemiaPostField = value;
+                    this.RaisePropertyChanged("svGlucemiaPost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svGlucemiaPre {
+            get {
+                return this.svGlucemiaPreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svGlucemiaPreField, value) != true)) {
+                    this.svGlucemiaPreField = value;
+                    this.RaisePropertyChanged("svGlucemiaPre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svIMC {
+            get {
+                return this.svIMCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svIMCField, value) != true)) {
+                    this.svIMCField = value;
+                    this.RaisePropertyChanged("svIMC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svPeso {
+            get {
+                return this.svPesoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svPesoField, value) != true)) {
+                    this.svPesoField = value;
+                    this.RaisePropertyChanged("svPeso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svTA {
+            get {
+                return this.svTAField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svTAField, value) != true)) {
+                    this.svTAField = value;
+                    this.RaisePropertyChanged("svTA");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svTemperatura {
+            get {
+                return this.svTemperaturaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svTemperaturaField, value) != true)) {
+                    this.svTemperaturaField = value;
+                    this.RaisePropertyChanged("svTemperatura");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string svTrigliceridos {
+            get {
+                return this.svTrigliceridosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.svTrigliceridosField, value) != true)) {
+                    this.svTrigliceridosField = value;
+                    this.RaisePropertyChanged("svTrigliceridos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string tabaquismo {
+            get {
+                return this.tabaquismoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tabaquismoField, value) != true)) {
+                    this.tabaquismoField = value;
+                    this.RaisePropertyChanged("tabaquismo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string telefonoContacto {
+            get {
+                return this.telefonoContactoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.telefonoContactoField, value) != true)) {
+                    this.telefonoContactoField = value;
+                    this.RaisePropertyChanged("telefonoContacto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string toxicomonias {
+            get {
+                return this.toxicomoniasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.toxicomoniasField, value) != true)) {
+                    this.toxicomoniasField = value;
+                    this.RaisePropertyChanged("toxicomonias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string transfusiones {
+            get {
+                return this.transfusionesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.transfusionesField, value) != true)) {
+                    this.transfusionesField = value;
+                    this.RaisePropertyChanged("transfusiones");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string usoProtesis {
+            get {
+                return this.usoProtesisField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.usoProtesisField, value) != true)) {
+                    this.usoProtesisField = value;
+                    this.RaisePropertyChanged("usoProtesis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string xerostomia {
+            get {
+                return this.xerostomiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.xerostomiaField, value) != true)) {
+                    this.xerostomiaField = value;
+                    this.RaisePropertyChanged("xerostomia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string yesavage {
+            get {
+                return this.yesavageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.yesavageField, value) != true)) {
+                    this.yesavageField = value;
+                    this.RaisePropertyChanged("yesavage");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="beneficiario", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
     [System.SerializableAttribute()]
     public partial class beneficiario : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1323,6 +3352,51 @@ namespace Cliente_Asociados_CA.Server_Asociados {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="mostrarHC", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class mostrarHC : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable HCTabField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable HCTab {
+            get {
+                return this.HCTabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HCTabField, value) != true)) {
+                    this.HCTabField = value;
+                    this.RaisePropertyChanged("HCTab");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="mostrarBeneficiario", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
     [System.SerializableAttribute()]
     public partial class mostrarBeneficiario : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1352,6 +3426,67 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                 if ((object.ReferenceEquals(this.BeneficiarioTabField, value) != true)) {
                     this.BeneficiarioTabField = value;
                     this.RaisePropertyChanged("BeneficiarioTab");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="getBeneficiarioByNoSocio", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class getBeneficiarioByNoSocio : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable BeneficiarioTabField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int numSocioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable BeneficiarioTab {
+            get {
+                return this.BeneficiarioTabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BeneficiarioTabField, value) != true)) {
+                    this.BeneficiarioTabField = value;
+                    this.RaisePropertyChanged("BeneficiarioTab");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int numSocio {
+            get {
+                return this.numSocioField;
+            }
+            set {
+                if ((this.numSocioField.Equals(value) != true)) {
+                    this.numSocioField = value;
+                    this.RaisePropertyChanged("numSocio");
                 }
             }
         }
@@ -1548,6 +3683,264 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string telefonoE, 
                     string estatus);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarHC", ReplyAction="http://tempuri.org/IServerAsociados/registrarHCResponse")]
+        Cliente_Asociados_CA.Server_Asociados.historialClinico registrarHC(
+                    int Id, 
+                    int IdSocio, 
+                    string fecha, 
+                    string hora, 
+                    string escolaridad, 
+                    string ocupacionPrincipal, 
+                    string alergias, 
+                    string nombreContacto, 
+                    string parentesco, 
+                    string cuidadorPrimario, 
+                    string telefonoContacto, 
+                    string svTA, 
+                    string svFC, 
+                    string svFR, 
+                    string svGlucemiaPre, 
+                    string svGlucemiaPost, 
+                    string svColesterol, 
+                    string svTrigliceridos, 
+                    string svTemperatura, 
+                    string svPeso, 
+                    string svEstatura, 
+                    string svCintura, 
+                    string svIMC, 
+                    string resumenInterrogatorio, 
+                    string alcoholismo, 
+                    string tabaquismo, 
+                    string toxicomonias, 
+                    string transfusiones, 
+                    string cartillaVacunacion, 
+                    string gestas, 
+                    string partos, 
+                    string cesareas, 
+                    string abortos, 
+                    string medicacionActual, 
+                    string padecimientoActual, 
+                    string exploracionFisica, 
+                    string resultadosRelevantes, 
+                    string cbdAgudo, 
+                    string realizoCBDAgudo, 
+                    string cbdCronico, 
+                    string realizoCBDCronico, 
+                    string riesgoFramingham, 
+                    string riesgoASCVD, 
+                    string estudioEnfermedadCronica, 
+                    string realizoEstudio, 
+                    string ojoDerecho, 
+                    string oidoDerecho, 
+                    string pruebaSusurro, 
+                    string ojoIzquierdo, 
+                    string OidoIzquierdo, 
+                    string realizoAlteraciones, 
+                    string examenMMSE, 
+                    string deterioroGlobal, 
+                    string yesavage, 
+                    string pruebaReloj, 
+                    string escalaMaltrato, 
+                    string realizoEvMaltrato, 
+                    string noHorasDuerme, 
+                    string duermeDia, 
+                    string sueñoFragmentado, 
+                    string dConciliarSueño, 
+                    string rIntenso, 
+                    string pRespiratorias, 
+                    string cansancioDia, 
+                    string sDiurna, 
+                    string iCharlson, 
+                    string RealizoEvCormobilidades, 
+                    string cuestionarioFrail, 
+                    string rEvFragilidad, 
+                    string escalaSARC, 
+                    string rEvSar, 
+                    string criteriosStopp, 
+                    string rEvMedic, 
+                    string usoProtesis, 
+                    string xerostomia, 
+                    string numDientes, 
+                    string disfagia, 
+                    string cadidiasis, 
+                    string caries, 
+                    string rEvSalud, 
+                    string actKatz, 
+                    string actLawton, 
+                    string indiceBarthel, 
+                    string escalaTinneti, 
+                    string rEvDesempeño, 
+                    string escalaIn, 
+                    string rEvIn, 
+                    string escalaKar, 
+                    string escalaRam, 
+                    string rEvCuidados, 
+                    string sgAfasia, 
+                    string sgCaidas, 
+                    string sgColapso, 
+                    string sgDeficit, 
+                    string sgDepresion, 
+                    string sgDesnutricion, 
+                    string sgPatologia, 
+                    string sgPatologiaD, 
+                    string sgEstadoT, 
+                    string sgInconF, 
+                    string sgInconU, 
+                    string sgAbuso, 
+                    string sgObesidad, 
+                    string sgOsteoporosis, 
+                    string sgPerdidaA, 
+                    string sgUlceras, 
+                    string sgPerdidaV, 
+                    string sgPolifarmacia, 
+                    string sgRegresion, 
+                    string sgSxInmovilidad, 
+                    string sgSxPiernas, 
+                    string sgTranstornoC, 
+                    string sgTranstornoS, 
+                    string sgTranstornoM, 
+                    string sgTranstornoE, 
+                    string sgEncarnizamiento, 
+                    string sgPatologiaSocial, 
+                    string sgDemencia, 
+                    string sgDelirum, 
+                    string pClinicos, 
+                    string analisis, 
+                    string pEstudios, 
+                    string pronostico, 
+                    string indTerap, 
+                    string equipoM, 
+                    string fechaP);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarHC", ReplyAction="http://tempuri.org/IServerAsociados/registrarHCResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.historialClinico> registrarHCAsync(
+                    int Id, 
+                    int IdSocio, 
+                    string fecha, 
+                    string hora, 
+                    string escolaridad, 
+                    string ocupacionPrincipal, 
+                    string alergias, 
+                    string nombreContacto, 
+                    string parentesco, 
+                    string cuidadorPrimario, 
+                    string telefonoContacto, 
+                    string svTA, 
+                    string svFC, 
+                    string svFR, 
+                    string svGlucemiaPre, 
+                    string svGlucemiaPost, 
+                    string svColesterol, 
+                    string svTrigliceridos, 
+                    string svTemperatura, 
+                    string svPeso, 
+                    string svEstatura, 
+                    string svCintura, 
+                    string svIMC, 
+                    string resumenInterrogatorio, 
+                    string alcoholismo, 
+                    string tabaquismo, 
+                    string toxicomonias, 
+                    string transfusiones, 
+                    string cartillaVacunacion, 
+                    string gestas, 
+                    string partos, 
+                    string cesareas, 
+                    string abortos, 
+                    string medicacionActual, 
+                    string padecimientoActual, 
+                    string exploracionFisica, 
+                    string resultadosRelevantes, 
+                    string cbdAgudo, 
+                    string realizoCBDAgudo, 
+                    string cbdCronico, 
+                    string realizoCBDCronico, 
+                    string riesgoFramingham, 
+                    string riesgoASCVD, 
+                    string estudioEnfermedadCronica, 
+                    string realizoEstudio, 
+                    string ojoDerecho, 
+                    string oidoDerecho, 
+                    string pruebaSusurro, 
+                    string ojoIzquierdo, 
+                    string OidoIzquierdo, 
+                    string realizoAlteraciones, 
+                    string examenMMSE, 
+                    string deterioroGlobal, 
+                    string yesavage, 
+                    string pruebaReloj, 
+                    string escalaMaltrato, 
+                    string realizoEvMaltrato, 
+                    string noHorasDuerme, 
+                    string duermeDia, 
+                    string sueñoFragmentado, 
+                    string dConciliarSueño, 
+                    string rIntenso, 
+                    string pRespiratorias, 
+                    string cansancioDia, 
+                    string sDiurna, 
+                    string iCharlson, 
+                    string RealizoEvCormobilidades, 
+                    string cuestionarioFrail, 
+                    string rEvFragilidad, 
+                    string escalaSARC, 
+                    string rEvSar, 
+                    string criteriosStopp, 
+                    string rEvMedic, 
+                    string usoProtesis, 
+                    string xerostomia, 
+                    string numDientes, 
+                    string disfagia, 
+                    string cadidiasis, 
+                    string caries, 
+                    string rEvSalud, 
+                    string actKatz, 
+                    string actLawton, 
+                    string indiceBarthel, 
+                    string escalaTinneti, 
+                    string rEvDesempeño, 
+                    string escalaIn, 
+                    string rEvIn, 
+                    string escalaKar, 
+                    string escalaRam, 
+                    string rEvCuidados, 
+                    string sgAfasia, 
+                    string sgCaidas, 
+                    string sgColapso, 
+                    string sgDeficit, 
+                    string sgDepresion, 
+                    string sgDesnutricion, 
+                    string sgPatologia, 
+                    string sgPatologiaD, 
+                    string sgEstadoT, 
+                    string sgInconF, 
+                    string sgInconU, 
+                    string sgAbuso, 
+                    string sgObesidad, 
+                    string sgOsteoporosis, 
+                    string sgPerdidaA, 
+                    string sgUlceras, 
+                    string sgPerdidaV, 
+                    string sgPolifarmacia, 
+                    string sgRegresion, 
+                    string sgSxInmovilidad, 
+                    string sgSxPiernas, 
+                    string sgTranstornoC, 
+                    string sgTranstornoS, 
+                    string sgTranstornoM, 
+                    string sgTranstornoE, 
+                    string sgEncarnizamiento, 
+                    string sgPatologiaSocial, 
+                    string sgDemencia, 
+                    string sgDelirum, 
+                    string pClinicos, 
+                    string analisis, 
+                    string pEstudios, 
+                    string pronostico, 
+                    string indTerap, 
+                    string equipoM, 
+                    string fechaP);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarBeneficiario", ReplyAction="http://tempuri.org/IServerAsociados/registrarBeneficiarioResponse")]
         Cliente_Asociados_CA.Server_Asociados.beneficiario registrarBeneficiario(
                     int idBeneficiario, 
@@ -1618,6 +4011,12 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getSocio", ReplyAction="http://tempuri.org/IServerAsociados/getSocioResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarSocios> getSocioAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getHC", ReplyAction="http://tempuri.org/IServerAsociados/getHCResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarHC getHC();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getHC", ReplyAction="http://tempuri.org/IServerAsociados/getHCResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarHC> getHCAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getBeneficiario", ReplyAction="http://tempuri.org/IServerAsociados/getBeneficiarioResponse")]
         Cliente_Asociados_CA.Server_Asociados.mostrarBeneficiario getBeneficiario();
         
@@ -1629,6 +4028,12 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getSocioDetalle", ReplyAction="http://tempuri.org/IServerAsociados/getSocioDetalleResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.getSocioByNoSocio> getSocioDetalleAsync(string numSocio);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getBeneficiarioDetalle", ReplyAction="http://tempuri.org/IServerAsociados/getBeneficiarioDetalleResponse")]
+        Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio getBeneficiarioDetalle(int numSocio);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getBeneficiarioDetalle", ReplyAction="http://tempuri.org/IServerAsociados/getBeneficiarioDetalleResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio> getBeneficiarioDetalleAsync(int numSocio);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/allSocios", ReplyAction="http://tempuri.org/IServerAsociados/allSociosResponse")]
         Cliente_Asociados_CA.Server_Asociados.socio[] allSocios();
@@ -1796,6 +4201,266 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.registrarSocioAsync(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
         }
         
+        public Cliente_Asociados_CA.Server_Asociados.historialClinico registrarHC(
+                    int Id, 
+                    int IdSocio, 
+                    string fecha, 
+                    string hora, 
+                    string escolaridad, 
+                    string ocupacionPrincipal, 
+                    string alergias, 
+                    string nombreContacto, 
+                    string parentesco, 
+                    string cuidadorPrimario, 
+                    string telefonoContacto, 
+                    string svTA, 
+                    string svFC, 
+                    string svFR, 
+                    string svGlucemiaPre, 
+                    string svGlucemiaPost, 
+                    string svColesterol, 
+                    string svTrigliceridos, 
+                    string svTemperatura, 
+                    string svPeso, 
+                    string svEstatura, 
+                    string svCintura, 
+                    string svIMC, 
+                    string resumenInterrogatorio, 
+                    string alcoholismo, 
+                    string tabaquismo, 
+                    string toxicomonias, 
+                    string transfusiones, 
+                    string cartillaVacunacion, 
+                    string gestas, 
+                    string partos, 
+                    string cesareas, 
+                    string abortos, 
+                    string medicacionActual, 
+                    string padecimientoActual, 
+                    string exploracionFisica, 
+                    string resultadosRelevantes, 
+                    string cbdAgudo, 
+                    string realizoCBDAgudo, 
+                    string cbdCronico, 
+                    string realizoCBDCronico, 
+                    string riesgoFramingham, 
+                    string riesgoASCVD, 
+                    string estudioEnfermedadCronica, 
+                    string realizoEstudio, 
+                    string ojoDerecho, 
+                    string oidoDerecho, 
+                    string pruebaSusurro, 
+                    string ojoIzquierdo, 
+                    string OidoIzquierdo, 
+                    string realizoAlteraciones, 
+                    string examenMMSE, 
+                    string deterioroGlobal, 
+                    string yesavage, 
+                    string pruebaReloj, 
+                    string escalaMaltrato, 
+                    string realizoEvMaltrato, 
+                    string noHorasDuerme, 
+                    string duermeDia, 
+                    string sueñoFragmentado, 
+                    string dConciliarSueño, 
+                    string rIntenso, 
+                    string pRespiratorias, 
+                    string cansancioDia, 
+                    string sDiurna, 
+                    string iCharlson, 
+                    string RealizoEvCormobilidades, 
+                    string cuestionarioFrail, 
+                    string rEvFragilidad, 
+                    string escalaSARC, 
+                    string rEvSar, 
+                    string criteriosStopp, 
+                    string rEvMedic, 
+                    string usoProtesis, 
+                    string xerostomia, 
+                    string numDientes, 
+                    string disfagia, 
+                    string cadidiasis, 
+                    string caries, 
+                    string rEvSalud, 
+                    string actKatz, 
+                    string actLawton, 
+                    string indiceBarthel, 
+                    string escalaTinneti, 
+                    string rEvDesempeño, 
+                    string escalaIn, 
+                    string rEvIn, 
+                    string escalaKar, 
+                    string escalaRam, 
+                    string rEvCuidados, 
+                    string sgAfasia, 
+                    string sgCaidas, 
+                    string sgColapso, 
+                    string sgDeficit, 
+                    string sgDepresion, 
+                    string sgDesnutricion, 
+                    string sgPatologia, 
+                    string sgPatologiaD, 
+                    string sgEstadoT, 
+                    string sgInconF, 
+                    string sgInconU, 
+                    string sgAbuso, 
+                    string sgObesidad, 
+                    string sgOsteoporosis, 
+                    string sgPerdidaA, 
+                    string sgUlceras, 
+                    string sgPerdidaV, 
+                    string sgPolifarmacia, 
+                    string sgRegresion, 
+                    string sgSxInmovilidad, 
+                    string sgSxPiernas, 
+                    string sgTranstornoC, 
+                    string sgTranstornoS, 
+                    string sgTranstornoM, 
+                    string sgTranstornoE, 
+                    string sgEncarnizamiento, 
+                    string sgPatologiaSocial, 
+                    string sgDemencia, 
+                    string sgDelirum, 
+                    string pClinicos, 
+                    string analisis, 
+                    string pEstudios, 
+                    string pronostico, 
+                    string indTerap, 
+                    string equipoM, 
+                    string fechaP) {
+            return base.Channel.registrarHC(Id, IdSocio, fecha, hora, escolaridad, ocupacionPrincipal, alergias, nombreContacto, parentesco, cuidadorPrimario, telefonoContacto, svTA, svFC, svFR, svGlucemiaPre, svGlucemiaPost, svColesterol, svTrigliceridos, svTemperatura, svPeso, svEstatura, svCintura, svIMC, resumenInterrogatorio, alcoholismo, tabaquismo, toxicomonias, transfusiones, cartillaVacunacion, gestas, partos, cesareas, abortos, medicacionActual, padecimientoActual, exploracionFisica, resultadosRelevantes, cbdAgudo, realizoCBDAgudo, cbdCronico, realizoCBDCronico, riesgoFramingham, riesgoASCVD, estudioEnfermedadCronica, realizoEstudio, ojoDerecho, oidoDerecho, pruebaSusurro, ojoIzquierdo, OidoIzquierdo, realizoAlteraciones, examenMMSE, deterioroGlobal, yesavage, pruebaReloj, escalaMaltrato, realizoEvMaltrato, noHorasDuerme, duermeDia, sueñoFragmentado, dConciliarSueño, rIntenso, pRespiratorias, cansancioDia, sDiurna, iCharlson, RealizoEvCormobilidades, cuestionarioFrail, rEvFragilidad, escalaSARC, rEvSar, criteriosStopp, rEvMedic, usoProtesis, xerostomia, numDientes, disfagia, cadidiasis, caries, rEvSalud, actKatz, actLawton, indiceBarthel, escalaTinneti, rEvDesempeño, escalaIn, rEvIn, escalaKar, escalaRam, rEvCuidados, sgAfasia, sgCaidas, sgColapso, sgDeficit, sgDepresion, sgDesnutricion, sgPatologia, sgPatologiaD, sgEstadoT, sgInconF, sgInconU, sgAbuso, sgObesidad, sgOsteoporosis, sgPerdidaA, sgUlceras, sgPerdidaV, sgPolifarmacia, sgRegresion, sgSxInmovilidad, sgSxPiernas, sgTranstornoC, sgTranstornoS, sgTranstornoM, sgTranstornoE, sgEncarnizamiento, sgPatologiaSocial, sgDemencia, sgDelirum, pClinicos, analisis, pEstudios, pronostico, indTerap, equipoM, fechaP);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.historialClinico> registrarHCAsync(
+                    int Id, 
+                    int IdSocio, 
+                    string fecha, 
+                    string hora, 
+                    string escolaridad, 
+                    string ocupacionPrincipal, 
+                    string alergias, 
+                    string nombreContacto, 
+                    string parentesco, 
+                    string cuidadorPrimario, 
+                    string telefonoContacto, 
+                    string svTA, 
+                    string svFC, 
+                    string svFR, 
+                    string svGlucemiaPre, 
+                    string svGlucemiaPost, 
+                    string svColesterol, 
+                    string svTrigliceridos, 
+                    string svTemperatura, 
+                    string svPeso, 
+                    string svEstatura, 
+                    string svCintura, 
+                    string svIMC, 
+                    string resumenInterrogatorio, 
+                    string alcoholismo, 
+                    string tabaquismo, 
+                    string toxicomonias, 
+                    string transfusiones, 
+                    string cartillaVacunacion, 
+                    string gestas, 
+                    string partos, 
+                    string cesareas, 
+                    string abortos, 
+                    string medicacionActual, 
+                    string padecimientoActual, 
+                    string exploracionFisica, 
+                    string resultadosRelevantes, 
+                    string cbdAgudo, 
+                    string realizoCBDAgudo, 
+                    string cbdCronico, 
+                    string realizoCBDCronico, 
+                    string riesgoFramingham, 
+                    string riesgoASCVD, 
+                    string estudioEnfermedadCronica, 
+                    string realizoEstudio, 
+                    string ojoDerecho, 
+                    string oidoDerecho, 
+                    string pruebaSusurro, 
+                    string ojoIzquierdo, 
+                    string OidoIzquierdo, 
+                    string realizoAlteraciones, 
+                    string examenMMSE, 
+                    string deterioroGlobal, 
+                    string yesavage, 
+                    string pruebaReloj, 
+                    string escalaMaltrato, 
+                    string realizoEvMaltrato, 
+                    string noHorasDuerme, 
+                    string duermeDia, 
+                    string sueñoFragmentado, 
+                    string dConciliarSueño, 
+                    string rIntenso, 
+                    string pRespiratorias, 
+                    string cansancioDia, 
+                    string sDiurna, 
+                    string iCharlson, 
+                    string RealizoEvCormobilidades, 
+                    string cuestionarioFrail, 
+                    string rEvFragilidad, 
+                    string escalaSARC, 
+                    string rEvSar, 
+                    string criteriosStopp, 
+                    string rEvMedic, 
+                    string usoProtesis, 
+                    string xerostomia, 
+                    string numDientes, 
+                    string disfagia, 
+                    string cadidiasis, 
+                    string caries, 
+                    string rEvSalud, 
+                    string actKatz, 
+                    string actLawton, 
+                    string indiceBarthel, 
+                    string escalaTinneti, 
+                    string rEvDesempeño, 
+                    string escalaIn, 
+                    string rEvIn, 
+                    string escalaKar, 
+                    string escalaRam, 
+                    string rEvCuidados, 
+                    string sgAfasia, 
+                    string sgCaidas, 
+                    string sgColapso, 
+                    string sgDeficit, 
+                    string sgDepresion, 
+                    string sgDesnutricion, 
+                    string sgPatologia, 
+                    string sgPatologiaD, 
+                    string sgEstadoT, 
+                    string sgInconF, 
+                    string sgInconU, 
+                    string sgAbuso, 
+                    string sgObesidad, 
+                    string sgOsteoporosis, 
+                    string sgPerdidaA, 
+                    string sgUlceras, 
+                    string sgPerdidaV, 
+                    string sgPolifarmacia, 
+                    string sgRegresion, 
+                    string sgSxInmovilidad, 
+                    string sgSxPiernas, 
+                    string sgTranstornoC, 
+                    string sgTranstornoS, 
+                    string sgTranstornoM, 
+                    string sgTranstornoE, 
+                    string sgEncarnizamiento, 
+                    string sgPatologiaSocial, 
+                    string sgDemencia, 
+                    string sgDelirum, 
+                    string pClinicos, 
+                    string analisis, 
+                    string pEstudios, 
+                    string pronostico, 
+                    string indTerap, 
+                    string equipoM, 
+                    string fechaP) {
+            return base.Channel.registrarHCAsync(Id, IdSocio, fecha, hora, escolaridad, ocupacionPrincipal, alergias, nombreContacto, parentesco, cuidadorPrimario, telefonoContacto, svTA, svFC, svFR, svGlucemiaPre, svGlucemiaPost, svColesterol, svTrigliceridos, svTemperatura, svPeso, svEstatura, svCintura, svIMC, resumenInterrogatorio, alcoholismo, tabaquismo, toxicomonias, transfusiones, cartillaVacunacion, gestas, partos, cesareas, abortos, medicacionActual, padecimientoActual, exploracionFisica, resultadosRelevantes, cbdAgudo, realizoCBDAgudo, cbdCronico, realizoCBDCronico, riesgoFramingham, riesgoASCVD, estudioEnfermedadCronica, realizoEstudio, ojoDerecho, oidoDerecho, pruebaSusurro, ojoIzquierdo, OidoIzquierdo, realizoAlteraciones, examenMMSE, deterioroGlobal, yesavage, pruebaReloj, escalaMaltrato, realizoEvMaltrato, noHorasDuerme, duermeDia, sueñoFragmentado, dConciliarSueño, rIntenso, pRespiratorias, cansancioDia, sDiurna, iCharlson, RealizoEvCormobilidades, cuestionarioFrail, rEvFragilidad, escalaSARC, rEvSar, criteriosStopp, rEvMedic, usoProtesis, xerostomia, numDientes, disfagia, cadidiasis, caries, rEvSalud, actKatz, actLawton, indiceBarthel, escalaTinneti, rEvDesempeño, escalaIn, rEvIn, escalaKar, escalaRam, rEvCuidados, sgAfasia, sgCaidas, sgColapso, sgDeficit, sgDepresion, sgDesnutricion, sgPatologia, sgPatologiaD, sgEstadoT, sgInconF, sgInconU, sgAbuso, sgObesidad, sgOsteoporosis, sgPerdidaA, sgUlceras, sgPerdidaV, sgPolifarmacia, sgRegresion, sgSxInmovilidad, sgSxPiernas, sgTranstornoC, sgTranstornoS, sgTranstornoM, sgTranstornoE, sgEncarnizamiento, sgPatologiaSocial, sgDemencia, sgDelirum, pClinicos, analisis, pEstudios, pronostico, indTerap, equipoM, fechaP);
+        }
+        
         public Cliente_Asociados_CA.Server_Asociados.beneficiario registrarBeneficiario(
                     int idBeneficiario, 
                     string nombre, 
@@ -1878,6 +4543,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.getSocioAsync();
         }
         
+        public Cliente_Asociados_CA.Server_Asociados.mostrarHC getHC() {
+            return base.Channel.getHC();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarHC> getHCAsync() {
+            return base.Channel.getHCAsync();
+        }
+        
         public Cliente_Asociados_CA.Server_Asociados.mostrarBeneficiario getBeneficiario() {
             return base.Channel.getBeneficiario();
         }
@@ -1892,6 +4565,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.getSocioByNoSocio> getSocioDetalleAsync(string numSocio) {
             return base.Channel.getSocioDetalleAsync(numSocio);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio getBeneficiarioDetalle(int numSocio) {
+            return base.Channel.getBeneficiarioDetalle(numSocio);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio> getBeneficiarioDetalleAsync(int numSocio) {
+            return base.Channel.getBeneficiarioDetalleAsync(numSocio);
         }
         
         public Cliente_Asociados_CA.Server_Asociados.socio[] allSocios() {

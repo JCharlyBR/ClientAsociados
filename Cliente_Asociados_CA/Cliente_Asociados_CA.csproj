@@ -188,7 +188,13 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.estados.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.getSocioByNoSocio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.historialClinico.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.localidades.datasource">
@@ -198,6 +204,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarCategoria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarHC.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarSocios.datasource">

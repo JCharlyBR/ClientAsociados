@@ -43,7 +43,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.txtIMC = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.txtCinturaHC = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -74,8 +74,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.txtHoraHC = new System.Windows.Forms.DateTimePicker();
+            this.txtFechaHC = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEstadoCivilHC = new System.Windows.Forms.TextBox();
             this.cmbEscolaridadHC = new System.Windows.Forms.ComboBox();
             this.txtAlergiasHC = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
@@ -90,18 +92,17 @@
             this.txtFechaNacimientoHC = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.txtHoraHC = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
             this.txtDomicilioHC = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.txtEdadHC = new System.Windows.Forms.TextBox();
             this.txtNombreHC = new System.Windows.Forms.TextBox();
-            this.txtFechaHC = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtNoSocioHC = new System.Windows.Forms.TextBox();
             this.label137 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -117,10 +118,10 @@
             this.txtMedicacionActualHC = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtAbortosHC = new System.Windows.Forms.NumericUpDown();
-            this.txtCesareasHC = new System.Windows.Forms.NumericUpDown();
-            this.txtPartosHC = new System.Windows.Forms.NumericUpDown();
-            this.txtGestasHC = new System.Windows.Forms.NumericUpDown();
+            this.txtAbortos = new System.Windows.Forms.TextBox();
+            this.txtCesareas = new System.Windows.Forms.TextBox();
+            this.txtPartos = new System.Windows.Forms.TextBox();
+            this.txtGestas = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -128,7 +129,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtCartillaVacunacionHC = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTransfusionesHC = new System.Windows.Forms.ComboBox();
             this.cmbToxicomaniaHC = new System.Windows.Forms.ComboBox();
@@ -183,7 +183,6 @@
             this.label63 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.btnFragilidad = new System.Windows.Forms.Button();
             this.txtRealizoFragilidadHC = new System.Windows.Forms.TextBox();
             this.label92 = new System.Windows.Forms.Label();
             this.txtCuestionarioFrailHC = new System.Windows.Forms.TextBox();
@@ -196,6 +195,14 @@
             this.label90 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.txtRBTN7 = new System.Windows.Forms.TextBox();
+            this.txtRBTN6 = new System.Windows.Forms.TextBox();
+            this.txtRBTN5 = new System.Windows.Forms.TextBox();
+            this.txtRBT4 = new System.Windows.Forms.TextBox();
+            this.txtRBT3 = new System.Windows.Forms.TextBox();
+            this.txtRBT2 = new System.Windows.Forms.TextBox();
+            this.txtRBT1 = new System.Windows.Forms.TextBox();
+            this.txtNoHorasDuermeHC = new System.Windows.Forms.TextBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.rbtn14 = new System.Windows.Forms.RadioButton();
             this.rbtn13 = new System.Windows.Forms.RadioButton();
@@ -217,7 +224,6 @@
             this.panel22 = new System.Windows.Forms.Panel();
             this.rbtn2 = new System.Windows.Forms.RadioButton();
             this.rbtn1 = new System.Windows.Forms.RadioButton();
-            this.txtHorasDuermeHC = new System.Windows.Forms.NumericUpDown();
             this.label89 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
@@ -228,15 +234,12 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btnTestNutricion = new System.Windows.Forms.Button();
             this.label76 = new System.Windows.Forms.Label();
             this.txtRealizoEvaluacionMaltratoHC = new System.Windows.Forms.TextBox();
             this.txtEscalaGeriatricaMaltratoHC = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.btnTestMoca = new System.Windows.Forms.Button();
-            this.btnTestGDS = new System.Windows.Forms.Button();
             this.label81 = new System.Windows.Forms.Label();
             this.txtEscalaDeterioroHC = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
@@ -248,8 +251,6 @@
             this.label79 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.btnTestBarthel = new System.Windows.Forms.Button();
-            this.btnTestKatz = new System.Windows.Forms.Button();
             this.txtIndiceBarthelHC = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
             this.txtActInstHC = new System.Windows.Forms.TextBox();
@@ -287,6 +288,35 @@
             this.label97 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel38 = new System.Windows.Forms.Panel();
+            this.txtCHL29 = new System.Windows.Forms.TextBox();
+            this.txtCHL28 = new System.Windows.Forms.TextBox();
+            this.txtCHL27 = new System.Windows.Forms.TextBox();
+            this.txtCHL26 = new System.Windows.Forms.TextBox();
+            this.txtCHL25 = new System.Windows.Forms.TextBox();
+            this.txtCHL24 = new System.Windows.Forms.TextBox();
+            this.txtCHL23 = new System.Windows.Forms.TextBox();
+            this.txtCHL22 = new System.Windows.Forms.TextBox();
+            this.txtCHL21 = new System.Windows.Forms.TextBox();
+            this.txtCHL20 = new System.Windows.Forms.TextBox();
+            this.txtCHL19 = new System.Windows.Forms.TextBox();
+            this.txtCHL18 = new System.Windows.Forms.TextBox();
+            this.txtCHL17 = new System.Windows.Forms.TextBox();
+            this.txtCHL16 = new System.Windows.Forms.TextBox();
+            this.txtCHL15 = new System.Windows.Forms.TextBox();
+            this.txtCHL14 = new System.Windows.Forms.TextBox();
+            this.txtCHL13 = new System.Windows.Forms.TextBox();
+            this.txtCHL12 = new System.Windows.Forms.TextBox();
+            this.txtCHL11 = new System.Windows.Forms.TextBox();
+            this.txtCHL10 = new System.Windows.Forms.TextBox();
+            this.txtCHL9 = new System.Windows.Forms.TextBox();
+            this.txtCHL8 = new System.Windows.Forms.TextBox();
+            this.txtCHL7 = new System.Windows.Forms.TextBox();
+            this.txtCHL6 = new System.Windows.Forms.TextBox();
+            this.txtCHL5 = new System.Windows.Forms.TextBox();
+            this.txtCHL4 = new System.Windows.Forms.TextBox();
+            this.txtCHL3 = new System.Windows.Forms.TextBox();
+            this.txtCHL2 = new System.Windows.Forms.TextBox();
+            this.txtCHL1 = new System.Windows.Forms.TextBox();
             this.chbDelirumHC = new System.Windows.Forms.CheckBox();
             this.chbDemenciaHC = new System.Windows.Forms.CheckBox();
             this.chbPatologiaHC = new System.Windows.Forms.CheckBox();
@@ -332,7 +362,6 @@
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.btnTestPoma = new System.Windows.Forms.Button();
             this.txtRealizoDesFisHC = new System.Windows.Forms.TextBox();
             this.label114 = new System.Windows.Forms.Label();
             this.txtRiesgoCaidasHC = new System.Windows.Forms.TextBox();
@@ -368,44 +397,27 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.txtProblemasCliHC = new System.Windows.Forms.TextBox();
             this.label126 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHC = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCancelarHC = new System.Windows.Forms.Button();
             this.btnBuscarHC = new System.Windows.Forms.Button();
             this.label138 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNoSocioSearchHC = new System.Windows.Forms.TextBox();
             this.btnGuardarHC = new System.Windows.Forms.Button();
-            this.panelEncuestaFrail = new System.Windows.Forms.Panel();
-            this.btnEvaluarTestFrail = new System.Windows.Forms.Button();
-            this.txtFr3 = new System.Windows.Forms.TextBox();
-            this.txtFr4 = new System.Windows.Forms.TextBox();
-            this.txtFr5 = new System.Windows.Forms.TextBox();
-            this.txtFr2 = new System.Windows.Forms.TextBox();
-            this.txtFr1 = new System.Windows.Forms.TextBox();
-            this.btnCancelarTestFrail = new System.Windows.Forms.Button();
-            this.txtResultadoTestFrail = new System.Windows.Forms.TextBox();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.rbF10 = new System.Windows.Forms.RadioButton();
-            this.rbF9 = new System.Windows.Forms.RadioButton();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.rbF6 = new System.Windows.Forms.RadioButton();
-            this.rbF5 = new System.Windows.Forms.RadioButton();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.rbF8 = new System.Windows.Forms.RadioButton();
-            this.rbF7 = new System.Windows.Forms.RadioButton();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.rbF2 = new System.Windows.Forms.RadioButton();
-            this.rbF1 = new System.Windows.Forms.RadioButton();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.rbF4 = new System.Windows.Forms.RadioButton();
-            this.rbF3 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
+            this.txtTD1HC = new System.Windows.Forms.TextBox();
+            this.txtTD2HC = new System.Windows.Forms.TextBox();
+            this.txtTD3HC = new System.Windows.Forms.TextBox();
+            this.txtInfluencia = new System.Windows.Forms.TextBox();
             this.label140 = new System.Windows.Forms.Label();
             this.label141 = new System.Windows.Forms.Label();
             this.label142 = new System.Windows.Forms.Label();
+            this.txtAntineu = new System.Windows.Forms.TextBox();
             this.label143 = new System.Windows.Forms.Label();
-            this.label144 = new System.Windows.Forms.Label();
-            this.label145 = new System.Windows.Forms.Label();
+            this.txtCBDAgudoHC = new System.Windows.Forms.TextBox();
+            this.txtCBDCronicoHC = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -419,10 +431,6 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -444,7 +452,6 @@
             this.panel24.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHorasDuermeHC)).BeginInit();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -465,14 +472,9 @@
             this.panel41.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel39.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHC)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panelEncuestaFrail.SuspendLayout();
             this.panel46.SuspendLayout();
-            this.panel47.SuspendLayout();
-            this.panel48.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -623,7 +625,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Beige;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.textBox28);
+            this.panel5.Controls.Add(this.txtIMC);
             this.panel5.Controls.Add(this.label37);
             this.panel5.Controls.Add(this.txtCinturaHC);
             this.panel5.Controls.Add(this.label36);
@@ -654,13 +656,13 @@
             this.panel5.TabIndex = 33;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // textBox28
+            // txtIMC
             // 
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Location = new System.Drawing.Point(529, 73);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(58, 20);
-            this.textBox28.TabIndex = 56;
+            this.txtIMC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIMC.Location = new System.Drawing.Point(529, 73);
+            this.txtIMC.Name = "txtIMC";
+            this.txtIMC.Size = new System.Drawing.Size(58, 20);
+            this.txtIMC.TabIndex = 56;
             // 
             // label37
             // 
@@ -839,6 +841,7 @@
             this.txtTAHC.Name = "txtTAHC";
             this.txtTAHC.Size = new System.Drawing.Size(81, 20);
             this.txtTAHC.TabIndex = 36;
+            this.txtTAHC.TextChanged += new System.EventHandler(this.txtTAHC_TextChanged);
             // 
             // label28
             // 
@@ -945,8 +948,10 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Beige;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.txtHoraHC);
+            this.panel8.Controls.Add(this.txtFechaHC);
             this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.txtEstadoCivilHC);
             this.panel8.Controls.Add(this.cmbEscolaridadHC);
             this.panel8.Controls.Add(this.txtAlergiasHC);
             this.panel8.Controls.Add(this.label44);
@@ -961,13 +966,11 @@
             this.panel8.Controls.Add(this.txtFechaNacimientoHC);
             this.panel8.Controls.Add(this.label50);
             this.panel8.Controls.Add(this.label51);
-            this.panel8.Controls.Add(this.txtHoraHC);
             this.panel8.Controls.Add(this.label52);
             this.panel8.Controls.Add(this.txtDomicilioHC);
             this.panel8.Controls.Add(this.label53);
             this.panel8.Controls.Add(this.txtEdadHC);
             this.panel8.Controls.Add(this.txtNombreHC);
-            this.panel8.Controls.Add(this.txtFechaHC);
             this.panel8.Controls.Add(this.label54);
             this.panel8.Controls.Add(this.label55);
             this.panel8.Controls.Add(this.label56);
@@ -977,21 +980,35 @@
             this.panel8.Size = new System.Drawing.Size(602, 211);
             this.panel8.TabIndex = 33;
             // 
+            // txtHoraHC
+            // 
+            this.txtHoraHC.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.txtHoraHC.Location = new System.Drawing.Point(261, 38);
+            this.txtHoraHC.Name = "txtHoraHC";
+            this.txtHoraHC.Size = new System.Drawing.Size(111, 20);
+            this.txtHoraHC.TabIndex = 34;
+            // 
+            // txtFechaHC
+            // 
+            this.txtFechaHC.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFechaHC.Location = new System.Drawing.Point(66, 38);
+            this.txtFechaHC.Name = "txtFechaHC";
+            this.txtFechaHC.Size = new System.Drawing.Size(150, 20);
+            this.txtFechaHC.TabIndex = 33;
+            // 
             // textBox3
             // 
-            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(261, 72);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(111, 20);
             this.textBox3.TabIndex = 32;
             // 
-            // textBox2
+            // txtEstadoCivilHC
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(449, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 31;
+            this.txtEstadoCivilHC.Location = new System.Drawing.Point(449, 35);
+            this.txtEstadoCivilHC.Name = "txtEstadoCivilHC";
+            this.txtEstadoCivilHC.Size = new System.Drawing.Size(138, 20);
+            this.txtEstadoCivilHC.TabIndex = 31;
             // 
             // cmbEscolaridadHC
             // 
@@ -1047,7 +1064,6 @@
             // 
             // txtTelefonoMovilHC
             // 
-            this.txtTelefonoMovilHC.Enabled = false;
             this.txtTelefonoMovilHC.Location = new System.Drawing.Point(449, 128);
             this.txtTelefonoMovilHC.Name = "txtTelefonoMovilHC";
             this.txtTelefonoMovilHC.Size = new System.Drawing.Size(138, 20);
@@ -1065,7 +1081,6 @@
             // 
             // txtTelefonoFijoHC
             // 
-            this.txtTelefonoFijoHC.Enabled = false;
             this.txtTelefonoFijoHC.Location = new System.Drawing.Point(449, 98);
             this.txtTelefonoFijoHC.Name = "txtTelefonoFijoHC";
             this.txtTelefonoFijoHC.Size = new System.Drawing.Size(138, 20);
@@ -1103,7 +1118,6 @@
             // 
             // txtFechaNacimientoHC
             // 
-            this.txtFechaNacimientoHC.Enabled = false;
             this.txtFechaNacimientoHC.Location = new System.Drawing.Point(261, 102);
             this.txtFechaNacimientoHC.Name = "txtFechaNacimientoHC";
             this.txtFechaNacimientoHC.Size = new System.Drawing.Size(111, 20);
@@ -1129,14 +1143,6 @@
             this.label51.TabIndex = 13;
             this.label51.Text = "Sexo:";
             // 
-            // txtHoraHC
-            // 
-            this.txtHoraHC.Enabled = false;
-            this.txtHoraHC.Location = new System.Drawing.Point(261, 38);
-            this.txtHoraHC.Name = "txtHoraHC";
-            this.txtHoraHC.Size = new System.Drawing.Size(111, 20);
-            this.txtHoraHC.TabIndex = 12;
-            // 
             // label52
             // 
             this.label52.AutoSize = true;
@@ -1149,7 +1155,6 @@
             // 
             // txtDomicilioHC
             // 
-            this.txtDomicilioHC.Enabled = false;
             this.txtDomicilioHC.Location = new System.Drawing.Point(66, 132);
             this.txtDomicilioHC.Multiline = true;
             this.txtDomicilioHC.Name = "txtDomicilioHC";
@@ -1168,7 +1173,6 @@
             // 
             // txtEdadHC
             // 
-            this.txtEdadHC.Enabled = false;
             this.txtEdadHC.Location = new System.Drawing.Point(66, 102);
             this.txtEdadHC.Name = "txtEdadHC";
             this.txtEdadHC.Size = new System.Drawing.Size(65, 20);
@@ -1176,19 +1180,10 @@
             // 
             // txtNombreHC
             // 
-            this.txtNombreHC.Enabled = false;
             this.txtNombreHC.Location = new System.Drawing.Point(66, 72);
             this.txtNombreHC.Name = "txtNombreHC";
             this.txtNombreHC.Size = new System.Drawing.Size(150, 20);
             this.txtNombreHC.TabIndex = 7;
-            // 
-            // txtFechaHC
-            // 
-            this.txtFechaHC.Enabled = false;
-            this.txtFechaHC.Location = new System.Drawing.Point(66, 38);
-            this.txtFechaHC.Name = "txtFechaHC";
-            this.txtFechaHC.Size = new System.Drawing.Size(150, 20);
-            this.txtFechaHC.TabIndex = 6;
             // 
             // label54
             // 
@@ -1235,6 +1230,7 @@
             this.panel7.AutoScroll = true;
             this.panel7.BackColor = System.Drawing.Color.Beige;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.txtId);
             this.panel7.Controls.Add(this.txtNoSocioHC);
             this.panel7.Controls.Add(this.label137);
             this.panel7.Controls.Add(this.label39);
@@ -1247,13 +1243,23 @@
             this.panel7.Size = new System.Drawing.Size(491, 211);
             this.panel7.TabIndex = 32;
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(412, 148);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(62, 20);
+            this.txtId.TabIndex = 33;
+            this.txtId.Text = "0";
+            this.txtId.Visible = false;
+            // 
             // txtNoSocioHC
             // 
-            this.txtNoSocioHC.Enabled = false;
+            this.txtNoSocioHC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNoSocioHC.Location = new System.Drawing.Point(412, 174);
             this.txtNoSocioHC.Name = "txtNoSocioHC";
             this.txtNoSocioHC.Size = new System.Drawing.Size(65, 20);
             this.txtNoSocioHC.TabIndex = 32;
+            this.txtNoSocioHC.Text = "3";
             // 
             // label137
             // 
@@ -1287,9 +1293,9 @@
             this.label41.AutoSize = true;
             this.label41.Location = new System.Drawing.Point(127, 64);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(318, 13);
+            this.label41.Size = new System.Drawing.Size(345, 13);
             this.label41.TabIndex = 2;
-            this.label41.Text = "Prol. Independencia No. 100 San Miguel Vindhò, Tula de Allende \t\t\t\t\r\n";
+            this.label41.Text = "Boulevard del Cooperativismo S/N, Ciudad Cooperativa Cruz Azul, Hgo.\t\t\t\r\n";
             // 
             // label43
             // 
@@ -1297,9 +1303,10 @@
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(128, 23);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(347, 15);
+            this.label43.Size = new System.Drawing.Size(359, 30);
             this.label43.TabIndex = 1;
-            this.label43.Text = "HOSPITAL GENERAL GUILLERMO ALVAREZ MACIAS \t\t\t\t\r\n";
+            this.label43.Text = "ASOCIACIÓN DE SOCIOS JUBILADOS Y PENSIONADOS\r\nDE LA COOPERATIVA LA CRUZ AZUL, A.C" +
+    ".\t\t\t\r\n";
             // 
             // pictureBox2
             // 
@@ -1313,6 +1320,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel46);
             this.tabPage2.Controls.Add(this.panel11);
             this.tabPage2.Controls.Add(this.panel10);
             this.tabPage2.Controls.Add(this.panel9);
@@ -1388,10 +1396,10 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.Beige;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.txtAbortosHC);
-            this.panel9.Controls.Add(this.txtCesareasHC);
-            this.panel9.Controls.Add(this.txtPartosHC);
-            this.panel9.Controls.Add(this.txtGestasHC);
+            this.panel9.Controls.Add(this.txtAbortos);
+            this.panel9.Controls.Add(this.txtCesareas);
+            this.panel9.Controls.Add(this.txtPartos);
+            this.panel9.Controls.Add(this.txtGestas);
             this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.label9);
@@ -1399,42 +1407,42 @@
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(6, 137);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1093, 86);
+            this.panel9.Size = new System.Drawing.Size(724, 86);
             this.panel9.TabIndex = 41;
             // 
-            // txtAbortosHC
+            // txtAbortos
             // 
-            this.txtAbortosHC.Location = new System.Drawing.Point(860, 44);
-            this.txtAbortosHC.Name = "txtAbortosHC";
-            this.txtAbortosHC.Size = new System.Drawing.Size(40, 20);
-            this.txtAbortosHC.TabIndex = 50;
+            this.txtAbortos.Location = new System.Drawing.Point(465, 57);
+            this.txtAbortos.Name = "txtAbortos";
+            this.txtAbortos.Size = new System.Drawing.Size(36, 20);
+            this.txtAbortos.TabIndex = 54;
             // 
-            // txtCesareasHC
+            // txtCesareas
             // 
-            this.txtCesareasHC.Location = new System.Drawing.Point(607, 43);
-            this.txtCesareasHC.Name = "txtCesareasHC";
-            this.txtCesareasHC.Size = new System.Drawing.Size(40, 20);
-            this.txtCesareasHC.TabIndex = 49;
+            this.txtCesareas.Location = new System.Drawing.Point(465, 28);
+            this.txtCesareas.Name = "txtCesareas";
+            this.txtCesareas.Size = new System.Drawing.Size(36, 20);
+            this.txtCesareas.TabIndex = 53;
             // 
-            // txtPartosHC
+            // txtPartos
             // 
-            this.txtPartosHC.Location = new System.Drawing.Point(346, 43);
-            this.txtPartosHC.Name = "txtPartosHC";
-            this.txtPartosHC.Size = new System.Drawing.Size(40, 20);
-            this.txtPartosHC.TabIndex = 48;
+            this.txtPartos.Location = new System.Drawing.Point(204, 57);
+            this.txtPartos.Name = "txtPartos";
+            this.txtPartos.Size = new System.Drawing.Size(36, 20);
+            this.txtPartos.TabIndex = 52;
             // 
-            // txtGestasHC
+            // txtGestas
             // 
-            this.txtGestasHC.Location = new System.Drawing.Point(110, 43);
-            this.txtGestasHC.Name = "txtGestasHC";
-            this.txtGestasHC.Size = new System.Drawing.Size(40, 20);
-            this.txtGestasHC.TabIndex = 47;
+            this.txtGestas.Location = new System.Drawing.Point(204, 28);
+            this.txtGestas.Name = "txtGestas";
+            this.txtGestas.Size = new System.Drawing.Size(36, 20);
+            this.txtGestas.TabIndex = 51;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(796, 44);
+            this.label14.Location = new System.Drawing.Point(401, 58);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 16);
             this.label14.TabIndex = 43;
@@ -1444,7 +1452,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(531, 44);
+            this.label7.Location = new System.Drawing.Point(389, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 16);
             this.label7.TabIndex = 39;
@@ -1454,7 +1462,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(290, 44);
+            this.label9.Location = new System.Drawing.Point(148, 57);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 16);
             this.label9.TabIndex = 35;
@@ -1464,7 +1472,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(50, 44);
+            this.label11.Location = new System.Drawing.Point(144, 32);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 16);
             this.label11.TabIndex = 31;
@@ -1485,8 +1493,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Beige;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtCartillaVacunacionHC);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cmbTransfusionesHC);
             this.panel1.Controls.Add(this.cmbToxicomaniaHC);
@@ -1498,7 +1504,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1093, 125);
+            this.panel1.Size = new System.Drawing.Size(724, 125);
             this.panel1.TabIndex = 37;
             // 
             // txtCartillaVacunacionHC
@@ -1506,22 +1512,13 @@
             this.txtCartillaVacunacionHC.FormattingEnabled = true;
             this.txtCartillaVacunacionHC.Items.AddRange(new object[] {
             "COMPLETA",
-            "IMCOMPLETA"});
-            this.txtCartillaVacunacionHC.Location = new System.Drawing.Point(893, 59);
+            "IMCOMPLETA",
+            "NO TIENE"});
+            this.txtCartillaVacunacionHC.Location = new System.Drawing.Point(63, 39);
             this.txtCartillaVacunacionHC.Name = "txtCartillaVacunacionHC";
             this.txtCartillaVacunacionHC.Size = new System.Drawing.Size(166, 21);
             this.txtCartillaVacunacionHC.TabIndex = 40;
             this.txtCartillaVacunacionHC.Text = "--- SELECCIONE ---";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(733, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 16);
-            this.label6.TabIndex = 39;
-            this.label6.Text = "Cartilla de vacunación:\t\r\n";
             // 
             // label5
             // 
@@ -1640,6 +1637,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.Beige;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.txtCBDAgudoHC);
             this.panel15.Controls.Add(this.txtRealizoDolorAgudoHC);
             this.panel15.Controls.Add(this.label58);
             this.panel15.Controls.Add(this.label59);
@@ -1691,6 +1689,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.Beige;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.txtCBDCronicoHC);
             this.panel14.Controls.Add(this.txtRealizoDolorCronicoHC);
             this.panel14.Controls.Add(this.label19);
             this.panel14.Controls.Add(this.label18);
@@ -2079,7 +2078,6 @@
             // 
             this.panel30.BackColor = System.Drawing.Color.Beige;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.btnFragilidad);
             this.panel30.Controls.Add(this.txtRealizoFragilidadHC);
             this.panel30.Controls.Add(this.label92);
             this.panel30.Controls.Add(this.txtCuestionarioFrailHC);
@@ -2089,21 +2087,6 @@
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(571, 128);
             this.panel30.TabIndex = 72;
-            // 
-            // btnFragilidad
-            // 
-            this.btnFragilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnFragilidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnFragilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFragilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFragilidad.ForeColor = System.Drawing.Color.White;
-            this.btnFragilidad.Location = new System.Drawing.Point(454, 65);
-            this.btnFragilidad.Name = "btnFragilidad";
-            this.btnFragilidad.Size = new System.Drawing.Size(103, 26);
-            this.btnFragilidad.TabIndex = 72;
-            this.btnFragilidad.Text = "Test Fragilidad";
-            this.btnFragilidad.UseVisualStyleBackColor = false;
-            this.btnFragilidad.Click += new System.EventHandler(this.btnFragilidad_Click);
             // 
             // txtRealizoFragilidadHC
             // 
@@ -2125,8 +2108,6 @@
             // 
             // txtCuestionarioFrailHC
             // 
-            this.txtCuestionarioFrailHC.Enabled = false;
-            this.txtCuestionarioFrailHC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuestionarioFrailHC.Location = new System.Drawing.Point(230, 30);
             this.txtCuestionarioFrailHC.Multiline = true;
             this.txtCuestionarioFrailHC.Name = "txtCuestionarioFrailHC";
@@ -2217,6 +2198,14 @@
             // 
             this.panel21.BackColor = System.Drawing.Color.Beige;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.txtRBTN7);
+            this.panel21.Controls.Add(this.txtRBTN6);
+            this.panel21.Controls.Add(this.txtRBTN5);
+            this.panel21.Controls.Add(this.txtRBT4);
+            this.panel21.Controls.Add(this.txtRBT3);
+            this.panel21.Controls.Add(this.txtRBT2);
+            this.panel21.Controls.Add(this.txtRBT1);
+            this.panel21.Controls.Add(this.txtNoHorasDuermeHC);
             this.panel21.Controls.Add(this.panel28);
             this.panel21.Controls.Add(this.panel27);
             this.panel21.Controls.Add(this.panel26);
@@ -2224,7 +2213,6 @@
             this.panel21.Controls.Add(this.panel24);
             this.panel21.Controls.Add(this.panel23);
             this.panel21.Controls.Add(this.panel22);
-            this.panel21.Controls.Add(this.txtHorasDuermeHC);
             this.panel21.Controls.Add(this.label89);
             this.panel21.Controls.Add(this.label88);
             this.panel21.Controls.Add(this.label84);
@@ -2238,6 +2226,76 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(1093, 129);
             this.panel21.TabIndex = 55;
+            // 
+            // txtRBTN7
+            // 
+            this.txtRBTN7.Enabled = false;
+            this.txtRBTN7.Location = new System.Drawing.Point(1010, 100);
+            this.txtRBTN7.Name = "txtRBTN7";
+            this.txtRBTN7.Size = new System.Drawing.Size(16, 20);
+            this.txtRBTN7.TabIndex = 78;
+            this.txtRBTN7.Visible = false;
+            // 
+            // txtRBTN6
+            // 
+            this.txtRBTN6.Enabled = false;
+            this.txtRBTN6.Location = new System.Drawing.Point(1010, 66);
+            this.txtRBTN6.Name = "txtRBTN6";
+            this.txtRBTN6.Size = new System.Drawing.Size(16, 20);
+            this.txtRBTN6.TabIndex = 77;
+            this.txtRBTN6.Visible = false;
+            // 
+            // txtRBTN5
+            // 
+            this.txtRBTN5.Enabled = false;
+            this.txtRBTN5.Location = new System.Drawing.Point(1010, 35);
+            this.txtRBTN5.Name = "txtRBTN5";
+            this.txtRBTN5.Size = new System.Drawing.Size(16, 20);
+            this.txtRBTN5.TabIndex = 76;
+            this.txtRBTN5.Visible = false;
+            // 
+            // txtRBT4
+            // 
+            this.txtRBT4.Enabled = false;
+            this.txtRBT4.Location = new System.Drawing.Point(668, 98);
+            this.txtRBT4.Name = "txtRBT4";
+            this.txtRBT4.Size = new System.Drawing.Size(16, 20);
+            this.txtRBT4.TabIndex = 75;
+            this.txtRBT4.Visible = false;
+            // 
+            // txtRBT3
+            // 
+            this.txtRBT3.Enabled = false;
+            this.txtRBT3.Location = new System.Drawing.Point(668, 72);
+            this.txtRBT3.Name = "txtRBT3";
+            this.txtRBT3.Size = new System.Drawing.Size(16, 20);
+            this.txtRBT3.TabIndex = 74;
+            this.txtRBT3.Visible = false;
+            // 
+            // txtRBT2
+            // 
+            this.txtRBT2.Enabled = false;
+            this.txtRBT2.Location = new System.Drawing.Point(328, 100);
+            this.txtRBT2.Name = "txtRBT2";
+            this.txtRBT2.Size = new System.Drawing.Size(16, 20);
+            this.txtRBT2.TabIndex = 73;
+            this.txtRBT2.Visible = false;
+            // 
+            // txtRBT1
+            // 
+            this.txtRBT1.Enabled = false;
+            this.txtRBT1.Location = new System.Drawing.Point(328, 72);
+            this.txtRBT1.Name = "txtRBT1";
+            this.txtRBT1.Size = new System.Drawing.Size(16, 20);
+            this.txtRBT1.TabIndex = 72;
+            this.txtRBT1.Visible = false;
+            // 
+            // txtNoHorasDuermeHC
+            // 
+            this.txtNoHorasDuermeHC.Location = new System.Drawing.Point(362, 24);
+            this.txtNoHorasDuermeHC.Name = "txtNoHorasDuermeHC";
+            this.txtNoHorasDuermeHC.Size = new System.Drawing.Size(36, 20);
+            this.txtNoHorasDuermeHC.TabIndex = 71;
             // 
             // panel28
             // 
@@ -2257,6 +2315,7 @@
             this.rbtn14.TabIndex = 50;
             this.rbtn14.Text = "NO";
             this.rbtn14.UseVisualStyleBackColor = true;
+            this.rbtn14.CheckedChanged += new System.EventHandler(this.rbtn14_CheckedChanged);
             // 
             // rbtn13
             // 
@@ -2267,6 +2326,7 @@
             this.rbtn13.TabIndex = 51;
             this.rbtn13.Text = "SI";
             this.rbtn13.UseVisualStyleBackColor = true;
+            this.rbtn13.CheckedChanged += new System.EventHandler(this.rbtn13_CheckedChanged);
             // 
             // panel27
             // 
@@ -2286,6 +2346,7 @@
             this.rbtn12.TabIndex = 50;
             this.rbtn12.Text = "NO";
             this.rbtn12.UseVisualStyleBackColor = true;
+            this.rbtn12.CheckedChanged += new System.EventHandler(this.rbtn12_CheckedChanged);
             // 
             // rbtn11
             // 
@@ -2296,6 +2357,7 @@
             this.rbtn11.TabIndex = 51;
             this.rbtn11.Text = "SI";
             this.rbtn11.UseVisualStyleBackColor = true;
+            this.rbtn11.CheckedChanged += new System.EventHandler(this.rbtn11_CheckedChanged);
             // 
             // panel26
             // 
@@ -2315,6 +2377,7 @@
             this.rbtn10.TabIndex = 50;
             this.rbtn10.Text = "NO";
             this.rbtn10.UseVisualStyleBackColor = true;
+            this.rbtn10.CheckedChanged += new System.EventHandler(this.rbtn10_CheckedChanged);
             // 
             // rbtn9
             // 
@@ -2325,6 +2388,7 @@
             this.rbtn9.TabIndex = 51;
             this.rbtn9.Text = "SI";
             this.rbtn9.UseVisualStyleBackColor = true;
+            this.rbtn9.CheckedChanged += new System.EventHandler(this.rbtn9_CheckedChanged);
             // 
             // panel25
             // 
@@ -2344,6 +2408,7 @@
             this.rbtn8.TabIndex = 50;
             this.rbtn8.Text = "NO";
             this.rbtn8.UseVisualStyleBackColor = true;
+            this.rbtn8.CheckedChanged += new System.EventHandler(this.rbtn8_CheckedChanged);
             // 
             // rbtn7
             // 
@@ -2354,6 +2419,7 @@
             this.rbtn7.TabIndex = 51;
             this.rbtn7.Text = "SI";
             this.rbtn7.UseVisualStyleBackColor = true;
+            this.rbtn7.CheckedChanged += new System.EventHandler(this.rbtn7_CheckedChanged);
             // 
             // panel24
             // 
@@ -2373,6 +2439,7 @@
             this.rbtn6.TabIndex = 50;
             this.rbtn6.Text = "NO";
             this.rbtn6.UseVisualStyleBackColor = true;
+            this.rbtn6.CheckedChanged += new System.EventHandler(this.rbtn6_CheckedChanged);
             // 
             // rbtn5
             // 
@@ -2383,6 +2450,7 @@
             this.rbtn5.TabIndex = 51;
             this.rbtn5.Text = "SI";
             this.rbtn5.UseVisualStyleBackColor = true;
+            this.rbtn5.CheckedChanged += new System.EventHandler(this.rbtn5_CheckedChanged);
             // 
             // panel23
             // 
@@ -2402,6 +2470,7 @@
             this.rbtn4.TabIndex = 50;
             this.rbtn4.Text = "NO";
             this.rbtn4.UseVisualStyleBackColor = true;
+            this.rbtn4.CheckedChanged += new System.EventHandler(this.rbtn4_CheckedChanged);
             // 
             // rbtn3
             // 
@@ -2412,6 +2481,7 @@
             this.rbtn3.TabIndex = 51;
             this.rbtn3.Text = "SI";
             this.rbtn3.UseVisualStyleBackColor = true;
+            this.rbtn3.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
             // 
             // panel22
             // 
@@ -2431,6 +2501,7 @@
             this.rbtn2.TabIndex = 50;
             this.rbtn2.Text = "NO";
             this.rbtn2.UseVisualStyleBackColor = true;
+            this.rbtn2.CheckedChanged += new System.EventHandler(this.rbtn2_CheckedChanged);
             // 
             // rbtn1
             // 
@@ -2441,13 +2512,7 @@
             this.rbtn1.TabIndex = 51;
             this.rbtn1.Text = "SI";
             this.rbtn1.UseVisualStyleBackColor = true;
-            // 
-            // txtHorasDuermeHC
-            // 
-            this.txtHorasDuermeHC.Location = new System.Drawing.Point(362, 28);
-            this.txtHorasDuermeHC.Name = "txtHorasDuermeHC";
-            this.txtHorasDuermeHC.Size = new System.Drawing.Size(54, 20);
-            this.txtHorasDuermeHC.TabIndex = 70;
+            this.rbtn1.CheckedChanged += new System.EventHandler(this.rbtn1_CheckedChanged);
             // 
             // label89
             // 
@@ -2543,29 +2608,15 @@
             // 
             this.panel20.BackColor = System.Drawing.Color.Beige;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.btnTestNutricion);
             this.panel20.Controls.Add(this.label76);
             this.panel20.Controls.Add(this.txtRealizoEvaluacionMaltratoHC);
             this.panel20.Controls.Add(this.txtEscalaGeriatricaMaltratoHC);
             this.panel20.Controls.Add(this.label77);
             this.panel20.Controls.Add(this.label82);
-            this.panel20.ForeColor = System.Drawing.Color.White;
             this.panel20.Location = new System.Drawing.Point(528, 6);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(571, 157);
             this.panel20.TabIndex = 54;
-            // 
-            // btnTestNutricion
-            // 
-            this.btnTestNutricion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestNutricion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestNutricion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestNutricion.Location = new System.Drawing.Point(38, 121);
-            this.btnTestNutricion.Name = "btnTestNutricion";
-            this.btnTestNutricion.Size = new System.Drawing.Size(105, 26);
-            this.btnTestNutricion.TabIndex = 43;
-            this.btnTestNutricion.Text = "Test Nutrición";
-            this.btnTestNutricion.UseVisualStyleBackColor = false;
             // 
             // label76
             // 
@@ -2617,8 +2668,6 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.Beige;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.btnTestMoca);
-            this.panel19.Controls.Add(this.btnTestGDS);
             this.panel19.Controls.Add(this.label81);
             this.panel19.Controls.Add(this.txtEscalaDeterioroHC);
             this.panel19.Controls.Add(this.label80);
@@ -2632,34 +2681,6 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(519, 157);
             this.panel19.TabIndex = 53;
-            // 
-            // btnTestMoca
-            // 
-            this.btnTestMoca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestMoca.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestMoca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestMoca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestMoca.ForeColor = System.Drawing.Color.White;
-            this.btnTestMoca.Location = new System.Drawing.Point(422, 31);
-            this.btnTestMoca.Name = "btnTestMoca";
-            this.btnTestMoca.Size = new System.Drawing.Size(78, 25);
-            this.btnTestMoca.TabIndex = 50;
-            this.btnTestMoca.Text = "Test Moca";
-            this.btnTestMoca.UseVisualStyleBackColor = false;
-            // 
-            // btnTestGDS
-            // 
-            this.btnTestGDS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestGDS.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestGDS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestGDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestGDS.ForeColor = System.Drawing.Color.White;
-            this.btnTestGDS.Location = new System.Drawing.Point(422, 91);
-            this.btnTestGDS.Name = "btnTestGDS";
-            this.btnTestGDS.Size = new System.Drawing.Size(78, 25);
-            this.btnTestGDS.TabIndex = 49;
-            this.btnTestGDS.Text = "Test GDS";
-            this.btnTestGDS.UseVisualStyleBackColor = false;
             // 
             // label81
             // 
@@ -2676,7 +2697,7 @@
             this.txtEscalaDeterioroHC.Location = new System.Drawing.Point(293, 59);
             this.txtEscalaDeterioroHC.Multiline = true;
             this.txtEscalaDeterioroHC.Name = "txtEscalaDeterioroHC";
-            this.txtEscalaDeterioroHC.Size = new System.Drawing.Size(123, 25);
+            this.txtEscalaDeterioroHC.Size = new System.Drawing.Size(205, 25);
             this.txtEscalaDeterioroHC.TabIndex = 47;
             // 
             // label80
@@ -2704,7 +2725,7 @@
             this.txtEscalaGeriatricaHC.Location = new System.Drawing.Point(293, 91);
             this.txtEscalaGeriatricaHC.Multiline = true;
             this.txtEscalaGeriatricaHC.Name = "txtEscalaGeriatricaHC";
-            this.txtEscalaGeriatricaHC.Size = new System.Drawing.Size(122, 25);
+            this.txtEscalaGeriatricaHC.Size = new System.Drawing.Size(205, 25);
             this.txtEscalaGeriatricaHC.TabIndex = 40;
             // 
             // txtPruebaRelojHC
@@ -2720,7 +2741,7 @@
             this.txtExamenMmseHC.Location = new System.Drawing.Point(293, 30);
             this.txtExamenMmseHC.Multiline = true;
             this.txtExamenMmseHC.Name = "txtExamenMmseHC";
-            this.txtExamenMmseHC.Size = new System.Drawing.Size(122, 25);
+            this.txtExamenMmseHC.Size = new System.Drawing.Size(205, 25);
             this.txtExamenMmseHC.TabIndex = 35;
             // 
             // label78
@@ -2760,8 +2781,6 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.Beige;
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.btnTestBarthel);
-            this.panel34.Controls.Add(this.btnTestKatz);
             this.panel34.Controls.Add(this.txtIndiceBarthelHC);
             this.panel34.Controls.Add(this.label113);
             this.panel34.Controls.Add(this.txtActInstHC);
@@ -2774,40 +2793,12 @@
             this.panel34.Size = new System.Drawing.Size(1093, 128);
             this.panel34.TabIndex = 75;
             // 
-            // btnTestBarthel
-            // 
-            this.btnTestBarthel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestBarthel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestBarthel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestBarthel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestBarthel.ForeColor = System.Drawing.Color.White;
-            this.btnTestBarthel.Location = new System.Drawing.Point(926, 73);
-            this.btnTestBarthel.Name = "btnTestBarthel";
-            this.btnTestBarthel.Size = new System.Drawing.Size(100, 26);
-            this.btnTestBarthel.TabIndex = 40;
-            this.btnTestBarthel.Text = "Test Barthel";
-            this.btnTestBarthel.UseVisualStyleBackColor = false;
-            // 
-            // btnTestKatz
-            // 
-            this.btnTestKatz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestKatz.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestKatz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestKatz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestKatz.ForeColor = System.Drawing.Color.White;
-            this.btnTestKatz.Location = new System.Drawing.Point(186, 73);
-            this.btnTestKatz.Name = "btnTestKatz";
-            this.btnTestKatz.Size = new System.Drawing.Size(107, 26);
-            this.btnTestKatz.TabIndex = 39;
-            this.btnTestKatz.Text = "Test Katz";
-            this.btnTestKatz.UseVisualStyleBackColor = false;
-            // 
             // txtIndiceBarthelHC
             // 
             this.txtIndiceBarthelHC.Location = new System.Drawing.Point(743, 61);
             this.txtIndiceBarthelHC.Multiline = true;
             this.txtIndiceBarthelHC.Name = "txtIndiceBarthelHC";
-            this.txtIndiceBarthelHC.Size = new System.Drawing.Size(156, 44);
+            this.txtIndiceBarthelHC.Size = new System.Drawing.Size(314, 44);
             this.txtIndiceBarthelHC.TabIndex = 38;
             // 
             // label113
@@ -2833,7 +2824,7 @@
             this.txtActBasicasHC.Location = new System.Drawing.Point(27, 61);
             this.txtActBasicasHC.Multiline = true;
             this.txtActBasicasHC.Name = "txtActBasicasHC";
-            this.txtActBasicasHC.Size = new System.Drawing.Size(138, 44);
+            this.txtActBasicasHC.Size = new System.Drawing.Size(314, 44);
             this.txtActBasicasHC.TabIndex = 35;
             // 
             // label103
@@ -3164,6 +3155,35 @@
             // 
             this.panel38.BackColor = System.Drawing.Color.Beige;
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel38.Controls.Add(this.txtCHL29);
+            this.panel38.Controls.Add(this.txtCHL28);
+            this.panel38.Controls.Add(this.txtCHL27);
+            this.panel38.Controls.Add(this.txtCHL26);
+            this.panel38.Controls.Add(this.txtCHL25);
+            this.panel38.Controls.Add(this.txtCHL24);
+            this.panel38.Controls.Add(this.txtCHL23);
+            this.panel38.Controls.Add(this.txtCHL22);
+            this.panel38.Controls.Add(this.txtCHL21);
+            this.panel38.Controls.Add(this.txtCHL20);
+            this.panel38.Controls.Add(this.txtCHL19);
+            this.panel38.Controls.Add(this.txtCHL18);
+            this.panel38.Controls.Add(this.txtCHL17);
+            this.panel38.Controls.Add(this.txtCHL16);
+            this.panel38.Controls.Add(this.txtCHL15);
+            this.panel38.Controls.Add(this.txtCHL14);
+            this.panel38.Controls.Add(this.txtCHL13);
+            this.panel38.Controls.Add(this.txtCHL12);
+            this.panel38.Controls.Add(this.txtCHL11);
+            this.panel38.Controls.Add(this.txtCHL10);
+            this.panel38.Controls.Add(this.txtCHL9);
+            this.panel38.Controls.Add(this.txtCHL8);
+            this.panel38.Controls.Add(this.txtCHL7);
+            this.panel38.Controls.Add(this.txtCHL6);
+            this.panel38.Controls.Add(this.txtCHL5);
+            this.panel38.Controls.Add(this.txtCHL4);
+            this.panel38.Controls.Add(this.txtCHL3);
+            this.panel38.Controls.Add(this.txtCHL2);
+            this.panel38.Controls.Add(this.txtCHL1);
             this.panel38.Controls.Add(this.chbDelirumHC);
             this.panel38.Controls.Add(this.chbDemenciaHC);
             this.panel38.Controls.Add(this.chbPatologiaHC);
@@ -3199,6 +3219,267 @@
             this.panel38.Size = new System.Drawing.Size(1093, 172);
             this.panel38.TabIndex = 75;
             // 
+            // txtCHL29
+            // 
+            this.txtCHL29.Location = new System.Drawing.Point(1060, 148);
+            this.txtCHL29.Multiline = true;
+            this.txtCHL29.Name = "txtCHL29";
+            this.txtCHL29.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL29.TabIndex = 131;
+            this.txtCHL29.Visible = false;
+            // 
+            // txtCHL28
+            // 
+            this.txtCHL28.Location = new System.Drawing.Point(1060, 123);
+            this.txtCHL28.Multiline = true;
+            this.txtCHL28.Name = "txtCHL28";
+            this.txtCHL28.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL28.TabIndex = 130;
+            this.txtCHL28.Visible = false;
+            // 
+            // txtCHL27
+            // 
+            this.txtCHL27.Location = new System.Drawing.Point(1060, 100);
+            this.txtCHL27.Multiline = true;
+            this.txtCHL27.Name = "txtCHL27";
+            this.txtCHL27.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL27.TabIndex = 129;
+            this.txtCHL27.Visible = false;
+            // 
+            // txtCHL26
+            // 
+            this.txtCHL26.Location = new System.Drawing.Point(1060, 74);
+            this.txtCHL26.Multiline = true;
+            this.txtCHL26.Name = "txtCHL26";
+            this.txtCHL26.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL26.TabIndex = 128;
+            this.txtCHL26.Visible = false;
+            // 
+            // txtCHL25
+            // 
+            this.txtCHL25.Location = new System.Drawing.Point(1060, 54);
+            this.txtCHL25.Multiline = true;
+            this.txtCHL25.Name = "txtCHL25";
+            this.txtCHL25.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL25.TabIndex = 127;
+            this.txtCHL25.Visible = false;
+            // 
+            // txtCHL24
+            // 
+            this.txtCHL24.Location = new System.Drawing.Point(1060, 31);
+            this.txtCHL24.Multiline = true;
+            this.txtCHL24.Name = "txtCHL24";
+            this.txtCHL24.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL24.TabIndex = 126;
+            this.txtCHL24.Visible = false;
+            // 
+            // txtCHL23
+            // 
+            this.txtCHL23.Location = new System.Drawing.Point(820, 148);
+            this.txtCHL23.Multiline = true;
+            this.txtCHL23.Name = "txtCHL23";
+            this.txtCHL23.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL23.TabIndex = 125;
+            this.txtCHL23.Visible = false;
+            // 
+            // txtCHL22
+            // 
+            this.txtCHL22.Location = new System.Drawing.Point(820, 123);
+            this.txtCHL22.Multiline = true;
+            this.txtCHL22.Name = "txtCHL22";
+            this.txtCHL22.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL22.TabIndex = 124;
+            this.txtCHL22.Visible = false;
+            // 
+            // txtCHL21
+            // 
+            this.txtCHL21.Location = new System.Drawing.Point(820, 100);
+            this.txtCHL21.Multiline = true;
+            this.txtCHL21.Name = "txtCHL21";
+            this.txtCHL21.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL21.TabIndex = 123;
+            this.txtCHL21.Visible = false;
+            // 
+            // txtCHL20
+            // 
+            this.txtCHL20.Location = new System.Drawing.Point(820, 74);
+            this.txtCHL20.Multiline = true;
+            this.txtCHL20.Name = "txtCHL20";
+            this.txtCHL20.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL20.TabIndex = 122;
+            this.txtCHL20.Visible = false;
+            // 
+            // txtCHL19
+            // 
+            this.txtCHL19.Location = new System.Drawing.Point(820, 54);
+            this.txtCHL19.Multiline = true;
+            this.txtCHL19.Name = "txtCHL19";
+            this.txtCHL19.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL19.TabIndex = 121;
+            this.txtCHL19.Visible = false;
+            // 
+            // txtCHL18
+            // 
+            this.txtCHL18.Location = new System.Drawing.Point(820, 36);
+            this.txtCHL18.Multiline = true;
+            this.txtCHL18.Name = "txtCHL18";
+            this.txtCHL18.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL18.TabIndex = 120;
+            this.txtCHL18.Visible = false;
+            // 
+            // txtCHL17
+            // 
+            this.txtCHL17.Location = new System.Drawing.Point(577, 145);
+            this.txtCHL17.Multiline = true;
+            this.txtCHL17.Name = "txtCHL17";
+            this.txtCHL17.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL17.TabIndex = 119;
+            this.txtCHL17.Visible = false;
+            // 
+            // txtCHL16
+            // 
+            this.txtCHL16.Location = new System.Drawing.Point(577, 125);
+            this.txtCHL16.Multiline = true;
+            this.txtCHL16.Name = "txtCHL16";
+            this.txtCHL16.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL16.TabIndex = 118;
+            this.txtCHL16.Visible = false;
+            // 
+            // txtCHL15
+            // 
+            this.txtCHL15.Location = new System.Drawing.Point(577, 105);
+            this.txtCHL15.Multiline = true;
+            this.txtCHL15.Name = "txtCHL15";
+            this.txtCHL15.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL15.TabIndex = 117;
+            this.txtCHL15.Visible = false;
+            // 
+            // txtCHL14
+            // 
+            this.txtCHL14.Location = new System.Drawing.Point(577, 82);
+            this.txtCHL14.Multiline = true;
+            this.txtCHL14.Name = "txtCHL14";
+            this.txtCHL14.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL14.TabIndex = 116;
+            this.txtCHL14.Visible = false;
+            // 
+            // txtCHL13
+            // 
+            this.txtCHL13.Location = new System.Drawing.Point(577, 59);
+            this.txtCHL13.Multiline = true;
+            this.txtCHL13.Name = "txtCHL13";
+            this.txtCHL13.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL13.TabIndex = 115;
+            this.txtCHL13.Visible = false;
+            // 
+            // txtCHL12
+            // 
+            this.txtCHL12.Location = new System.Drawing.Point(577, 33);
+            this.txtCHL12.Multiline = true;
+            this.txtCHL12.Name = "txtCHL12";
+            this.txtCHL12.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL12.TabIndex = 114;
+            this.txtCHL12.Visible = false;
+            // 
+            // txtCHL11
+            // 
+            this.txtCHL11.Location = new System.Drawing.Point(377, 125);
+            this.txtCHL11.Multiline = true;
+            this.txtCHL11.Name = "txtCHL11";
+            this.txtCHL11.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL11.TabIndex = 113;
+            this.txtCHL11.Visible = false;
+            // 
+            // txtCHL10
+            // 
+            this.txtCHL10.Location = new System.Drawing.Point(377, 100);
+            this.txtCHL10.Multiline = true;
+            this.txtCHL10.Name = "txtCHL10";
+            this.txtCHL10.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL10.TabIndex = 112;
+            this.txtCHL10.Visible = false;
+            // 
+            // txtCHL9
+            // 
+            this.txtCHL9.Location = new System.Drawing.Point(377, 77);
+            this.txtCHL9.Multiline = true;
+            this.txtCHL9.Name = "txtCHL9";
+            this.txtCHL9.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL9.TabIndex = 111;
+            this.txtCHL9.Visible = false;
+            // 
+            // txtCHL8
+            // 
+            this.txtCHL8.Location = new System.Drawing.Point(377, 54);
+            this.txtCHL8.Multiline = true;
+            this.txtCHL8.Name = "txtCHL8";
+            this.txtCHL8.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL8.TabIndex = 110;
+            this.txtCHL8.Visible = false;
+            // 
+            // txtCHL7
+            // 
+            this.txtCHL7.Location = new System.Drawing.Point(377, 33);
+            this.txtCHL7.Multiline = true;
+            this.txtCHL7.Name = "txtCHL7";
+            this.txtCHL7.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL7.TabIndex = 109;
+            this.txtCHL7.Visible = false;
+            // 
+            // txtCHL6
+            // 
+            this.txtCHL6.Location = new System.Drawing.Point(173, 148);
+            this.txtCHL6.Multiline = true;
+            this.txtCHL6.Name = "txtCHL6";
+            this.txtCHL6.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL6.TabIndex = 108;
+            this.txtCHL6.Visible = false;
+            // 
+            // txtCHL5
+            // 
+            this.txtCHL5.Location = new System.Drawing.Point(173, 125);
+            this.txtCHL5.Multiline = true;
+            this.txtCHL5.Name = "txtCHL5";
+            this.txtCHL5.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL5.TabIndex = 107;
+            this.txtCHL5.Visible = false;
+            // 
+            // txtCHL4
+            // 
+            this.txtCHL4.Location = new System.Drawing.Point(173, 102);
+            this.txtCHL4.Multiline = true;
+            this.txtCHL4.Name = "txtCHL4";
+            this.txtCHL4.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL4.TabIndex = 106;
+            this.txtCHL4.Visible = false;
+            // 
+            // txtCHL3
+            // 
+            this.txtCHL3.Location = new System.Drawing.Point(173, 76);
+            this.txtCHL3.Multiline = true;
+            this.txtCHL3.Name = "txtCHL3";
+            this.txtCHL3.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL3.TabIndex = 105;
+            this.txtCHL3.Visible = false;
+            // 
+            // txtCHL2
+            // 
+            this.txtCHL2.Location = new System.Drawing.Point(173, 56);
+            this.txtCHL2.Multiline = true;
+            this.txtCHL2.Name = "txtCHL2";
+            this.txtCHL2.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL2.TabIndex = 104;
+            this.txtCHL2.Visible = false;
+            // 
+            // txtCHL1
+            // 
+            this.txtCHL1.Location = new System.Drawing.Point(173, 36);
+            this.txtCHL1.Multiline = true;
+            this.txtCHL1.Name = "txtCHL1";
+            this.txtCHL1.Size = new System.Drawing.Size(15, 14);
+            this.txtCHL1.TabIndex = 73;
+            this.txtCHL1.Visible = false;
+            // 
             // chbDelirumHC
             // 
             this.chbDelirumHC.AutoSize = true;
@@ -3208,6 +3489,7 @@
             this.chbDelirumHC.TabIndex = 103;
             this.chbDelirumHC.Text = "Delirum";
             this.chbDelirumHC.UseVisualStyleBackColor = true;
+            this.chbDelirumHC.CheckedChanged += new System.EventHandler(this.chbDelirumHC_CheckedChanged);
             // 
             // chbDemenciaHC
             // 
@@ -3218,6 +3500,7 @@
             this.chbDemenciaHC.TabIndex = 102;
             this.chbDemenciaHC.Text = "Demencia";
             this.chbDemenciaHC.UseVisualStyleBackColor = true;
+            this.chbDemenciaHC.CheckedChanged += new System.EventHandler(this.chbDemenciaHC_CheckedChanged);
             // 
             // chbPatologiaHC
             // 
@@ -3228,6 +3511,7 @@
             this.chbPatologiaHC.TabIndex = 101;
             this.chbPatologiaHC.Text = "Patologia social";
             this.chbPatologiaHC.UseVisualStyleBackColor = true;
+            this.chbPatologiaHC.CheckedChanged += new System.EventHandler(this.chbPatologiaHC_CheckedChanged);
             // 
             // chbEncarnizamientoHC
             // 
@@ -3238,6 +3522,7 @@
             this.chbEncarnizamientoHC.TabIndex = 100;
             this.chbEncarnizamientoHC.Text = "Encarnizamiento Terapeutico";
             this.chbEncarnizamientoHC.UseVisualStyleBackColor = true;
+            this.chbEncarnizamientoHC.CheckedChanged += new System.EventHandler(this.chbEncarnizamientoHC_CheckedChanged);
             // 
             // chbTranstornoElecHC
             // 
@@ -3248,6 +3533,7 @@
             this.chbTranstornoElecHC.TabIndex = 99;
             this.chbTranstornoElecHC.Text = "Transtorno Electrolitico";
             this.chbTranstornoElecHC.UseVisualStyleBackColor = true;
+            this.chbTranstornoElecHC.CheckedChanged += new System.EventHandler(this.chbTranstornoElecHC_CheckedChanged);
             // 
             // chbTranstornoMarchaHC
             // 
@@ -3258,6 +3544,7 @@
             this.chbTranstornoMarchaHC.TabIndex = 98;
             this.chbTranstornoMarchaHC.Text = "Transtorno de la marcha";
             this.chbTranstornoMarchaHC.UseVisualStyleBackColor = true;
+            this.chbTranstornoMarchaHC.CheckedChanged += new System.EventHandler(this.chbTranstornoMarchaHC_CheckedChanged);
             // 
             // chbTranstornoSueñoHC
             // 
@@ -3268,6 +3555,7 @@
             this.chbTranstornoSueñoHC.TabIndex = 97;
             this.chbTranstornoSueñoHC.Text = "Transtorno del sueño";
             this.chbTranstornoSueñoHC.UseVisualStyleBackColor = true;
+            this.chbTranstornoSueñoHC.CheckedChanged += new System.EventHandler(this.chbTranstornoSueñoHC_CheckedChanged);
             // 
             // chbTranstornoCompHC
             // 
@@ -3278,6 +3566,7 @@
             this.chbTranstornoCompHC.TabIndex = 96;
             this.chbTranstornoCompHC.Text = "Transtorno del comportamiento";
             this.chbTranstornoCompHC.UseVisualStyleBackColor = true;
+            this.chbTranstornoCompHC.CheckedChanged += new System.EventHandler(this.chbTranstornoCompHC_CheckedChanged);
             // 
             // chbSxPiernasHC
             // 
@@ -3288,6 +3577,7 @@
             this.chbSxPiernasHC.TabIndex = 95;
             this.chbSxPiernasHC.Text = "Sx de piernas inquietas";
             this.chbSxPiernasHC.UseVisualStyleBackColor = true;
+            this.chbSxPiernasHC.CheckedChanged += new System.EventHandler(this.chbSxPiernasHC_CheckedChanged);
             // 
             // chbSxInmovHC
             // 
@@ -3298,6 +3588,7 @@
             this.chbSxInmovHC.TabIndex = 94;
             this.chbSxInmovHC.Text = "Sx de Inmovilidad";
             this.chbSxInmovHC.UseVisualStyleBackColor = true;
+            this.chbSxInmovHC.CheckedChanged += new System.EventHandler(this.chbSxInmovHC_CheckedChanged);
             // 
             // chbRegresionHC
             // 
@@ -3308,6 +3599,7 @@
             this.chbRegresionHC.TabIndex = 93;
             this.chbRegresionHC.Text = "Regresión Psicomotríz";
             this.chbRegresionHC.UseVisualStyleBackColor = true;
+            this.chbRegresionHC.CheckedChanged += new System.EventHandler(this.chbRegresionHC_CheckedChanged);
             // 
             // chbPolifarmaciaHC
             // 
@@ -3318,6 +3610,7 @@
             this.chbPolifarmaciaHC.TabIndex = 92;
             this.chbPolifarmaciaHC.Text = "Polifarmacia";
             this.chbPolifarmaciaHC.UseVisualStyleBackColor = true;
+            this.chbPolifarmaciaHC.CheckedChanged += new System.EventHandler(this.chbPolifarmaciaHC_CheckedChanged);
             // 
             // chbPerdidaVitaHC
             // 
@@ -3328,6 +3621,7 @@
             this.chbPerdidaVitaHC.TabIndex = 91;
             this.chbPerdidaVitaHC.Text = "Perdida de vitalidad";
             this.chbPerdidaVitaHC.UseVisualStyleBackColor = true;
+            this.chbPerdidaVitaHC.CheckedChanged += new System.EventHandler(this.chbPerdidaVitaHC_CheckedChanged);
             // 
             // chbUlcerasHC
             // 
@@ -3338,6 +3632,7 @@
             this.chbUlcerasHC.TabIndex = 90;
             this.chbUlcerasHC.Text = "Ulceras por presión";
             this.chbUlcerasHC.UseVisualStyleBackColor = true;
+            this.chbUlcerasHC.CheckedChanged += new System.EventHandler(this.chbUlcerasHC_CheckedChanged);
             // 
             // chbPerdidaAutoHC
             // 
@@ -3348,6 +3643,7 @@
             this.chbPerdidaAutoHC.TabIndex = 89;
             this.chbPerdidaAutoHC.Text = "Perdida de Autonomía";
             this.chbPerdidaAutoHC.UseVisualStyleBackColor = true;
+            this.chbPerdidaAutoHC.CheckedChanged += new System.EventHandler(this.chbPerdidaAutoHC_CheckedChanged);
             // 
             // chbOsteoporosisHC
             // 
@@ -3358,6 +3654,7 @@
             this.chbOsteoporosisHC.TabIndex = 88;
             this.chbOsteoporosisHC.Text = "Osteoporosis";
             this.chbOsteoporosisHC.UseVisualStyleBackColor = true;
+            this.chbOsteoporosisHC.CheckedChanged += new System.EventHandler(this.chbOsteoporosisHC_CheckedChanged);
             // 
             // chbObesidadHC
             // 
@@ -3368,6 +3665,7 @@
             this.chbObesidadHC.TabIndex = 87;
             this.chbObesidadHC.Text = "Obesidad";
             this.chbObesidadHC.UseVisualStyleBackColor = true;
+            this.chbObesidadHC.CheckedChanged += new System.EventHandler(this.chbObesidadHC_CheckedChanged);
             // 
             // chbAbusoHC
             // 
@@ -3378,6 +3676,7 @@
             this.chbAbusoHC.TabIndex = 86;
             this.chbAbusoHC.Text = "Abuso";
             this.chbAbusoHC.UseVisualStyleBackColor = true;
+            this.chbAbusoHC.CheckedChanged += new System.EventHandler(this.chbAbusoHC_CheckedChanged);
             // 
             // chbInconUrinariaHC
             // 
@@ -3388,6 +3687,7 @@
             this.chbInconUrinariaHC.TabIndex = 84;
             this.chbInconUrinariaHC.Text = "Incontinencia Urinaria";
             this.chbInconUrinariaHC.UseVisualStyleBackColor = true;
+            this.chbInconUrinariaHC.CheckedChanged += new System.EventHandler(this.chbInconUrinariaHC_CheckedChanged);
             // 
             // chbInconFecalHC
             // 
@@ -3398,6 +3698,7 @@
             this.chbInconFecalHC.TabIndex = 83;
             this.chbInconFecalHC.Text = "Incontinencia fecal";
             this.chbInconFecalHC.UseVisualStyleBackColor = true;
+            this.chbInconFecalHC.CheckedChanged += new System.EventHandler(this.chbInconFecalHC_CheckedChanged);
             // 
             // chbEstadoTerminalHC
             // 
@@ -3408,6 +3709,7 @@
             this.chbEstadoTerminalHC.TabIndex = 82;
             this.chbEstadoTerminalHC.Text = "Estado Terminal";
             this.chbEstadoTerminalHC.UseVisualStyleBackColor = true;
+            this.chbEstadoTerminalHC.CheckedChanged += new System.EventHandler(this.chbEstadoTerminalHC_CheckedChanged);
             // 
             // chbPatologiaDentalHC
             // 
@@ -3418,6 +3720,7 @@
             this.chbPatologiaDentalHC.TabIndex = 81;
             this.chbPatologiaDentalHC.Text = "Patologia Dental";
             this.chbPatologiaDentalHC.UseVisualStyleBackColor = true;
+            this.chbPatologiaDentalHC.CheckedChanged += new System.EventHandler(this.chbPatologiaDentalHC_CheckedChanged);
             // 
             // chbPatologiaPiesHC
             // 
@@ -3428,6 +3731,7 @@
             this.chbPatologiaPiesHC.TabIndex = 80;
             this.chbPatologiaPiesHC.Text = "Patologia de los pies";
             this.chbPatologiaPiesHC.UseVisualStyleBackColor = true;
+            this.chbPatologiaPiesHC.CheckedChanged += new System.EventHandler(this.chbPatologiaPiesHC_CheckedChanged);
             // 
             // chbDesnutricionHC
             // 
@@ -3438,6 +3742,7 @@
             this.chbDesnutricionHC.TabIndex = 79;
             this.chbDesnutricionHC.Text = "Desnutrición";
             this.chbDesnutricionHC.UseVisualStyleBackColor = true;
+            this.chbDesnutricionHC.CheckedChanged += new System.EventHandler(this.chbDesnutricionHC_CheckedChanged);
             // 
             // chbDepresionHC
             // 
@@ -3448,6 +3753,7 @@
             this.chbDepresionHC.TabIndex = 78;
             this.chbDepresionHC.Text = "Depresión";
             this.chbDepresionHC.UseVisualStyleBackColor = true;
+            this.chbDepresionHC.CheckedChanged += new System.EventHandler(this.chbDepresionHC_CheckedChanged);
             // 
             // chbDeficitHC
             // 
@@ -3458,6 +3764,7 @@
             this.chbDeficitHC.TabIndex = 77;
             this.chbDeficitHC.Text = "Deficit Auditivo";
             this.chbDeficitHC.UseVisualStyleBackColor = true;
+            this.chbDeficitHC.CheckedChanged += new System.EventHandler(this.chbDeficitHC_CheckedChanged);
             // 
             // chbColapsoHC
             // 
@@ -3468,6 +3775,7 @@
             this.chbColapsoHC.TabIndex = 76;
             this.chbColapsoHC.Text = "Colapso del cuidador";
             this.chbColapsoHC.UseVisualStyleBackColor = true;
+            this.chbColapsoHC.CheckedChanged += new System.EventHandler(this.chbColapsoHC_CheckedChanged);
             // 
             // chbCaidasHC
             // 
@@ -3478,6 +3786,7 @@
             this.chbCaidasHC.TabIndex = 75;
             this.chbCaidasHC.Text = "Caidas";
             this.chbCaidasHC.UseVisualStyleBackColor = true;
+            this.chbCaidasHC.CheckedChanged += new System.EventHandler(this.chbCaidasHC_CheckedChanged);
             // 
             // chbAfasiaHC
             // 
@@ -3488,6 +3797,7 @@
             this.chbAfasiaHC.TabIndex = 74;
             this.chbAfasiaHC.Text = "Afasia";
             this.chbAfasiaHC.UseVisualStyleBackColor = true;
+            this.chbAfasiaHC.CheckedChanged += new System.EventHandler(this.chbAfasiaHC_CheckedChanged);
             // 
             // label127
             // 
@@ -3643,7 +3953,6 @@
             // 
             this.panel35.BackColor = System.Drawing.Color.Beige;
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.btnTestPoma);
             this.panel35.Controls.Add(this.txtRealizoDesFisHC);
             this.panel35.Controls.Add(this.label114);
             this.panel35.Controls.Add(this.txtRiesgoCaidasHC);
@@ -3653,20 +3962,6 @@
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(519, 128);
             this.panel35.TabIndex = 73;
-            // 
-            // btnTestPoma
-            // 
-            this.btnTestPoma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestPoma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.btnTestPoma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestPoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestPoma.ForeColor = System.Drawing.Color.White;
-            this.btnTestPoma.Location = new System.Drawing.Point(26, 87);
-            this.btnTestPoma.Name = "btnTestPoma";
-            this.btnTestPoma.Size = new System.Drawing.Size(78, 26);
-            this.btnTestPoma.TabIndex = 72;
-            this.btnTestPoma.Text = "Test Poma";
-            this.btnTestPoma.UseVisualStyleBackColor = false;
             // 
             // txtRealizoDesFisHC
             // 
@@ -3744,6 +4039,7 @@
             // 
             // dtpFechaProximaHC
             // 
+            this.dtpFechaProximaHC.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaProximaHC.Location = new System.Drawing.Point(15, 47);
             this.dtpFechaProximaHC.Name = "dtpFechaProximaHC";
             this.dtpFechaProximaHC.Size = new System.Drawing.Size(200, 20);
@@ -4021,13 +4317,14 @@
             this.label126.TabIndex = 1;
             this.label126.Text = "DIAGNOSTICOS O PROBLEMAS CLÍNICOS";
             // 
-            // dataGridView1
+            // dgvHC
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 565);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1123, 123);
-            this.dataGridView1.TabIndex = 38;
+            this.dgvHC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHC.Location = new System.Drawing.Point(12, 565);
+            this.dgvHC.Name = "dgvHC";
+            this.dgvHC.Size = new System.Drawing.Size(1123, 123);
+            this.dgvHC.TabIndex = 38;
+            this.dgvHC.DoubleClick += new System.EventHandler(this.dgvHC_DoubleClick);
             // 
             // panel3
             // 
@@ -4035,7 +4332,7 @@
             this.panel3.Controls.Add(this.btnCancelarHC);
             this.panel3.Controls.Add(this.btnBuscarHC);
             this.panel3.Controls.Add(this.label138);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtNoSocioSearchHC);
             this.panel3.Controls.Add(this.btnGuardarHC);
             this.panel3.Location = new System.Drawing.Point(13, 505);
             this.panel3.Name = "panel3";
@@ -4059,6 +4356,7 @@
             this.btnBuscarHC.TabIndex = 52;
             this.btnBuscarHC.Text = "BUSCAR";
             this.btnBuscarHC.UseVisualStyleBackColor = true;
+            this.btnBuscarHC.Click += new System.EventHandler(this.btnBuscarHC_Click);
             // 
             // label138
             // 
@@ -4070,14 +4368,13 @@
             this.label138.TabIndex = 51;
             this.label138.Text = "Escriba el No. de Socio:";
             // 
-            // textBox1
+            // txtNoSocioSearchHC
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(315, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(65, 20);
-            this.textBox1.TabIndex = 33;
+            this.txtNoSocioSearchHC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoSocioSearchHC.Location = new System.Drawing.Point(315, 18);
+            this.txtNoSocioSearchHC.Name = "txtNoSocioSearchHC";
+            this.txtNoSocioSearchHC.Size = new System.Drawing.Size(65, 20);
+            this.txtNoSocioSearchHC.TabIndex = 33;
             // 
             // btnGuardarHC
             // 
@@ -4087,342 +4384,139 @@
             this.btnGuardarHC.TabIndex = 0;
             this.btnGuardarHC.Text = "GUARDAR";
             this.btnGuardarHC.UseVisualStyleBackColor = true;
-            // 
-            // panelEncuestaFrail
-            // 
-            this.panelEncuestaFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
-            this.panelEncuestaFrail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEncuestaFrail.Controls.Add(this.btnEvaluarTestFrail);
-            this.panelEncuestaFrail.Controls.Add(this.txtFr3);
-            this.panelEncuestaFrail.Controls.Add(this.txtFr4);
-            this.panelEncuestaFrail.Controls.Add(this.txtFr5);
-            this.panelEncuestaFrail.Controls.Add(this.txtFr2);
-            this.panelEncuestaFrail.Controls.Add(this.txtFr1);
-            this.panelEncuestaFrail.Controls.Add(this.btnCancelarTestFrail);
-            this.panelEncuestaFrail.Controls.Add(this.txtResultadoTestFrail);
-            this.panelEncuestaFrail.Controls.Add(this.panel46);
-            this.panelEncuestaFrail.Controls.Add(this.panel47);
-            this.panelEncuestaFrail.Controls.Add(this.panel48);
-            this.panelEncuestaFrail.Controls.Add(this.panel49);
-            this.panelEncuestaFrail.Controls.Add(this.panel50);
-            this.panelEncuestaFrail.Controls.Add(this.label139);
-            this.panelEncuestaFrail.Controls.Add(this.label140);
-            this.panelEncuestaFrail.Controls.Add(this.label141);
-            this.panelEncuestaFrail.Controls.Add(this.label142);
-            this.panelEncuestaFrail.Controls.Add(this.label143);
-            this.panelEncuestaFrail.Controls.Add(this.label144);
-            this.panelEncuestaFrail.Controls.Add(this.label145);
-            this.panelEncuestaFrail.Location = new System.Drawing.Point(7, 176);
-            this.panelEncuestaFrail.Name = "panelEncuestaFrail";
-            this.panelEncuestaFrail.Size = new System.Drawing.Size(658, 393);
-            this.panelEncuestaFrail.TabIndex = 51;
-            this.panelEncuestaFrail.Visible = false;
-            // 
-            // btnEvaluarTestFrail
-            // 
-            this.btnEvaluarTestFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnEvaluarTestFrail.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEvaluarTestFrail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvaluarTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEvaluarTestFrail.Location = new System.Drawing.Point(302, 338);
-            this.btnEvaluarTestFrail.Name = "btnEvaluarTestFrail";
-            this.btnEvaluarTestFrail.Size = new System.Drawing.Size(90, 31);
-            this.btnEvaluarTestFrail.TabIndex = 72;
-            this.btnEvaluarTestFrail.Text = "Evaluar Test";
-            this.btnEvaluarTestFrail.UseVisualStyleBackColor = false;
-            this.btnEvaluarTestFrail.Click += new System.EventHandler(this.btnEvaluarTestFrail_Click);
-            // 
-            // txtFr3
-            // 
-            this.txtFr3.Location = new System.Drawing.Point(443, 199);
-            this.txtFr3.Name = "txtFr3";
-            this.txtFr3.Size = new System.Drawing.Size(38, 20);
-            this.txtFr3.TabIndex = 71;
-            this.txtFr3.Text = "0";
-            this.txtFr3.Visible = false;
-            // 
-            // txtFr4
-            // 
-            this.txtFr4.Location = new System.Drawing.Point(443, 234);
-            this.txtFr4.Name = "txtFr4";
-            this.txtFr4.Size = new System.Drawing.Size(38, 20);
-            this.txtFr4.TabIndex = 70;
-            this.txtFr4.Text = "0";
-            this.txtFr4.Visible = false;
-            // 
-            // txtFr5
-            // 
-            this.txtFr5.Location = new System.Drawing.Point(443, 271);
-            this.txtFr5.Name = "txtFr5";
-            this.txtFr5.Size = new System.Drawing.Size(38, 20);
-            this.txtFr5.TabIndex = 69;
-            this.txtFr5.Text = "0";
-            this.txtFr5.Visible = false;
-            // 
-            // txtFr2
-            // 
-            this.txtFr2.Location = new System.Drawing.Point(443, 159);
-            this.txtFr2.Name = "txtFr2";
-            this.txtFr2.Size = new System.Drawing.Size(38, 20);
-            this.txtFr2.TabIndex = 68;
-            this.txtFr2.Text = "0";
-            this.txtFr2.Visible = false;
-            // 
-            // txtFr1
-            // 
-            this.txtFr1.Location = new System.Drawing.Point(443, 124);
-            this.txtFr1.Name = "txtFr1";
-            this.txtFr1.Size = new System.Drawing.Size(38, 20);
-            this.txtFr1.TabIndex = 67;
-            this.txtFr1.Text = "0";
-            this.txtFr1.Visible = false;
-            // 
-            // btnCancelarTestFrail
-            // 
-            this.btnCancelarTestFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
-            this.btnCancelarTestFrail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelarTestFrail.BackgroundImage")));
-            this.btnCancelarTestFrail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
-            this.btnCancelarTestFrail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnCancelarTestFrail.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarTestFrail.Location = new System.Drawing.Point(629, -1);
-            this.btnCancelarTestFrail.Name = "btnCancelarTestFrail";
-            this.btnCancelarTestFrail.Size = new System.Drawing.Size(28, 30);
-            this.btnCancelarTestFrail.TabIndex = 66;
-            this.btnCancelarTestFrail.UseVisualStyleBackColor = false;
-            this.btnCancelarTestFrail.Click += new System.EventHandler(this.btnCancelarTestFrail_Click);
-            // 
-            // txtResultadoTestFrail
-            // 
-            this.txtResultadoTestFrail.Enabled = false;
-            this.txtResultadoTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultadoTestFrail.Location = new System.Drawing.Point(454, 334);
-            this.txtResultadoTestFrail.Multiline = true;
-            this.txtResultadoTestFrail.Name = "txtResultadoTestFrail";
-            this.txtResultadoTestFrail.Size = new System.Drawing.Size(134, 35);
-            this.txtResultadoTestFrail.TabIndex = 65;
+            this.btnGuardarHC.Click += new System.EventHandler(this.btnGuardarHC_Click);
             // 
             // panel46
             // 
-            this.panel46.Controls.Add(this.rbF10);
-            this.panel46.Controls.Add(this.rbF9);
-            this.panel46.Location = new System.Drawing.Point(499, 271);
+            this.panel46.BackColor = System.Drawing.Color.Beige;
+            this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel46.Controls.Add(this.label143);
+            this.panel46.Controls.Add(this.txtAntineu);
+            this.panel46.Controls.Add(this.label142);
+            this.panel46.Controls.Add(this.label141);
+            this.panel46.Controls.Add(this.label140);
+            this.panel46.Controls.Add(this.txtInfluencia);
+            this.panel46.Controls.Add(this.txtTD3HC);
+            this.panel46.Controls.Add(this.txtTD2HC);
+            this.panel46.Controls.Add(this.txtTD1HC);
+            this.panel46.Controls.Add(this.label139);
+            this.panel46.Controls.Add(this.txtCartillaVacunacionHC);
+            this.panel46.Controls.Add(this.label6);
+            this.panel46.Location = new System.Drawing.Point(736, 6);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(92, 24);
-            this.panel46.TabIndex = 63;
+            this.panel46.Size = new System.Drawing.Size(363, 217);
+            this.panel46.TabIndex = 49;
             // 
-            // rbF10
+            // label6
             // 
-            this.rbF10.AutoSize = true;
-            this.rbF10.Location = new System.Drawing.Point(48, 3);
-            this.rbF10.Name = "rbF10";
-            this.rbF10.Size = new System.Drawing.Size(41, 17);
-            this.rbF10.TabIndex = 50;
-            this.rbF10.Text = "NO";
-            this.rbF10.UseVisualStyleBackColor = true;
-            // 
-            // rbF9
-            // 
-            this.rbF9.AutoSize = true;
-            this.rbF9.Location = new System.Drawing.Point(0, 3);
-            this.rbF9.Name = "rbF9";
-            this.rbF9.Size = new System.Drawing.Size(35, 17);
-            this.rbF9.TabIndex = 51;
-            this.rbF9.Text = "SI";
-            this.rbF9.UseVisualStyleBackColor = true;
-            this.rbF9.CheckedChanged += new System.EventHandler(this.rbF9_CheckedChanged);
-            // 
-            // panel47
-            // 
-            this.panel47.Controls.Add(this.rbF6);
-            this.panel47.Controls.Add(this.rbF5);
-            this.panel47.Location = new System.Drawing.Point(499, 197);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(92, 24);
-            this.panel47.TabIndex = 62;
-            // 
-            // rbF6
-            // 
-            this.rbF6.AutoSize = true;
-            this.rbF6.Location = new System.Drawing.Point(48, 3);
-            this.rbF6.Name = "rbF6";
-            this.rbF6.Size = new System.Drawing.Size(41, 17);
-            this.rbF6.TabIndex = 50;
-            this.rbF6.Text = "NO";
-            this.rbF6.UseVisualStyleBackColor = true;
-            // 
-            // rbF5
-            // 
-            this.rbF5.AutoSize = true;
-            this.rbF5.Location = new System.Drawing.Point(0, 3);
-            this.rbF5.Name = "rbF5";
-            this.rbF5.Size = new System.Drawing.Size(35, 17);
-            this.rbF5.TabIndex = 51;
-            this.rbF5.Text = "SI";
-            this.rbF5.UseVisualStyleBackColor = true;
-            this.rbF5.CheckedChanged += new System.EventHandler(this.rbF5_CheckedChanged);
-            // 
-            // panel48
-            // 
-            this.panel48.Controls.Add(this.rbF8);
-            this.panel48.Controls.Add(this.rbF7);
-            this.panel48.Location = new System.Drawing.Point(499, 234);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(92, 24);
-            this.panel48.TabIndex = 61;
-            // 
-            // rbF8
-            // 
-            this.rbF8.AutoSize = true;
-            this.rbF8.Location = new System.Drawing.Point(48, 3);
-            this.rbF8.Name = "rbF8";
-            this.rbF8.Size = new System.Drawing.Size(41, 17);
-            this.rbF8.TabIndex = 50;
-            this.rbF8.Text = "NO";
-            this.rbF8.UseVisualStyleBackColor = true;
-            // 
-            // rbF7
-            // 
-            this.rbF7.AutoSize = true;
-            this.rbF7.Location = new System.Drawing.Point(0, 3);
-            this.rbF7.Name = "rbF7";
-            this.rbF7.Size = new System.Drawing.Size(35, 17);
-            this.rbF7.TabIndex = 51;
-            this.rbF7.Text = "SI";
-            this.rbF7.UseVisualStyleBackColor = true;
-            this.rbF7.CheckedChanged += new System.EventHandler(this.rbF7_CheckedChanged);
-            // 
-            // panel49
-            // 
-            this.panel49.Controls.Add(this.rbF2);
-            this.panel49.Controls.Add(this.rbF1);
-            this.panel49.Location = new System.Drawing.Point(499, 121);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(92, 24);
-            this.panel49.TabIndex = 60;
-            // 
-            // rbF2
-            // 
-            this.rbF2.AutoSize = true;
-            this.rbF2.Location = new System.Drawing.Point(48, 3);
-            this.rbF2.Name = "rbF2";
-            this.rbF2.Size = new System.Drawing.Size(41, 17);
-            this.rbF2.TabIndex = 50;
-            this.rbF2.Text = "NO";
-            this.rbF2.UseVisualStyleBackColor = true;
-            // 
-            // rbF1
-            // 
-            this.rbF1.AutoSize = true;
-            this.rbF1.Location = new System.Drawing.Point(0, 3);
-            this.rbF1.Name = "rbF1";
-            this.rbF1.Size = new System.Drawing.Size(35, 17);
-            this.rbF1.TabIndex = 51;
-            this.rbF1.Text = "SI";
-            this.rbF1.UseVisualStyleBackColor = true;
-            this.rbF1.CheckedChanged += new System.EventHandler(this.rbF1_CheckedChanged);
-            // 
-            // panel50
-            // 
-            this.panel50.Controls.Add(this.rbF4);
-            this.panel50.Controls.Add(this.rbF3);
-            this.panel50.Location = new System.Drawing.Point(499, 159);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(92, 24);
-            this.panel50.TabIndex = 59;
-            // 
-            // rbF4
-            // 
-            this.rbF4.AutoSize = true;
-            this.rbF4.Location = new System.Drawing.Point(48, 3);
-            this.rbF4.Name = "rbF4";
-            this.rbF4.Size = new System.Drawing.Size(41, 17);
-            this.rbF4.TabIndex = 50;
-            this.rbF4.Text = "NO";
-            this.rbF4.UseVisualStyleBackColor = true;
-            // 
-            // rbF3
-            // 
-            this.rbF3.AutoSize = true;
-            this.rbF3.Location = new System.Drawing.Point(0, 3);
-            this.rbF3.Name = "rbF3";
-            this.rbF3.Size = new System.Drawing.Size(35, 17);
-            this.rbF3.TabIndex = 51;
-            this.rbF3.Text = "SI";
-            this.rbF3.UseVisualStyleBackColor = true;
-            this.rbF3.CheckedChanged += new System.EventHandler(this.rbF3_CheckedChanged);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(183, 15);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "CARTILLA DE VACUNACIÓN\t\t\t\t\t\t\t\r\n";
             // 
             // label139
             // 
             this.label139.AutoSize = true;
-            this.label139.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(44, 276);
+            this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label139.Location = new System.Drawing.Point(57, 80);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(377, 19);
-            this.label139.TabIndex = 7;
-            this.label139.Text = "¿Ha perdido màs del 5% de su peso en los ultimos 6 meses?";
+            this.label139.Size = new System.Drawing.Size(45, 16);
+            this.label139.TabIndex = 39;
+            this.label139.Text = "TD1a:\r\n";
+            // 
+            // txtTD1HC
+            // 
+            this.txtTD1HC.Location = new System.Drawing.Point(108, 78);
+            this.txtTD1HC.Name = "txtTD1HC";
+            this.txtTD1HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD1HC.TabIndex = 55;
+            // 
+            // txtTD2HC
+            // 
+            this.txtTD2HC.Location = new System.Drawing.Point(108, 104);
+            this.txtTD2HC.Name = "txtTD2HC";
+            this.txtTD2HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD2HC.TabIndex = 56;
+            // 
+            // txtTD3HC
+            // 
+            this.txtTD3HC.Location = new System.Drawing.Point(108, 130);
+            this.txtTD3HC.Name = "txtTD3HC";
+            this.txtTD3HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD3HC.TabIndex = 57;
+            // 
+            // txtInfluencia
+            // 
+            this.txtInfluencia.Location = new System.Drawing.Point(108, 156);
+            this.txtInfluencia.Name = "txtInfluencia";
+            this.txtInfluencia.Size = new System.Drawing.Size(121, 20);
+            this.txtInfluencia.TabIndex = 58;
             // 
             // label140
             // 
             this.label140.AutoSize = true;
-            this.label140.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.Location = new System.Drawing.Point(44, 239);
+            this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label140.Location = new System.Drawing.Point(57, 108);
             this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(229, 19);
-            this.label140.TabIndex = 6;
-            this.label140.Text = "¿Tiene màs de cinco enfermedades?";
+            this.label140.Size = new System.Drawing.Size(45, 16);
+            this.label140.TabIndex = 59;
+            this.label140.Text = "TD2a:";
             // 
             // label141
             // 
             this.label141.AutoSize = true;
-            this.label141.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label141.Location = new System.Drawing.Point(44, 202);
+            this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label141.Location = new System.Drawing.Point(57, 132);
             this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(242, 19);
-            this.label141.TabIndex = 5;
-            this.label141.Text = "¿Es incapaz de caminar una manzana?";
+            this.label141.Size = new System.Drawing.Size(45, 16);
+            this.label141.TabIndex = 60;
+            this.label141.Text = "TD3a:";
             // 
             // label142
             // 
             this.label142.AutoSize = true;
-            this.label142.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label142.Location = new System.Drawing.Point(44, 164);
+            this.label142.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label142.Location = new System.Drawing.Point(35, 157);
             this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(264, 19);
-            this.label142.TabIndex = 4;
-            this.label142.Text = "¿Es incapaz de subir un piso de escaleras?";
+            this.label142.Size = new System.Drawing.Size(67, 16);
+            this.label142.TabIndex = 61;
+            this.label142.Text = "Influencia:";
+            // 
+            // txtAntineu
+            // 
+            this.txtAntineu.Location = new System.Drawing.Point(108, 182);
+            this.txtAntineu.Name = "txtAntineu";
+            this.txtAntineu.Size = new System.Drawing.Size(121, 20);
+            this.txtAntineu.TabIndex = 62;
             // 
             // label143
             // 
             this.label143.AutoSize = true;
-            this.label143.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label143.Location = new System.Drawing.Point(44, 126);
+            this.label143.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label143.Location = new System.Drawing.Point(47, 182);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(143, 19);
-            this.label143.TabIndex = 3;
-            this.label143.Text = "¿Està usted cansado? ";
+            this.label143.Size = new System.Drawing.Size(55, 16);
+            this.label143.TabIndex = 63;
+            this.label143.Text = "Antineu:";
             // 
-            // label144
+            // txtCBDAgudoHC
             // 
-            this.label144.AutoSize = true;
-            this.label144.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(180)))));
-            this.label144.Location = new System.Drawing.Point(13, 55);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(230, 15);
-            this.label144.TabIndex = 1;
-            this.label144.Text = "SERVICIO MEDICO DE JUBILADOS";
+            this.txtCBDAgudoHC.Location = new System.Drawing.Point(273, 42);
+            this.txtCBDAgudoHC.Multiline = true;
+            this.txtCBDAgudoHC.Name = "txtCBDAgudoHC";
+            this.txtCBDAgudoHC.Size = new System.Drawing.Size(205, 25);
+            this.txtCBDAgudoHC.TabIndex = 35;
             // 
-            // label145
+            // txtCBDCronicoHC
             // 
-            this.label145.AutoSize = true;
-            this.label145.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label145.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(180)))));
-            this.label145.Location = new System.Drawing.Point(11, 13);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(265, 26);
-            this.label145.TabIndex = 0;
-            this.label145.Text = "CUESTIONARIO FRAIL";
+            this.txtCBDCronicoHC.Location = new System.Drawing.Point(273, 42);
+            this.txtCBDCronicoHC.Multiline = true;
+            this.txtCBDCronicoHC.Name = "txtCBDCronicoHC";
+            this.txtCBDCronicoHC.Size = new System.Drawing.Size(205, 25);
+            this.txtCBDCronicoHC.TabIndex = 36;
             // 
             // FrmHC
             // 
@@ -4432,13 +4526,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1151, 700);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHC);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelEncuestaFrail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHC";
-            this.Text = "zz";
+            this.Text = "FrmHC";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -4461,10 +4554,6 @@
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -4504,7 +4593,6 @@
             this.panel23.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHorasDuermeHC)).EndInit();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -4542,21 +4630,11 @@
             this.panel40.PerformLayout();
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHC)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panelEncuestaFrail.ResumeLayout(false);
-            this.panelEncuestaFrail.PerformLayout();
             this.panel46.ResumeLayout(false);
             this.panel46.PerformLayout();
-            this.panel47.ResumeLayout(false);
-            this.panel47.PerformLayout();
-            this.panel48.ResumeLayout(false);
-            this.panel48.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel49.PerformLayout();
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4577,7 +4655,7 @@
         private System.Windows.Forms.TextBox txtCuidadorPrimHC;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox txtIMC;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox txtCinturaHC;
         private System.Windows.Forms.Label label36;
@@ -4621,13 +4699,11 @@
         private System.Windows.Forms.TextBox txtFechaNacimientoHC;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox txtHoraHC;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox txtDomicilioHC;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.TextBox txtEdadHC;
         private System.Windows.Forms.TextBox txtNombreHC;
-        private System.Windows.Forms.TextBox txtFechaHC;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
@@ -4641,7 +4717,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox txtCartillaVacunacionHC;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbTransfusionesHC;
         private System.Windows.Forms.ComboBox cmbToxicomaniaHC;
@@ -4663,7 +4738,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvHC;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel15;
@@ -4710,7 +4785,6 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.NumericUpDown txtHorasDuermeHC;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label84;
@@ -4761,6 +4835,7 @@
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.TextBox txtRealizoFragilidadHC;
         private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.TextBox txtCuestionarioFrailHC;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Panel panel29;
@@ -4893,52 +4968,67 @@
         private System.Windows.Forms.Button btnCancelarHC;
         private System.Windows.Forms.Button btnBuscarHC;
         private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNoSocioSearchHC;
         private System.Windows.Forms.Button btnGuardarHC;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.NumericUpDown txtAbortosHC;
-        private System.Windows.Forms.NumericUpDown txtCesareasHC;
-        private System.Windows.Forms.NumericUpDown txtPartosHC;
-        private System.Windows.Forms.NumericUpDown txtGestasHC;
-        private System.Windows.Forms.Button btnFragilidad;
-        public System.Windows.Forms.TextBox txtCuestionarioFrailHC;
-        private System.Windows.Forms.Panel panelEncuestaFrail;
-        private System.Windows.Forms.TextBox txtResultadoTestFrail;
+        private System.Windows.Forms.TextBox txtEstadoCivilHC;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtAbortos;
+        private System.Windows.Forms.TextBox txtCesareas;
+        private System.Windows.Forms.TextBox txtPartos;
+        private System.Windows.Forms.TextBox txtGestas;
+        private System.Windows.Forms.TextBox txtNoHorasDuermeHC;
+        private System.Windows.Forms.TextBox txtRBTN7;
+        private System.Windows.Forms.TextBox txtRBTN6;
+        private System.Windows.Forms.TextBox txtRBTN5;
+        private System.Windows.Forms.TextBox txtRBT4;
+        private System.Windows.Forms.TextBox txtRBT3;
+        private System.Windows.Forms.TextBox txtRBT2;
+        private System.Windows.Forms.TextBox txtRBT1;
+        private System.Windows.Forms.TextBox txtCHL11;
+        private System.Windows.Forms.TextBox txtCHL10;
+        private System.Windows.Forms.TextBox txtCHL9;
+        private System.Windows.Forms.TextBox txtCHL8;
+        private System.Windows.Forms.TextBox txtCHL7;
+        private System.Windows.Forms.TextBox txtCHL6;
+        private System.Windows.Forms.TextBox txtCHL5;
+        private System.Windows.Forms.TextBox txtCHL4;
+        private System.Windows.Forms.TextBox txtCHL3;
+        private System.Windows.Forms.TextBox txtCHL2;
+        private System.Windows.Forms.TextBox txtCHL1;
+        private System.Windows.Forms.TextBox txtCHL18;
+        private System.Windows.Forms.TextBox txtCHL17;
+        private System.Windows.Forms.TextBox txtCHL16;
+        private System.Windows.Forms.TextBox txtCHL15;
+        private System.Windows.Forms.TextBox txtCHL14;
+        private System.Windows.Forms.TextBox txtCHL13;
+        private System.Windows.Forms.TextBox txtCHL12;
+        private System.Windows.Forms.TextBox txtCHL29;
+        private System.Windows.Forms.TextBox txtCHL28;
+        private System.Windows.Forms.TextBox txtCHL27;
+        private System.Windows.Forms.TextBox txtCHL26;
+        private System.Windows.Forms.TextBox txtCHL25;
+        private System.Windows.Forms.TextBox txtCHL24;
+        private System.Windows.Forms.TextBox txtCHL23;
+        private System.Windows.Forms.TextBox txtCHL22;
+        private System.Windows.Forms.TextBox txtCHL21;
+        private System.Windows.Forms.TextBox txtCHL20;
+        private System.Windows.Forms.TextBox txtCHL19;
+        private System.Windows.Forms.DateTimePicker txtHoraHC;
+        private System.Windows.Forms.DateTimePicker txtFechaHC;
         private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.RadioButton rbF10;
-        private System.Windows.Forms.RadioButton rbF9;
-        private System.Windows.Forms.Panel panel47;
-        private System.Windows.Forms.RadioButton rbF6;
-        private System.Windows.Forms.RadioButton rbF5;
-        private System.Windows.Forms.Panel panel48;
-        private System.Windows.Forms.RadioButton rbF8;
-        private System.Windows.Forms.RadioButton rbF7;
-        private System.Windows.Forms.Panel panel49;
-        private System.Windows.Forms.RadioButton rbF2;
-        private System.Windows.Forms.RadioButton rbF1;
-        private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.RadioButton rbF4;
-        private System.Windows.Forms.RadioButton rbF3;
-        private System.Windows.Forms.Label label139;
-        private System.Windows.Forms.Label label140;
-        private System.Windows.Forms.Label label141;
-        private System.Windows.Forms.Label label142;
         private System.Windows.Forms.Label label143;
-        private System.Windows.Forms.Label label144;
-        private System.Windows.Forms.Label label145;
-        private System.Windows.Forms.Button btnCancelarTestFrail;
-        private System.Windows.Forms.TextBox txtFr3;
-        private System.Windows.Forms.TextBox txtFr4;
-        private System.Windows.Forms.TextBox txtFr5;
-        private System.Windows.Forms.TextBox txtFr2;
-        private System.Windows.Forms.TextBox txtFr1;
-        private System.Windows.Forms.Button btnEvaluarTestFrail;
-        private System.Windows.Forms.Button btnTestNutricion;
-        private System.Windows.Forms.Button btnTestMoca;
-        private System.Windows.Forms.Button btnTestGDS;
-        private System.Windows.Forms.Button btnTestBarthel;
-        private System.Windows.Forms.Button btnTestKatz;
-        private System.Windows.Forms.Button btnTestPoma;
+        private System.Windows.Forms.TextBox txtAntineu;
+        private System.Windows.Forms.Label label142;
+        private System.Windows.Forms.Label label141;
+        private System.Windows.Forms.Label label140;
+        private System.Windows.Forms.TextBox txtInfluencia;
+        private System.Windows.Forms.TextBox txtTD3HC;
+        private System.Windows.Forms.TextBox txtTD2HC;
+        private System.Windows.Forms.TextBox txtTD1HC;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCBDAgudoHC;
+        private System.Windows.Forms.TextBox txtCBDCronicoHC;
     }
 }

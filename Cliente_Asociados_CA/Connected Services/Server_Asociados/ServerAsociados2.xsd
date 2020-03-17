@@ -104,6 +104,136 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="socio" nillable="true" type="tns:socio" />
+  <xs:complexType name="historialClinico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdSocio" type="xs:int" />
+      <xs:element minOccurs="0" name="OidoIzquierdo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RealizoEvCormobilidades" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abortos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="actKatz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="actLawton" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alcoholismo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alergias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="analisis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cadidiasis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cansancioDia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="caries" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cartillaVacunacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cbdAgudo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cbdCronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cesareas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="criteriosStopp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cuestionarioFrail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cuidadorPrimario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dConciliarSueño" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deterioroGlobal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="disfagia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duermeDia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipoM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaIn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaKar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaMaltrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaRam" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaSARC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escalaTinneti" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="escolaridad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estudioEnfermedadCronica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="examenMMSE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="exploracionFisica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gestas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iCharlson" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="indTerap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="indiceBarthel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="medicacionActual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noHorasDuerme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreContacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numDientes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocupacionPrincipal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oidoDerecho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ojoDerecho" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ojoIzquierdo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pClinicos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pEstudios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pRespiratorias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="padecimientoActual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="parentesco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="partos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pronostico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pruebaReloj" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pruebaSusurro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvCuidados" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvDesempeño" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvFragilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvIn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvMedic" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvSalud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rEvSar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rIntenso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="realizoAlteraciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="realizoCBDAgudo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="realizoCBDCronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="realizoEstudio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="realizoEvMaltrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resultadosRelevantes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resumenInterrogatorio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="riesgoASCVD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="riesgoFramingham" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sDiurna" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgAbuso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgAfasia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgCaidas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgColapso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgDeficit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgDelirum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgDemencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgDepresion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgDesnutricion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgEncarnizamiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgEstadoT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgInconF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgInconU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgObesidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgOsteoporosis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPatologia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPatologiaD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPatologiaSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPerdidaA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPerdidaV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgPolifarmacia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgRegresion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgSxInmovilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgSxPiernas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgTranstornoC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgTranstornoE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgTranstornoM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgTranstornoS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sgUlceras" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sueñoFragmentado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svCintura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svColesterol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svEstatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svFR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svGlucemiaPost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svGlucemiaPre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svIMC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svPeso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svTemperatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svTrigliceridos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tabaquismo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="telefonoContacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="toxicomonias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="transfusiones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usoProtesis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="xerostomia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="yesavage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="historialClinico" nillable="true" type="tns:historialClinico" />
   <xs:complexType name="beneficiario">
     <xs:sequence>
       <xs:element minOccurs="0" name="apellidoMaterno" nillable="true" type="xs:string" />
@@ -168,6 +298,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="mostrarSocios" nillable="true" type="tns:mostrarSocios" />
+  <xs:complexType name="mostrarHC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HCTab" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="mostrarHC" nillable="true" type="tns:mostrarHC" />
   <xs:complexType name="mostrarBeneficiario">
     <xs:sequence>
       <xs:element minOccurs="0" name="BeneficiarioTab" nillable="true">
@@ -186,6 +334,25 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="mostrarBeneficiario" nillable="true" type="tns:mostrarBeneficiario" />
+  <xs:complexType name="getBeneficiarioByNoSocio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BeneficiarioTab" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="numSocio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getBeneficiarioByNoSocio" nillable="true" type="tns:getBeneficiarioByNoSocio" />
   <xs:complexType name="ArrayOfsocio">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="socio" nillable="true" type="tns:socio" />
