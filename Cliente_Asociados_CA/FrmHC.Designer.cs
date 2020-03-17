@@ -117,6 +117,10 @@
             this.txtMedicacionActualHC = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.txtAbortosHC = new System.Windows.Forms.NumericUpDown();
+            this.txtCesareasHC = new System.Windows.Forms.NumericUpDown();
+            this.txtPartosHC = new System.Windows.Forms.NumericUpDown();
+            this.txtGestasHC = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -179,6 +183,7 @@
             this.label63 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel30 = new System.Windows.Forms.Panel();
+            this.btnFragilidad = new System.Windows.Forms.Button();
             this.txtRealizoFragilidadHC = new System.Windows.Forms.TextBox();
             this.label92 = new System.Windows.Forms.Label();
             this.txtCuestionarioFrailHC = new System.Windows.Forms.TextBox();
@@ -223,12 +228,15 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.btnTestNutricion = new System.Windows.Forms.Button();
             this.label76 = new System.Windows.Forms.Label();
             this.txtRealizoEvaluacionMaltratoHC = new System.Windows.Forms.TextBox();
             this.txtEscalaGeriatricaMaltratoHC = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.btnTestMoca = new System.Windows.Forms.Button();
+            this.btnTestGDS = new System.Windows.Forms.Button();
             this.label81 = new System.Windows.Forms.Label();
             this.txtEscalaDeterioroHC = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
@@ -240,6 +248,8 @@
             this.label79 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel34 = new System.Windows.Forms.Panel();
+            this.btnTestBarthel = new System.Windows.Forms.Button();
+            this.btnTestKatz = new System.Windows.Forms.Button();
             this.txtIndiceBarthelHC = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
             this.txtActInstHC = new System.Windows.Forms.TextBox();
@@ -322,6 +332,7 @@
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
+            this.btnTestPoma = new System.Windows.Forms.Button();
             this.txtRealizoDesFisHC = new System.Windows.Forms.TextBox();
             this.label114 = new System.Windows.Forms.Label();
             this.txtRiesgoCaidasHC = new System.Windows.Forms.TextBox();
@@ -364,10 +375,37 @@
             this.label138 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnGuardarHC = new System.Windows.Forms.Button();
-            this.txtGestasHC = new System.Windows.Forms.NumericUpDown();
-            this.txtPartosHC = new System.Windows.Forms.NumericUpDown();
-            this.txtCesareasHC = new System.Windows.Forms.NumericUpDown();
-            this.txtAbortosHC = new System.Windows.Forms.NumericUpDown();
+            this.panelEncuestaFrail = new System.Windows.Forms.Panel();
+            this.btnEvaluarTestFrail = new System.Windows.Forms.Button();
+            this.txtFr3 = new System.Windows.Forms.TextBox();
+            this.txtFr4 = new System.Windows.Forms.TextBox();
+            this.txtFr5 = new System.Windows.Forms.TextBox();
+            this.txtFr2 = new System.Windows.Forms.TextBox();
+            this.txtFr1 = new System.Windows.Forms.TextBox();
+            this.btnCancelarTestFrail = new System.Windows.Forms.Button();
+            this.txtResultadoTestFrail = new System.Windows.Forms.TextBox();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.rbF10 = new System.Windows.Forms.RadioButton();
+            this.rbF9 = new System.Windows.Forms.RadioButton();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.rbF6 = new System.Windows.Forms.RadioButton();
+            this.rbF5 = new System.Windows.Forms.RadioButton();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.rbF8 = new System.Windows.Forms.RadioButton();
+            this.rbF7 = new System.Windows.Forms.RadioButton();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.rbF2 = new System.Windows.Forms.RadioButton();
+            this.rbF1 = new System.Windows.Forms.RadioButton();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.rbF4 = new System.Windows.Forms.RadioButton();
+            this.rbF3 = new System.Windows.Forms.RadioButton();
+            this.label139 = new System.Windows.Forms.Label();
+            this.label140 = new System.Windows.Forms.Label();
+            this.label141 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
+            this.label143 = new System.Windows.Forms.Label();
+            this.label144 = new System.Windows.Forms.Label();
+            this.label145 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -381,6 +419,10 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -425,10 +467,12 @@
             this.panel39.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).BeginInit();
+            this.panelEncuestaFrail.SuspendLayout();
+            this.panel46.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.panel48.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -1358,6 +1402,34 @@
             this.panel9.Size = new System.Drawing.Size(1093, 86);
             this.panel9.TabIndex = 41;
             // 
+            // txtAbortosHC
+            // 
+            this.txtAbortosHC.Location = new System.Drawing.Point(860, 44);
+            this.txtAbortosHC.Name = "txtAbortosHC";
+            this.txtAbortosHC.Size = new System.Drawing.Size(40, 20);
+            this.txtAbortosHC.TabIndex = 50;
+            // 
+            // txtCesareasHC
+            // 
+            this.txtCesareasHC.Location = new System.Drawing.Point(607, 43);
+            this.txtCesareasHC.Name = "txtCesareasHC";
+            this.txtCesareasHC.Size = new System.Drawing.Size(40, 20);
+            this.txtCesareasHC.TabIndex = 49;
+            // 
+            // txtPartosHC
+            // 
+            this.txtPartosHC.Location = new System.Drawing.Point(346, 43);
+            this.txtPartosHC.Name = "txtPartosHC";
+            this.txtPartosHC.Size = new System.Drawing.Size(40, 20);
+            this.txtPartosHC.TabIndex = 48;
+            // 
+            // txtGestasHC
+            // 
+            this.txtGestasHC.Location = new System.Drawing.Point(110, 43);
+            this.txtGestasHC.Name = "txtGestasHC";
+            this.txtGestasHC.Size = new System.Drawing.Size(40, 20);
+            this.txtGestasHC.TabIndex = 47;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -2007,6 +2079,7 @@
             // 
             this.panel30.BackColor = System.Drawing.Color.Beige;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel30.Controls.Add(this.btnFragilidad);
             this.panel30.Controls.Add(this.txtRealizoFragilidadHC);
             this.panel30.Controls.Add(this.label92);
             this.panel30.Controls.Add(this.txtCuestionarioFrailHC);
@@ -2016,6 +2089,21 @@
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(571, 128);
             this.panel30.TabIndex = 72;
+            // 
+            // btnFragilidad
+            // 
+            this.btnFragilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnFragilidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnFragilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFragilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFragilidad.ForeColor = System.Drawing.Color.White;
+            this.btnFragilidad.Location = new System.Drawing.Point(454, 65);
+            this.btnFragilidad.Name = "btnFragilidad";
+            this.btnFragilidad.Size = new System.Drawing.Size(103, 26);
+            this.btnFragilidad.TabIndex = 72;
+            this.btnFragilidad.Text = "Test Fragilidad";
+            this.btnFragilidad.UseVisualStyleBackColor = false;
+            this.btnFragilidad.Click += new System.EventHandler(this.btnFragilidad_Click);
             // 
             // txtRealizoFragilidadHC
             // 
@@ -2037,6 +2125,8 @@
             // 
             // txtCuestionarioFrailHC
             // 
+            this.txtCuestionarioFrailHC.Enabled = false;
+            this.txtCuestionarioFrailHC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuestionarioFrailHC.Location = new System.Drawing.Point(230, 30);
             this.txtCuestionarioFrailHC.Multiline = true;
             this.txtCuestionarioFrailHC.Name = "txtCuestionarioFrailHC";
@@ -2453,15 +2543,29 @@
             // 
             this.panel20.BackColor = System.Drawing.Color.Beige;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.btnTestNutricion);
             this.panel20.Controls.Add(this.label76);
             this.panel20.Controls.Add(this.txtRealizoEvaluacionMaltratoHC);
             this.panel20.Controls.Add(this.txtEscalaGeriatricaMaltratoHC);
             this.panel20.Controls.Add(this.label77);
             this.panel20.Controls.Add(this.label82);
+            this.panel20.ForeColor = System.Drawing.Color.White;
             this.panel20.Location = new System.Drawing.Point(528, 6);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(571, 157);
             this.panel20.TabIndex = 54;
+            // 
+            // btnTestNutricion
+            // 
+            this.btnTestNutricion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestNutricion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestNutricion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestNutricion.Location = new System.Drawing.Point(38, 121);
+            this.btnTestNutricion.Name = "btnTestNutricion";
+            this.btnTestNutricion.Size = new System.Drawing.Size(105, 26);
+            this.btnTestNutricion.TabIndex = 43;
+            this.btnTestNutricion.Text = "Test Nutrición";
+            this.btnTestNutricion.UseVisualStyleBackColor = false;
             // 
             // label76
             // 
@@ -2513,6 +2617,8 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.Beige;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.btnTestMoca);
+            this.panel19.Controls.Add(this.btnTestGDS);
             this.panel19.Controls.Add(this.label81);
             this.panel19.Controls.Add(this.txtEscalaDeterioroHC);
             this.panel19.Controls.Add(this.label80);
@@ -2526,6 +2632,34 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(519, 157);
             this.panel19.TabIndex = 53;
+            // 
+            // btnTestMoca
+            // 
+            this.btnTestMoca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestMoca.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestMoca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestMoca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestMoca.ForeColor = System.Drawing.Color.White;
+            this.btnTestMoca.Location = new System.Drawing.Point(422, 31);
+            this.btnTestMoca.Name = "btnTestMoca";
+            this.btnTestMoca.Size = new System.Drawing.Size(78, 25);
+            this.btnTestMoca.TabIndex = 50;
+            this.btnTestMoca.Text = "Test Moca";
+            this.btnTestMoca.UseVisualStyleBackColor = false;
+            // 
+            // btnTestGDS
+            // 
+            this.btnTestGDS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestGDS.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestGDS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestGDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestGDS.ForeColor = System.Drawing.Color.White;
+            this.btnTestGDS.Location = new System.Drawing.Point(422, 91);
+            this.btnTestGDS.Name = "btnTestGDS";
+            this.btnTestGDS.Size = new System.Drawing.Size(78, 25);
+            this.btnTestGDS.TabIndex = 49;
+            this.btnTestGDS.Text = "Test GDS";
+            this.btnTestGDS.UseVisualStyleBackColor = false;
             // 
             // label81
             // 
@@ -2542,7 +2676,7 @@
             this.txtEscalaDeterioroHC.Location = new System.Drawing.Point(293, 59);
             this.txtEscalaDeterioroHC.Multiline = true;
             this.txtEscalaDeterioroHC.Name = "txtEscalaDeterioroHC";
-            this.txtEscalaDeterioroHC.Size = new System.Drawing.Size(205, 25);
+            this.txtEscalaDeterioroHC.Size = new System.Drawing.Size(123, 25);
             this.txtEscalaDeterioroHC.TabIndex = 47;
             // 
             // label80
@@ -2570,7 +2704,7 @@
             this.txtEscalaGeriatricaHC.Location = new System.Drawing.Point(293, 91);
             this.txtEscalaGeriatricaHC.Multiline = true;
             this.txtEscalaGeriatricaHC.Name = "txtEscalaGeriatricaHC";
-            this.txtEscalaGeriatricaHC.Size = new System.Drawing.Size(205, 25);
+            this.txtEscalaGeriatricaHC.Size = new System.Drawing.Size(122, 25);
             this.txtEscalaGeriatricaHC.TabIndex = 40;
             // 
             // txtPruebaRelojHC
@@ -2586,7 +2720,7 @@
             this.txtExamenMmseHC.Location = new System.Drawing.Point(293, 30);
             this.txtExamenMmseHC.Multiline = true;
             this.txtExamenMmseHC.Name = "txtExamenMmseHC";
-            this.txtExamenMmseHC.Size = new System.Drawing.Size(205, 25);
+            this.txtExamenMmseHC.Size = new System.Drawing.Size(122, 25);
             this.txtExamenMmseHC.TabIndex = 35;
             // 
             // label78
@@ -2626,6 +2760,8 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.Beige;
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.btnTestBarthel);
+            this.panel34.Controls.Add(this.btnTestKatz);
             this.panel34.Controls.Add(this.txtIndiceBarthelHC);
             this.panel34.Controls.Add(this.label113);
             this.panel34.Controls.Add(this.txtActInstHC);
@@ -2638,12 +2774,40 @@
             this.panel34.Size = new System.Drawing.Size(1093, 128);
             this.panel34.TabIndex = 75;
             // 
+            // btnTestBarthel
+            // 
+            this.btnTestBarthel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestBarthel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestBarthel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestBarthel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestBarthel.ForeColor = System.Drawing.Color.White;
+            this.btnTestBarthel.Location = new System.Drawing.Point(926, 73);
+            this.btnTestBarthel.Name = "btnTestBarthel";
+            this.btnTestBarthel.Size = new System.Drawing.Size(100, 26);
+            this.btnTestBarthel.TabIndex = 40;
+            this.btnTestBarthel.Text = "Test Barthel";
+            this.btnTestBarthel.UseVisualStyleBackColor = false;
+            // 
+            // btnTestKatz
+            // 
+            this.btnTestKatz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestKatz.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestKatz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestKatz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestKatz.ForeColor = System.Drawing.Color.White;
+            this.btnTestKatz.Location = new System.Drawing.Point(186, 73);
+            this.btnTestKatz.Name = "btnTestKatz";
+            this.btnTestKatz.Size = new System.Drawing.Size(107, 26);
+            this.btnTestKatz.TabIndex = 39;
+            this.btnTestKatz.Text = "Test Katz";
+            this.btnTestKatz.UseVisualStyleBackColor = false;
+            // 
             // txtIndiceBarthelHC
             // 
             this.txtIndiceBarthelHC.Location = new System.Drawing.Point(743, 61);
             this.txtIndiceBarthelHC.Multiline = true;
             this.txtIndiceBarthelHC.Name = "txtIndiceBarthelHC";
-            this.txtIndiceBarthelHC.Size = new System.Drawing.Size(314, 44);
+            this.txtIndiceBarthelHC.Size = new System.Drawing.Size(156, 44);
             this.txtIndiceBarthelHC.TabIndex = 38;
             // 
             // label113
@@ -2669,7 +2833,7 @@
             this.txtActBasicasHC.Location = new System.Drawing.Point(27, 61);
             this.txtActBasicasHC.Multiline = true;
             this.txtActBasicasHC.Name = "txtActBasicasHC";
-            this.txtActBasicasHC.Size = new System.Drawing.Size(314, 44);
+            this.txtActBasicasHC.Size = new System.Drawing.Size(138, 44);
             this.txtActBasicasHC.TabIndex = 35;
             // 
             // label103
@@ -3479,6 +3643,7 @@
             // 
             this.panel35.BackColor = System.Drawing.Color.Beige;
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.btnTestPoma);
             this.panel35.Controls.Add(this.txtRealizoDesFisHC);
             this.panel35.Controls.Add(this.label114);
             this.panel35.Controls.Add(this.txtRiesgoCaidasHC);
@@ -3488,6 +3653,20 @@
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(519, 128);
             this.panel35.TabIndex = 73;
+            // 
+            // btnTestPoma
+            // 
+            this.btnTestPoma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestPoma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.btnTestPoma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestPoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestPoma.ForeColor = System.Drawing.Color.White;
+            this.btnTestPoma.Location = new System.Drawing.Point(26, 87);
+            this.btnTestPoma.Name = "btnTestPoma";
+            this.btnTestPoma.Size = new System.Drawing.Size(78, 26);
+            this.btnTestPoma.TabIndex = 72;
+            this.btnTestPoma.Text = "Test Poma";
+            this.btnTestPoma.UseVisualStyleBackColor = false;
             // 
             // txtRealizoDesFisHC
             // 
@@ -3909,33 +4088,341 @@
             this.btnGuardarHC.Text = "GUARDAR";
             this.btnGuardarHC.UseVisualStyleBackColor = true;
             // 
-            // txtGestasHC
+            // panelEncuestaFrail
             // 
-            this.txtGestasHC.Location = new System.Drawing.Point(110, 43);
-            this.txtGestasHC.Name = "txtGestasHC";
-            this.txtGestasHC.Size = new System.Drawing.Size(40, 20);
-            this.txtGestasHC.TabIndex = 47;
+            this.panelEncuestaFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
+            this.panelEncuestaFrail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEncuestaFrail.Controls.Add(this.btnEvaluarTestFrail);
+            this.panelEncuestaFrail.Controls.Add(this.txtFr3);
+            this.panelEncuestaFrail.Controls.Add(this.txtFr4);
+            this.panelEncuestaFrail.Controls.Add(this.txtFr5);
+            this.panelEncuestaFrail.Controls.Add(this.txtFr2);
+            this.panelEncuestaFrail.Controls.Add(this.txtFr1);
+            this.panelEncuestaFrail.Controls.Add(this.btnCancelarTestFrail);
+            this.panelEncuestaFrail.Controls.Add(this.txtResultadoTestFrail);
+            this.panelEncuestaFrail.Controls.Add(this.panel46);
+            this.panelEncuestaFrail.Controls.Add(this.panel47);
+            this.panelEncuestaFrail.Controls.Add(this.panel48);
+            this.panelEncuestaFrail.Controls.Add(this.panel49);
+            this.panelEncuestaFrail.Controls.Add(this.panel50);
+            this.panelEncuestaFrail.Controls.Add(this.label139);
+            this.panelEncuestaFrail.Controls.Add(this.label140);
+            this.panelEncuestaFrail.Controls.Add(this.label141);
+            this.panelEncuestaFrail.Controls.Add(this.label142);
+            this.panelEncuestaFrail.Controls.Add(this.label143);
+            this.panelEncuestaFrail.Controls.Add(this.label144);
+            this.panelEncuestaFrail.Controls.Add(this.label145);
+            this.panelEncuestaFrail.Location = new System.Drawing.Point(7, 176);
+            this.panelEncuestaFrail.Name = "panelEncuestaFrail";
+            this.panelEncuestaFrail.Size = new System.Drawing.Size(658, 393);
+            this.panelEncuestaFrail.TabIndex = 51;
+            this.panelEncuestaFrail.Visible = false;
             // 
-            // txtPartosHC
+            // btnEvaluarTestFrail
             // 
-            this.txtPartosHC.Location = new System.Drawing.Point(346, 43);
-            this.txtPartosHC.Name = "txtPartosHC";
-            this.txtPartosHC.Size = new System.Drawing.Size(40, 20);
-            this.txtPartosHC.TabIndex = 48;
+            this.btnEvaluarTestFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEvaluarTestFrail.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEvaluarTestFrail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEvaluarTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvaluarTestFrail.Location = new System.Drawing.Point(302, 338);
+            this.btnEvaluarTestFrail.Name = "btnEvaluarTestFrail";
+            this.btnEvaluarTestFrail.Size = new System.Drawing.Size(90, 31);
+            this.btnEvaluarTestFrail.TabIndex = 72;
+            this.btnEvaluarTestFrail.Text = "Evaluar Test";
+            this.btnEvaluarTestFrail.UseVisualStyleBackColor = false;
+            this.btnEvaluarTestFrail.Click += new System.EventHandler(this.btnEvaluarTestFrail_Click);
             // 
-            // txtCesareasHC
+            // txtFr3
             // 
-            this.txtCesareasHC.Location = new System.Drawing.Point(607, 43);
-            this.txtCesareasHC.Name = "txtCesareasHC";
-            this.txtCesareasHC.Size = new System.Drawing.Size(40, 20);
-            this.txtCesareasHC.TabIndex = 49;
+            this.txtFr3.Location = new System.Drawing.Point(443, 199);
+            this.txtFr3.Name = "txtFr3";
+            this.txtFr3.Size = new System.Drawing.Size(38, 20);
+            this.txtFr3.TabIndex = 71;
+            this.txtFr3.Text = "0";
+            this.txtFr3.Visible = false;
             // 
-            // txtAbortosHC
+            // txtFr4
             // 
-            this.txtAbortosHC.Location = new System.Drawing.Point(860, 44);
-            this.txtAbortosHC.Name = "txtAbortosHC";
-            this.txtAbortosHC.Size = new System.Drawing.Size(40, 20);
-            this.txtAbortosHC.TabIndex = 50;
+            this.txtFr4.Location = new System.Drawing.Point(443, 234);
+            this.txtFr4.Name = "txtFr4";
+            this.txtFr4.Size = new System.Drawing.Size(38, 20);
+            this.txtFr4.TabIndex = 70;
+            this.txtFr4.Text = "0";
+            this.txtFr4.Visible = false;
+            // 
+            // txtFr5
+            // 
+            this.txtFr5.Location = new System.Drawing.Point(443, 271);
+            this.txtFr5.Name = "txtFr5";
+            this.txtFr5.Size = new System.Drawing.Size(38, 20);
+            this.txtFr5.TabIndex = 69;
+            this.txtFr5.Text = "0";
+            this.txtFr5.Visible = false;
+            // 
+            // txtFr2
+            // 
+            this.txtFr2.Location = new System.Drawing.Point(443, 159);
+            this.txtFr2.Name = "txtFr2";
+            this.txtFr2.Size = new System.Drawing.Size(38, 20);
+            this.txtFr2.TabIndex = 68;
+            this.txtFr2.Text = "0";
+            this.txtFr2.Visible = false;
+            // 
+            // txtFr1
+            // 
+            this.txtFr1.Location = new System.Drawing.Point(443, 124);
+            this.txtFr1.Name = "txtFr1";
+            this.txtFr1.Size = new System.Drawing.Size(38, 20);
+            this.txtFr1.TabIndex = 67;
+            this.txtFr1.Text = "0";
+            this.txtFr1.Visible = false;
+            // 
+            // btnCancelarTestFrail
+            // 
+            this.btnCancelarTestFrail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
+            this.btnCancelarTestFrail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelarTestFrail.BackgroundImage")));
+            this.btnCancelarTestFrail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(206)))), ((int)(((byte)(246)))));
+            this.btnCancelarTestFrail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnCancelarTestFrail.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarTestFrail.Location = new System.Drawing.Point(629, -1);
+            this.btnCancelarTestFrail.Name = "btnCancelarTestFrail";
+            this.btnCancelarTestFrail.Size = new System.Drawing.Size(28, 30);
+            this.btnCancelarTestFrail.TabIndex = 66;
+            this.btnCancelarTestFrail.UseVisualStyleBackColor = false;
+            this.btnCancelarTestFrail.Click += new System.EventHandler(this.btnCancelarTestFrail_Click);
+            // 
+            // txtResultadoTestFrail
+            // 
+            this.txtResultadoTestFrail.Enabled = false;
+            this.txtResultadoTestFrail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultadoTestFrail.Location = new System.Drawing.Point(454, 334);
+            this.txtResultadoTestFrail.Multiline = true;
+            this.txtResultadoTestFrail.Name = "txtResultadoTestFrail";
+            this.txtResultadoTestFrail.Size = new System.Drawing.Size(134, 35);
+            this.txtResultadoTestFrail.TabIndex = 65;
+            // 
+            // panel46
+            // 
+            this.panel46.Controls.Add(this.rbF10);
+            this.panel46.Controls.Add(this.rbF9);
+            this.panel46.Location = new System.Drawing.Point(499, 271);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(92, 24);
+            this.panel46.TabIndex = 63;
+            // 
+            // rbF10
+            // 
+            this.rbF10.AutoSize = true;
+            this.rbF10.Location = new System.Drawing.Point(48, 3);
+            this.rbF10.Name = "rbF10";
+            this.rbF10.Size = new System.Drawing.Size(41, 17);
+            this.rbF10.TabIndex = 50;
+            this.rbF10.Text = "NO";
+            this.rbF10.UseVisualStyleBackColor = true;
+            // 
+            // rbF9
+            // 
+            this.rbF9.AutoSize = true;
+            this.rbF9.Location = new System.Drawing.Point(0, 3);
+            this.rbF9.Name = "rbF9";
+            this.rbF9.Size = new System.Drawing.Size(35, 17);
+            this.rbF9.TabIndex = 51;
+            this.rbF9.Text = "SI";
+            this.rbF9.UseVisualStyleBackColor = true;
+            this.rbF9.CheckedChanged += new System.EventHandler(this.rbF9_CheckedChanged);
+            // 
+            // panel47
+            // 
+            this.panel47.Controls.Add(this.rbF6);
+            this.panel47.Controls.Add(this.rbF5);
+            this.panel47.Location = new System.Drawing.Point(499, 197);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(92, 24);
+            this.panel47.TabIndex = 62;
+            // 
+            // rbF6
+            // 
+            this.rbF6.AutoSize = true;
+            this.rbF6.Location = new System.Drawing.Point(48, 3);
+            this.rbF6.Name = "rbF6";
+            this.rbF6.Size = new System.Drawing.Size(41, 17);
+            this.rbF6.TabIndex = 50;
+            this.rbF6.Text = "NO";
+            this.rbF6.UseVisualStyleBackColor = true;
+            // 
+            // rbF5
+            // 
+            this.rbF5.AutoSize = true;
+            this.rbF5.Location = new System.Drawing.Point(0, 3);
+            this.rbF5.Name = "rbF5";
+            this.rbF5.Size = new System.Drawing.Size(35, 17);
+            this.rbF5.TabIndex = 51;
+            this.rbF5.Text = "SI";
+            this.rbF5.UseVisualStyleBackColor = true;
+            this.rbF5.CheckedChanged += new System.EventHandler(this.rbF5_CheckedChanged);
+            // 
+            // panel48
+            // 
+            this.panel48.Controls.Add(this.rbF8);
+            this.panel48.Controls.Add(this.rbF7);
+            this.panel48.Location = new System.Drawing.Point(499, 234);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(92, 24);
+            this.panel48.TabIndex = 61;
+            // 
+            // rbF8
+            // 
+            this.rbF8.AutoSize = true;
+            this.rbF8.Location = new System.Drawing.Point(48, 3);
+            this.rbF8.Name = "rbF8";
+            this.rbF8.Size = new System.Drawing.Size(41, 17);
+            this.rbF8.TabIndex = 50;
+            this.rbF8.Text = "NO";
+            this.rbF8.UseVisualStyleBackColor = true;
+            // 
+            // rbF7
+            // 
+            this.rbF7.AutoSize = true;
+            this.rbF7.Location = new System.Drawing.Point(0, 3);
+            this.rbF7.Name = "rbF7";
+            this.rbF7.Size = new System.Drawing.Size(35, 17);
+            this.rbF7.TabIndex = 51;
+            this.rbF7.Text = "SI";
+            this.rbF7.UseVisualStyleBackColor = true;
+            this.rbF7.CheckedChanged += new System.EventHandler(this.rbF7_CheckedChanged);
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.rbF2);
+            this.panel49.Controls.Add(this.rbF1);
+            this.panel49.Location = new System.Drawing.Point(499, 121);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(92, 24);
+            this.panel49.TabIndex = 60;
+            // 
+            // rbF2
+            // 
+            this.rbF2.AutoSize = true;
+            this.rbF2.Location = new System.Drawing.Point(48, 3);
+            this.rbF2.Name = "rbF2";
+            this.rbF2.Size = new System.Drawing.Size(41, 17);
+            this.rbF2.TabIndex = 50;
+            this.rbF2.Text = "NO";
+            this.rbF2.UseVisualStyleBackColor = true;
+            // 
+            // rbF1
+            // 
+            this.rbF1.AutoSize = true;
+            this.rbF1.Location = new System.Drawing.Point(0, 3);
+            this.rbF1.Name = "rbF1";
+            this.rbF1.Size = new System.Drawing.Size(35, 17);
+            this.rbF1.TabIndex = 51;
+            this.rbF1.Text = "SI";
+            this.rbF1.UseVisualStyleBackColor = true;
+            this.rbF1.CheckedChanged += new System.EventHandler(this.rbF1_CheckedChanged);
+            // 
+            // panel50
+            // 
+            this.panel50.Controls.Add(this.rbF4);
+            this.panel50.Controls.Add(this.rbF3);
+            this.panel50.Location = new System.Drawing.Point(499, 159);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(92, 24);
+            this.panel50.TabIndex = 59;
+            // 
+            // rbF4
+            // 
+            this.rbF4.AutoSize = true;
+            this.rbF4.Location = new System.Drawing.Point(48, 3);
+            this.rbF4.Name = "rbF4";
+            this.rbF4.Size = new System.Drawing.Size(41, 17);
+            this.rbF4.TabIndex = 50;
+            this.rbF4.Text = "NO";
+            this.rbF4.UseVisualStyleBackColor = true;
+            // 
+            // rbF3
+            // 
+            this.rbF3.AutoSize = true;
+            this.rbF3.Location = new System.Drawing.Point(0, 3);
+            this.rbF3.Name = "rbF3";
+            this.rbF3.Size = new System.Drawing.Size(35, 17);
+            this.rbF3.TabIndex = 51;
+            this.rbF3.Text = "SI";
+            this.rbF3.UseVisualStyleBackColor = true;
+            this.rbF3.CheckedChanged += new System.EventHandler(this.rbF3_CheckedChanged);
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label139.Location = new System.Drawing.Point(44, 276);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(377, 19);
+            this.label139.TabIndex = 7;
+            this.label139.Text = "¿Ha perdido màs del 5% de su peso en los ultimos 6 meses?";
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label140.Location = new System.Drawing.Point(44, 239);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(229, 19);
+            this.label140.TabIndex = 6;
+            this.label140.Text = "¿Tiene màs de cinco enfermedades?";
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label141.Location = new System.Drawing.Point(44, 202);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(242, 19);
+            this.label141.TabIndex = 5;
+            this.label141.Text = "¿Es incapaz de caminar una manzana?";
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label142.Location = new System.Drawing.Point(44, 164);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(264, 19);
+            this.label142.TabIndex = 4;
+            this.label142.Text = "¿Es incapaz de subir un piso de escaleras?";
+            // 
+            // label143
+            // 
+            this.label143.AutoSize = true;
+            this.label143.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label143.Location = new System.Drawing.Point(44, 126);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(143, 19);
+            this.label143.TabIndex = 3;
+            this.label143.Text = "¿Està usted cansado? ";
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(180)))));
+            this.label144.Location = new System.Drawing.Point(13, 55);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(230, 15);
+            this.label144.TabIndex = 1;
+            this.label144.Text = "SERVICIO MEDICO DE JUBILADOS";
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label145.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(180)))));
+            this.label145.Location = new System.Drawing.Point(11, 13);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(265, 26);
+            this.label145.TabIndex = 0;
+            this.label145.Text = "CUESTIONARIO FRAIL";
             // 
             // FrmHC
             // 
@@ -3948,9 +4435,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelEncuestaFrail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHC";
-            this.Text = "FrmHC";
+            this.Text = "zz";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -3973,6 +4461,10 @@
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -4053,10 +4545,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGestasHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPartosHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCesareasHC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAbortosHC)).EndInit();
+            this.panelEncuestaFrail.ResumeLayout(false);
+            this.panelEncuestaFrail.PerformLayout();
+            this.panel46.ResumeLayout(false);
+            this.panel46.PerformLayout();
+            this.panel47.ResumeLayout(false);
+            this.panel47.PerformLayout();
+            this.panel48.ResumeLayout(false);
+            this.panel48.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel49.PerformLayout();
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4261,7 +4761,6 @@
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.TextBox txtRealizoFragilidadHC;
         private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.TextBox txtCuestionarioFrailHC;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Panel panel29;
@@ -4402,5 +4901,44 @@
         private System.Windows.Forms.NumericUpDown txtCesareasHC;
         private System.Windows.Forms.NumericUpDown txtPartosHC;
         private System.Windows.Forms.NumericUpDown txtGestasHC;
+        private System.Windows.Forms.Button btnFragilidad;
+        public System.Windows.Forms.TextBox txtCuestionarioFrailHC;
+        private System.Windows.Forms.Panel panelEncuestaFrail;
+        private System.Windows.Forms.TextBox txtResultadoTestFrail;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.RadioButton rbF10;
+        private System.Windows.Forms.RadioButton rbF9;
+        private System.Windows.Forms.Panel panel47;
+        private System.Windows.Forms.RadioButton rbF6;
+        private System.Windows.Forms.RadioButton rbF5;
+        private System.Windows.Forms.Panel panel48;
+        private System.Windows.Forms.RadioButton rbF8;
+        private System.Windows.Forms.RadioButton rbF7;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.RadioButton rbF2;
+        private System.Windows.Forms.RadioButton rbF1;
+        private System.Windows.Forms.Panel panel50;
+        private System.Windows.Forms.RadioButton rbF4;
+        private System.Windows.Forms.RadioButton rbF3;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.Label label140;
+        private System.Windows.Forms.Label label141;
+        private System.Windows.Forms.Label label142;
+        private System.Windows.Forms.Label label143;
+        private System.Windows.Forms.Label label144;
+        private System.Windows.Forms.Label label145;
+        private System.Windows.Forms.Button btnCancelarTestFrail;
+        private System.Windows.Forms.TextBox txtFr3;
+        private System.Windows.Forms.TextBox txtFr4;
+        private System.Windows.Forms.TextBox txtFr5;
+        private System.Windows.Forms.TextBox txtFr2;
+        private System.Windows.Forms.TextBox txtFr1;
+        private System.Windows.Forms.Button btnEvaluarTestFrail;
+        private System.Windows.Forms.Button btnTestNutricion;
+        private System.Windows.Forms.Button btnTestMoca;
+        private System.Windows.Forms.Button btnTestGDS;
+        private System.Windows.Forms.Button btnTestBarthel;
+        private System.Windows.Forms.Button btnTestKatz;
+        private System.Windows.Forms.Button btnTestPoma;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cliente_Asociados_CA
 {
-    public partial class FrmHistorialClinico : Form
+    public partial class PruebasCuestionarios : Form
     {
-        public FrmHistorialClinico()
+        public PruebasCuestionarios()
         {
             InitializeComponent();
         }

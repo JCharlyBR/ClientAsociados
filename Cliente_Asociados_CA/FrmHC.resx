@@ -342,6 +342,22 @@
         3f3E1xv+ZZVmiQKmznIOc9q96or1f7Wm8EsDOEWottNp8yva9ne2tuqZn7Nc3OmFFFFeUaH/2Q==
 </value>
   </data>
+  <data name="btnCancelarTestFrail.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAltJREFUSEvtVj1PFEEYXhNJFIiVnZWJtc0CsXFnGxMLG1RICJfbWQv+AImVv0B/
+        glY2FBpCBahYXG+F0EAB2Y8jBAotqDCuzzP3zh4bZo+DozL3JJfd9+N53pl3ZmfOG2KInkhU40Gioqd5
+        EE/zSVtCgyF51LyXB/ptpnSWhXFx7gc/48wTSv8oPO9GFkaLqdInFOs89VoaxO8g/MY8aVfi8SJ5ItEb
+        hVI300AvCfk32vP6eGr+joQroJ9x5pn8UC+RL+F6IPm9IQT65/7jxn1x9wTzMhVvkke+uN3IguYsRvUX
+        BXZzNXf34GFjLEF76kZHP+PMYz4K7ZBPHUmpovAXRpCwj9+fJNCTW2pmHO8tjg5Cn3/4/oikGtDGunwy
+        s0Ye88kjnzrUk9Qu0jB6YQjoK+3cfzaaqei7tIBCy5YoA1q2Mebl/sIoY3Y929CjXQFG8ZFBbMkn4sIW
+        nrkN0jcrlqp45dDMMF4pfYgzTyge+SYGPXF1gX5uYfqnnIG4DCiA2HopGuqj8l3pL2cLECYfOohti6sL
+        OI9BPBCzgj0V3cL3sWrFTYFAr9EvKRWk0KGemF1ctgjt+iK6tsi2q12FKeBuF/2XalfdwkPoa1lg0IV3
+        bWGMZqMUu3ALdzpgt3Cqmi9pVyBE58eI/js/Rn6kEm9xhm31aoJ86tgBnYPrWIFAz2OF8b6PFQuMzByQ
+        IGxe5YBEkQ/irgdHx3URgjnqd2qOevoTxDGbXya/36Oe6FxasePSiuTSwnOQS+sseK2KcO31y/iVrl8X
+        7B8JbIrn7ev8IzHE/wrP+wdZaFfWuzUbsAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBD

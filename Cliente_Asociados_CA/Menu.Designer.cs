@@ -208,11 +208,12 @@
             // btnPrincipal
             // 
             this.btnPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrincipal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnPrincipal.Image")));
-            this.btnPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.btnPrincipal.Location = new System.Drawing.Point(-1, 0);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(216, 188);
+            this.btnPrincipal.Size = new System.Drawing.Size(217, 207);
             this.btnPrincipal.TabIndex = 18;
             this.btnPrincipal.UseVisualStyleBackColor = false;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
@@ -284,7 +285,7 @@
             this.btnBeneficiario.ForeColor = System.Drawing.Color.White;
             this.btnBeneficiario.Image = ((System.Drawing.Image)(resources.GetObject("btnBeneficiario.Image")));
             this.btnBeneficiario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBeneficiario.Location = new System.Drawing.Point(-2, 196);
+            this.btnBeneficiario.Location = new System.Drawing.Point(-2, 204);
             this.btnBeneficiario.Name = "btnBeneficiario";
             this.btnBeneficiario.Size = new System.Drawing.Size(218, 50);
             this.btnBeneficiario.TabIndex = 3;
@@ -312,6 +313,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.SubmenuReportes.ResumeLayout(false);
             this.ResumeLayout(false);
