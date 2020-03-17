@@ -43,6 +43,7 @@
             this.dgvEnfermedad = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtIdSocio = new System.Windows.Forms.TextBox();
             this.txtEstatus = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtNombreSocio = new System.Windows.Forms.TextBox();
@@ -124,6 +125,7 @@
             this.dgvConsultaSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsultaSocio.Size = new System.Drawing.Size(1127, 178);
             this.dgvConsultaSocio.TabIndex = 32;
+            this.dgvConsultaSocio.DoubleClick += new System.EventHandler(this.dgvConsultaSocio_DoubleClick);
             // 
             // panel3
             // 
@@ -194,6 +196,7 @@
             this.cmbEnfermedadPadecida.Name = "cmbEnfermedadPadecida";
             this.cmbEnfermedadPadecida.Size = new System.Drawing.Size(280, 21);
             this.cmbEnfermedadPadecida.TabIndex = 14;
+            this.cmbEnfermedadPadecida.Text = "SELECCIONE";
             // 
             // dgvEnfermedad
             // 
@@ -217,6 +220,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Moccasin;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.txtIdSocio);
             this.panel5.Controls.Add(this.txtEstatus);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.txtNombreSocio);
@@ -228,6 +232,16 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(345, 147);
             this.panel5.TabIndex = 35;
+            // 
+            // txtIdSocio
+            // 
+            this.txtIdSocio.Enabled = false;
+            this.txtIdSocio.Location = new System.Drawing.Point(167, 38);
+            this.txtIdSocio.Multiline = true;
+            this.txtIdSocio.Name = "txtIdSocio";
+            this.txtIdSocio.Size = new System.Drawing.Size(68, 25);
+            this.txtIdSocio.TabIndex = 7;
+            this.txtIdSocio.Visible = false;
             // 
             // txtEstatus
             // 
@@ -359,6 +373,7 @@
             this.cmbNombreTaller.Name = "cmbNombreTaller";
             this.cmbNombreTaller.Size = new System.Drawing.Size(158, 21);
             this.cmbNombreTaller.TabIndex = 11;
+            this.cmbNombreTaller.Text = "SELECCIONE";
             // 
             // txtInstructorTaller
             // 
@@ -396,6 +411,7 @@
             this.cmbCategoriaTaller.Name = "cmbCategoriaTaller";
             this.cmbCategoriaTaller.Size = new System.Drawing.Size(158, 21);
             this.cmbCategoriaTaller.TabIndex = 7;
+            this.cmbCategoriaTaller.Text = "SELECCIONE";
             // 
             // label8
             // 
@@ -502,6 +518,7 @@
             this.btnBuscarPorNum.TabIndex = 46;
             this.btnBuscarPorNum.Text = "Buscar por Num Socio";
             this.btnBuscarPorNum.UseVisualStyleBackColor = true;
+            this.btnBuscarPorNum.Click += new System.EventHandler(this.btnBuscarPorNum_Click);
             // 
             // txtBuscarNumSocio
             // 
@@ -613,6 +630,7 @@
         private System.Windows.Forms.TextBox txtBuscarNombreSocio;
         private System.Windows.Forms.Button btnAgregarTaller;
         private System.Windows.Forms.DataGridView dgvTaller;
-        private System.Windows.Forms.TextBox txtEstatus;
+        private System.Windows.Forms.TextBox txtEstatus;
+        private System.Windows.Forms.TextBox txtIdSocio;
     }
 }

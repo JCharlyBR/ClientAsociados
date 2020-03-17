@@ -104,12 +104,6 @@
     <Compile Include="FrmHC.Designer.cs">
       <DependentUpon>FrmHC.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHistorialClinico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmHistorialClinico.Designer.cs">
-      <DependentUpon>FrmHistorialClinico.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,9 +151,6 @@
     <EmbeddedResource Include="FrmHC.resx">
       <DependentUpon>FrmHC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHistorialClinico.resx">
-      <DependentUpon>FrmHistorialClinico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,7 +188,13 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.estados.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.getBeneficiarioByNoSocio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.getSocioByNoSocio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.historialClinico.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.localidades.datasource">
@@ -207,6 +204,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarCategoria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarHC.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarSocios.datasource">
