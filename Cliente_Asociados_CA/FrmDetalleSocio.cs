@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,19 @@ namespace Cliente_Asociados_CA
                 this.cmbCategoriaTaller.DataSource = cat.cargarComboCategoriaT();
                 cmbCategoriaTaller.DisplayMember = "nombre";
             }
+        }
+        void cargarComboTalleres()
+        {
+            var categoria = cmbCategoriaTaller.SelectedIndex + 1;
+
+            using (Server_Asociados.ServerAsociadosClient cat = new Server_Asociados.ServerAsociadosClient())
+            {
+                cmbNombreTaller.DataSource = cat.cargarComboTaller(categoria);
+                cmbNombreTaller.DisplayMember = "nombre";
+
+
+            }
+
         }
 
         private void btnBuscarPorNum_Click(object sender, EventArgs e)
@@ -60,6 +74,49 @@ namespace Cliente_Asociados_CA
                 cargarGridBeneficiario();
             }
 
+        }
+
+        private void cmbNombreTaller_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarDatosTaller();
+        }
+
+        private void cmbCategoriaTaller_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cargarComboTalleres();
+        }
+
+        const string MySqlConnecionString = "Server=192.168.0.125; Database=asociadosbd; Username=jubiladoUser; Password=1234;";
+
+        static MySqlConnection GetNewConnection()
+        {
+            var conn = new MySqlConnection(MySqlConnecionString);
+            conn.Open();
+            return conn;
+        }
+
+        void CargarDatosTaller()
+        {
+            var id = cmbNombreTaller.SelectedIndex+1;
+            using (MySqlConnection conn = GetNewConnection())
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT horario, instructor FROM taller WHERE Id=@id";
+                    cmd.Parameters.AddWithValue("@id", id);
+                    MySqlDataReader consulta = cmd.ExecuteReader();
+                    if (consulta.Read())
+                    {
+                        txtInstructorTaller.Text = consulta["instructor"].ToString();
+                        txtHorarioTaller.Text = consulta["horario"].ToString();
+                    }
+
+                    conn.Close();
+
+
+                }
+            }
         }
     }
 }

@@ -179,6 +179,9 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.categoriaTaller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.detalleEnfermedad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.detalleTaller.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -200,6 +203,9 @@
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.localidades.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.medicamentos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarBeneficiario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -207,6 +213,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarHC.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarMedicamento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Server_Asociados\Cliente_Asociados_CA.Server_Asociados.mostrarSocios.datasource">

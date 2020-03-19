@@ -19,6 +19,7 @@ namespace Cliente_Asociados_CA
             InitializeComponent();
             cargarGrid();
             cargarComboEstados();
+            //CargarEstado();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -50,17 +51,20 @@ namespace Cliente_Asociados_CA
             var direccionE = txtDireccionE.Text;
             var telefonoE = txtTelefonoE.Text;
             var estatus = cmbStatus.SelectedItem.ToString();
+            var sexo = cmbSexoHC.SelectedItem.ToString();
+            var escolaridad = cmbEscolaridadHC.SelectedItem.ToString();
             
             using (Server_Asociados.ServerAsociadosClient socio = new Server_Asociados.ServerAsociadosClient())
             {
                 
-                var idEstado = cmbEstado.SelectedIndex;
-                var idMunicipio = cmbMunicipio.SelectedIndex;
+                var idEstado = Convert.ToInt32(txtIdEstado.Text);
+                var idMunicipio = Convert.ToInt32(txtIdMunicipio.Text);
                 var localidad = txtLocalidad.Text;
                 var calle = txtCalle.Text;               
                 socio.registrarSocio(id, numeroSocio, nombre, apellidoP, apellidoM, fecha, edad, cel, telf, añoJub, estadoCivil,
-                    tipoSangre, noImss, curp,idEstado,idMunicipio,localidad,calle, imagen, nombreCompletoE, direccionE, telefonoE, estatus);
+                    tipoSangre, noImss, curp,idEstado,idMunicipio,localidad,calle, imagen, nombreCompletoE, direccionE, telefonoE, estatus, sexo, escolaridad);
                 MessageBox.Show("GUARDADO EXITOSAMENTE");
+                limpiarCampos();
                 cargarGrid();
 
             }
@@ -122,7 +126,7 @@ namespace Cliente_Asociados_CA
             {
                 this.cmbEstado.DataSource = cat.cargarComboEstados();
                 cmbEstado.DisplayMember = "nombre";
-                CargarEstado();
+                CargarDatosEstado();
             }
 
         }
@@ -137,16 +141,37 @@ namespace Cliente_Asociados_CA
             {
                 this.cmbMunicipio.DataSource = cat.cargarComboMunicipios(estado);
                 cmbMunicipio.DisplayMember = "nombre";
+                txtNombreMunicipio.Text = cmbMunicipio.Text;
+                CargarDatosMunicipio();
 
 
             }
 
         }
 
+        void limpiarCampos()
+        {
+            txtNoSocio.Text = txtNombre.Text = txtApellidoMaterno.Text = txtApellidoPaterno.Text 
+                = dateFecha.Text = cmbSexoHC.Text = txtEdad.Text = cmbAñoJub.Text=cmbEstadoCivil.Text=
+                cmbTipoSangre.Text=txtNoIMS.Text=txtCurp.Text=txtCelular.Text=txtTelefono.Text=
+                cmbEscolaridadHC.Text=txtLocalidad.Text=txtCalle.Text=txtNombreE.Text=txtTelefonoE.Text=
+                txtDireccionE.Text=cmbStatus.Text="";
+         
+            txtId.Text = "0";
+            pictureImage.Image = null;
+            pictureImage.Invalidate();
+
+        }
+
+
         private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarEstado();
+            //CargarEstado();
+            //CargarMunicipio();
+            
             cargarComboMunicipios();
+            CargarDatosEstado();
+            //CargarDatosMunicipio();
            
         }
 
@@ -161,7 +186,7 @@ namespace Cliente_Asociados_CA
             return conn;
         }
 
-        void CargarEstado()
+        void CargarDatosEstado()
         {
             var id = cmbEstado.SelectedIndex+1;
             using (MySqlConnection conn = GetNewConnection())
@@ -175,7 +200,7 @@ namespace Cliente_Asociados_CA
                     if (consulta.Read())
                     {                        
                         txtIdEstado.Text = consulta["id"].ToString();
-                        cmbEstado.Text = consulta["nombre"].ToString();
+                        txtNombreEstado.Text = consulta["nombre"].ToString();
                     }
 
                     conn.Close();
@@ -185,21 +210,22 @@ namespace Cliente_Asociados_CA
             }
         }
 
-        void CargarMunicipio()
+        void CargarDatosMunicipio()
         {
-            var id = cmbMunicipio.SelectedIndex+1;
+            var id = txtIdEstado.Text ;
             using (MySqlConnection conn = GetNewConnection())
             {
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "SELECT id, nombre FROM municipios WHERE id=@id";
+                    cmd.CommandText = "SELECT id, nombre FROM municipios WHERE estado_id=@id";
                     cmd.Parameters.AddWithValue("@id", id);
                     MySqlDataReader consulta = cmd.ExecuteReader();
                     if (consulta.Read())
                     {
                         txtIdMunicipio.Text = consulta["id"].ToString();
-                        cmbMunicipio.Text = consulta["nombre"].ToString();
+                        //txtNombreMunicipio.Text = consulta["nombre"].ToString();
+                        txtNombreMunicipio.Text = cmbMunicipio.Text;
                     }
 
                     conn.Close();
@@ -263,8 +289,8 @@ namespace Cliente_Asociados_CA
                 btnGuardar.Text = "ACTUALIZAR";
                 btnCargarImagen.Text = "Cambiar Foto";
                 cargarGrid();
-                CargarMunicipio();
-                CargarEstado();
+                CargarDatosMunicipio();
+                CargarDatosEstado();
 
 
 
@@ -290,7 +316,7 @@ namespace Cliente_Asociados_CA
 
         private void cmbMunicipio_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarMunicipio();
+            CargarDatosMunicipio();
         }
     }
 }

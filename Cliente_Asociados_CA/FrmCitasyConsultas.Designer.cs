@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCitasyConsultas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -80,18 +80,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMedicamento = new System.Windows.Forms.DataGridView();
             this.transparentControl7 = new TransControl_src.TransparentControl();
+            this.label22 = new System.Windows.Forms.Label();
             this.transparentControl6 = new TransControl_src.TransparentControl();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -105,7 +103,7 @@
             this.transparentControl3.SuspendLayout();
             this.transparentControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamento)).BeginInit();
             this.transparentControl7.SuspendLayout();
             this.transparentControl6.SuspendLayout();
             this.SuspendLayout();
@@ -169,12 +167,12 @@
             this.dgvConsultarCitas.Location = new System.Drawing.Point(10, 332);
             this.dgvConsultarCitas.Name = "dgvConsultarCitas";
             this.dgvConsultarCitas.ReadOnly = true;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvConsultarCitas.RowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvConsultarCitas.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsultarCitas.Size = new System.Drawing.Size(1119, 271);
             this.dgvConsultarCitas.TabIndex = 52;
             // 
@@ -356,12 +354,12 @@
             this.dgvConsultarConsultas.Location = new System.Drawing.Point(10, 402);
             this.dgvConsultarConsultas.Name = "dgvConsultarConsultas";
             this.dgvConsultarConsultas.ReadOnly = true;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvConsultarConsultas.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvConsultarConsultas.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsultarConsultas.Size = new System.Drawing.Size(1127, 202);
             this.dgvConsultarConsultas.TabIndex = 48;
             // 
@@ -665,7 +663,7 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
-            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.dgvMedicamento);
             this.tabPage3.Controls.Add(this.transparentControl7);
             this.tabPage3.Controls.Add(this.transparentControl6);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
@@ -675,24 +673,25 @@
             this.tabPage3.Text = "Medicamentos";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvMedicamento
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 333);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle32;
-            this.dataGridView1.Size = new System.Drawing.Size(1119, 271);
-            this.dataGridView1.TabIndex = 53;
+            this.dgvMedicamento.AllowUserToAddRows = false;
+            this.dgvMedicamento.AllowUserToDeleteRows = false;
+            this.dgvMedicamento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.dgvMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicamento.Location = new System.Drawing.Point(13, 333);
+            this.dgvMedicamento.Name = "dgvMedicamento";
+            this.dgvMedicamento.ReadOnly = true;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvMedicamento.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMedicamento.Size = new System.Drawing.Size(1119, 271);
+            this.dgvMedicamento.TabIndex = 53;
+            this.dgvMedicamento.DoubleClick += new System.EventHandler(this.dgvMedicamento_DoubleClick);
             // 
             // transparentControl7
             // 
@@ -707,14 +706,23 @@
             this.transparentControl7.Transparent = true;
             this.transparentControl7.TransparentColor = System.Drawing.Color.SlateGray;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(8, 3);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(273, 25);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Consulta de un  Medicamento";
+            // 
             // transparentControl6
             // 
-            this.transparentControl6.Controls.Add(this.button1);
-            this.transparentControl6.Controls.Add(this.textBox3);
-            this.transparentControl6.Controls.Add(this.textBox2);
-            this.transparentControl6.Controls.Add(this.textBox1);
+            this.transparentControl6.Controls.Add(this.btnGuardar);
+            this.transparentControl6.Controls.Add(this.txtDescripcion);
+            this.transparentControl6.Controls.Add(this.txtId);
             this.transparentControl6.Controls.Add(this.label21);
-            this.transparentControl6.Controls.Add(this.label20);
             this.transparentControl6.Controls.Add(this.label19);
             this.transparentControl6.Controls.Add(this.label14);
             this.transparentControl6.Location = new System.Drawing.Point(13, 9);
@@ -727,55 +735,52 @@
             this.transparentControl6.Transparent = true;
             this.transparentControl6.TransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(222)))), ((int)(((byte)(240)))));
             // 
-            // textBox3
+            // btnGuardar
             // 
-            this.textBox3.Location = new System.Drawing.Point(460, 118);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(263, 30);
-            this.textBox3.TabIndex = 6;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(764, 118);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(147, 39);
+            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textBox2
+            // txtDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(188, 118);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 30);
-            this.textBox2.TabIndex = 5;
+            this.txtDescripcion.Location = new System.Drawing.Point(153, 118);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(514, 57);
+            this.txtDescripcion.TabIndex = 6;
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 118);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 30);
-            this.textBox1.TabIndex = 4;
+            this.txtId.Location = new System.Drawing.Point(25, 118);
+            this.txtId.Multiline = true;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(96, 30);
+            this.txtId.TabIndex = 4;
+            this.txtId.Text = "0";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(456, 81);
+            this.label21.Location = new System.Drawing.Point(150, 81);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(104, 17);
             this.label21.TabIndex = 3;
             this.label21.Text = "DESCRIPCIÓN:";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(184, 81);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 17);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "CODIGO:";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(21, 81);
+            this.label19.Location = new System.Drawing.Point(22, 81);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(25, 17);
             this.label19.TabIndex = 1;
@@ -788,33 +793,9 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(8, 10);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(248, 25);
+            this.label14.Size = new System.Drawing.Size(216, 25);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Datos de un  Medicamento";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(764, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 39);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "GUARDAR";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(8, 3);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(273, 25);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Consulta de un  Medicamento";
+            this.label14.Text = "Datos de Medicamento";
             // 
             // FrmCitasyConsultas
             // 
@@ -846,7 +827,7 @@
             this.transparentControl2.ResumeLayout(false);
             this.transparentControl2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamento)).EndInit();
             this.transparentControl7.ResumeLayout(false);
             this.transparentControl7.PerformLayout();
             this.transparentControl6.ResumeLayout(false);
@@ -908,14 +889,12 @@
         private TransControl_src.TransparentControl transparentControl6;
         private System.Windows.Forms.Label label14;
         private TransControl_src.TransparentControl transparentControl7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvMedicamento;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label22;
     }
 }

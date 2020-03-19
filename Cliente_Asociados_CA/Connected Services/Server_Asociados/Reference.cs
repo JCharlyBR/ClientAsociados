@@ -211,6 +211,99 @@ namespace Cliente_Asociados_CA.Server_Asociados {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="taller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class taller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string horarioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idCategoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string instructorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string horario {
+            get {
+                return this.horarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.horarioField, value) != true)) {
+                    this.horarioField = value;
+                    this.RaisePropertyChanged("horario");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idCategoria {
+            get {
+                return this.idCategoriaField;
+            }
+            set {
+                if ((this.idCategoriaField.Equals(value) != true)) {
+                    this.idCategoriaField = value;
+                    this.RaisePropertyChanged("idCategoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string instructor {
+            get {
+                return this.instructorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.instructorField, value) != true)) {
+                    this.instructorField = value;
+                    this.RaisePropertyChanged("instructor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="userLogin", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
     [System.SerializableAttribute()]
     public partial class userLogin : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -381,6 +474,9 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private int edadField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string escolaridadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string estadoCivilField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -415,6 +511,9 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nombreCompletoEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string sexoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string telefonoField;
@@ -535,6 +634,19 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                 if ((this.edadField.Equals(value) != true)) {
                     this.edadField = value;
                     this.RaisePropertyChanged("edad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string escolaridad {
+            get {
+                return this.escolaridadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.escolaridadField, value) != true)) {
+                    this.escolaridadField = value;
+                    this.RaisePropertyChanged("escolaridad");
                 }
             }
         }
@@ -691,6 +803,19 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                 if ((object.ReferenceEquals(this.nombreCompletoEField, value) != true)) {
                     this.nombreCompletoEField = value;
                     this.RaisePropertyChanged("nombreCompletoE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string sexo {
+            get {
+                return this.sexoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sexoField, value) != true)) {
+                    this.sexoField = value;
+                    this.RaisePropertyChanged("sexo");
                 }
             }
         }
@@ -3153,24 +3278,15 @@ namespace Cliente_Asociados_CA.Server_Asociados {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="taller", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="medicamentos", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
     [System.SerializableAttribute()]
-    public partial class taller : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class medicamentos : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string horarioField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idCategoriaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string instructorField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nombreField;
+        private string descripcionField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -3183,53 +3299,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string horario {
+        public string descripcion {
             get {
-                return this.horarioField;
+                return this.descripcionField;
             }
             set {
-                if ((object.ReferenceEquals(this.horarioField, value) != true)) {
-                    this.horarioField = value;
-                    this.RaisePropertyChanged("horario");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idCategoria {
-            get {
-                return this.idCategoriaField;
-            }
-            set {
-                if ((this.idCategoriaField.Equals(value) != true)) {
-                    this.idCategoriaField = value;
-                    this.RaisePropertyChanged("idCategoria");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string instructor {
-            get {
-                return this.instructorField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.instructorField, value) != true)) {
-                    this.instructorField = value;
-                    this.RaisePropertyChanged("instructor");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
-                    this.nombreField = value;
-                    this.RaisePropertyChanged("nombre");
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
                 }
             }
         }
@@ -3254,6 +3331,12 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idCategoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idSocioField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -3266,6 +3349,32 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idCategoria {
+            get {
+                return this.idCategoriaField;
+            }
+            set {
+                if ((this.idCategoriaField.Equals(value) != true)) {
+                    this.idCategoriaField = value;
+                    this.RaisePropertyChanged("idCategoria");
+                }
             }
         }
         
@@ -3291,6 +3400,83 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                 if ((this.idTallerField.Equals(value) != true)) {
                     this.idTallerField = value;
                     this.RaisePropertyChanged("idTaller");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="detalleEnfermedad", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class detalleEnfermedad : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idEnfermedadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idSocioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idEnfermedad {
+            get {
+                return this.idEnfermedadField;
+            }
+            set {
+                if ((this.idEnfermedadField.Equals(value) != true)) {
+                    this.idEnfermedadField = value;
+                    this.RaisePropertyChanged("idEnfermedad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idSocio {
+            get {
+                return this.idSocioField;
+            }
+            set {
+                if ((this.idSocioField.Equals(value) != true)) {
+                    this.idSocioField = value;
+                    this.RaisePropertyChanged("idSocio");
                 }
             }
         }
@@ -3336,6 +3522,51 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                 if ((object.ReferenceEquals(this.SocioTabField, value) != true)) {
                     this.SocioTabField = value;
                     this.RaisePropertyChanged("SocioTab");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="mostrarMedicamento", Namespace="http://schemas.datacontract.org/2004/07/Server_Asociados_Jubilados_CA")]
+    [System.SerializableAttribute()]
+    public partial class mostrarMedicamento : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable MedicamentoTabField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable MedicamentoTab {
+            get {
+                return this.MedicamentoTabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MedicamentoTabField, value) != true)) {
+                    this.MedicamentoTabField = value;
+                    this.RaisePropertyChanged("MedicamentoTab");
                 }
             }
         }
@@ -3619,6 +3850,12 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaT", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboCategoriaTResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.categoriaTaller[]> cargarComboCategoriaTAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboTaller", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboTallerResponse")]
+        Cliente_Asociados_CA.Server_Asociados.taller[] cargarComboTaller(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/cargarComboTaller", ReplyAction="http://tempuri.org/IServerAsociados/cargarComboTallerResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.taller[]> cargarComboTallerAsync(int Id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarLogin", ReplyAction="http://tempuri.org/IServerAsociados/registrarLoginResponse")]
         Cliente_Asociados_CA.Server_Asociados.userLogin registrarLogin(string nombreUsuario, string contrasenia, string tipoUsuario);
         
@@ -3655,7 +3892,9 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
-                    string estatus);
+                    string estatus, 
+                    string sexo, 
+                    string escolaridad);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarSocio", ReplyAction="http://tempuri.org/IServerAsociados/registrarSocioResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.socio> registrarSocioAsync(
@@ -3681,7 +3920,9 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
-                    string estatus);
+                    string estatus, 
+                    string sexo, 
+                    string escolaridad);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarHC", ReplyAction="http://tempuri.org/IServerAsociados/registrarHCResponse")]
         Cliente_Asociados_CA.Server_Asociados.historialClinico registrarHC(
@@ -3999,17 +4240,35 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarTallerResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.taller> registrarTallerAsync(int Id, string nombre, string horario, string instructor, int idCategoria);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse")]
-        Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idTaller, int idSocio);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarMed", ReplyAction="http://tempuri.org/IServerAsociados/registrarMedResponse")]
+        Cliente_Asociados_CA.Server_Asociados.medicamentos registrarMed(int Id, string descripcion);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarMed", ReplyAction="http://tempuri.org/IServerAsociados/registrarMedResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.medicamentos> registrarMedAsync(int Id, string descripcion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse")]
-        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idTaller, int idSocio);
+        Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idSocio, int idCategoria, int idTaller);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idSocio, int idCategoria, int idTaller);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedad", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedadResponse")]
+        Cliente_Asociados_CA.Server_Asociados.detalleEnfermedad registrarDetalleEnfermedad(int Id, int idSocio, int idEnfermedad);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedad", ReplyAction="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedadResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleEnfermedad> registrarDetalleEnfermedadAsync(int Id, int idSocio, int idEnfermedad);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getSocio", ReplyAction="http://tempuri.org/IServerAsociados/getSocioResponse")]
         Cliente_Asociados_CA.Server_Asociados.mostrarSocios getSocio();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getSocio", ReplyAction="http://tempuri.org/IServerAsociados/getSocioResponse")]
         System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarSocios> getSocioAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getMedicamento", ReplyAction="http://tempuri.org/IServerAsociados/getMedicamentoResponse")]
+        Cliente_Asociados_CA.Server_Asociados.mostrarMedicamento getMedicamento();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getMedicamento", ReplyAction="http://tempuri.org/IServerAsociados/getMedicamentoResponse")]
+        System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarMedicamento> getMedicamentoAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerAsociados/getHC", ReplyAction="http://tempuri.org/IServerAsociados/getHCResponse")]
         Cliente_Asociados_CA.Server_Asociados.mostrarHC getHC();
@@ -4131,6 +4390,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.cargarComboCategoriaTAsync();
         }
         
+        public Cliente_Asociados_CA.Server_Asociados.taller[] cargarComboTaller(int Id) {
+            return base.Channel.cargarComboTaller(Id);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.taller[]> cargarComboTallerAsync(int Id) {
+            return base.Channel.cargarComboTallerAsync(Id);
+        }
+        
         public Cliente_Asociados_CA.Server_Asociados.userLogin registrarLogin(string nombreUsuario, string contrasenia, string tipoUsuario) {
             return base.Channel.registrarLogin(nombreUsuario, contrasenia, tipoUsuario);
         }
@@ -4170,8 +4437,10 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
-                    string estatus) {
-            return base.Channel.registrarSocio(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
+                    string estatus, 
+                    string sexo, 
+                    string escolaridad) {
+            return base.Channel.registrarSocio(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus, sexo, escolaridad);
         }
         
         public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.socio> registrarSocioAsync(
@@ -4197,8 +4466,10 @@ namespace Cliente_Asociados_CA.Server_Asociados {
                     string nombreCompletoE, 
                     string direccionE, 
                     string telefonoE, 
-                    string estatus) {
-            return base.Channel.registrarSocioAsync(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus);
+                    string estatus, 
+                    string sexo, 
+                    string escolaridad) {
+            return base.Channel.registrarSocioAsync(idSocio, noSocio, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, edad, celular, telefono, anioJubilacion, estadoCivil, tipoSangre, noImms, curp, idEstado, idMunicipio, localidad, calle, fotoPerfil, nombreCompletoE, direccionE, telefonoE, estatus, sexo, escolaridad);
         }
         
         public Cliente_Asociados_CA.Server_Asociados.historialClinico registrarHC(
@@ -4527,12 +4798,28 @@ namespace Cliente_Asociados_CA.Server_Asociados {
             return base.Channel.registrarTallerAsync(Id, nombre, horario, instructor, idCategoria);
         }
         
-        public Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idTaller, int idSocio) {
-            return base.Channel.registrarDetalleTaller(Id, idTaller, idSocio);
+        public Cliente_Asociados_CA.Server_Asociados.medicamentos registrarMed(int Id, string descripcion) {
+            return base.Channel.registrarMed(Id, descripcion);
         }
         
-        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idTaller, int idSocio) {
-            return base.Channel.registrarDetalleTallerAsync(Id, idTaller, idSocio);
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.medicamentos> registrarMedAsync(int Id, string descripcion) {
+            return base.Channel.registrarMedAsync(Id, descripcion);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.detalleTaller registrarDetalleTaller(int Id, int idSocio, int idCategoria, int idTaller) {
+            return base.Channel.registrarDetalleTaller(Id, idSocio, idCategoria, idTaller);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleTaller> registrarDetalleTallerAsync(int Id, int idSocio, int idCategoria, int idTaller) {
+            return base.Channel.registrarDetalleTallerAsync(Id, idSocio, idCategoria, idTaller);
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.detalleEnfermedad registrarDetalleEnfermedad(int Id, int idSocio, int idEnfermedad) {
+            return base.Channel.registrarDetalleEnfermedad(Id, idSocio, idEnfermedad);
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.detalleEnfermedad> registrarDetalleEnfermedadAsync(int Id, int idSocio, int idEnfermedad) {
+            return base.Channel.registrarDetalleEnfermedadAsync(Id, idSocio, idEnfermedad);
         }
         
         public Cliente_Asociados_CA.Server_Asociados.mostrarSocios getSocio() {
@@ -4541,6 +4828,14 @@ namespace Cliente_Asociados_CA.Server_Asociados {
         
         public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarSocios> getSocioAsync() {
             return base.Channel.getSocioAsync();
+        }
+        
+        public Cliente_Asociados_CA.Server_Asociados.mostrarMedicamento getMedicamento() {
+            return base.Channel.getMedicamento();
+        }
+        
+        public System.Threading.Tasks.Task<Cliente_Asociados_CA.Server_Asociados.mostrarMedicamento> getMedicamentoAsync() {
+            return base.Channel.getMedicamentoAsync();
         }
         
         public Cliente_Asociados_CA.Server_Asociados.mostrarHC getHC() {

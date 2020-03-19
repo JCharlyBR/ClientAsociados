@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarSocio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +46,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbEscolaridadHC = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cmbSexoHC = new System.Windows.Forms.ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
@@ -67,6 +71,7 @@
             this.cmbTipoSangre = new System.Windows.Forms.ComboBox();
             this.dgvSocio = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtDireccionE = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtTelefonoE = new System.Windows.Forms.TextBox();
@@ -81,8 +86,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.cmbSexoHC = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.cmbMunicipio = new System.Windows.Forms.ComboBox();
@@ -92,12 +95,11 @@
             this.txtIdEstado = new System.Windows.Forms.TextBox();
             this.txtIdMunicipio = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtNombreEstado = new System.Windows.Forms.TextBox();
+            this.txtNombreMunicipio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -265,7 +267,7 @@
             this.panel3.AccessibleName = "";
             this.panel3.BackColor = System.Drawing.Color.Beige;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.cmbEscolaridadHC);
             this.panel3.Controls.Add(this.label25);
             this.panel3.Controls.Add(this.cmbSexoHC);
             this.panel3.Controls.Add(this.label24);
@@ -304,6 +306,54 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1129, 199);
             this.panel3.TabIndex = 28;
+            // 
+            // cmbEscolaridadHC
+            // 
+            this.cmbEscolaridadHC.FormattingEnabled = true;
+            this.cmbEscolaridadHC.Items.AddRange(new object[] {
+            "PRIMARIA",
+            "SECUNDARIA",
+            "PREPARATORIA",
+            "LICENCIATURA",
+            "POSGRADO",
+            "DOCTORADO"});
+            this.cmbEscolaridadHC.Location = new System.Drawing.Point(737, 159);
+            this.cmbEscolaridadHC.Name = "cmbEscolaridadHC";
+            this.cmbEscolaridadHC.Size = new System.Drawing.Size(185, 21);
+            this.cmbEscolaridadHC.TabIndex = 50;
+            this.cmbEscolaridadHC.Text = "-- Seleccione --";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label25.Location = new System.Drawing.Point(654, 163);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(77, 15);
+            this.label25.TabIndex = 49;
+            this.label25.Text = "Escolaridad:";
+            // 
+            // cmbSexoHC
+            // 
+            this.cmbSexoHC.FormattingEnabled = true;
+            this.cmbSexoHC.Items.AddRange(new object[] {
+            "FEMENINO",
+            "MASCULINO"});
+            this.cmbSexoHC.Location = new System.Drawing.Point(136, 161);
+            this.cmbSexoHC.Name = "cmbSexoHC";
+            this.cmbSexoHC.Size = new System.Drawing.Size(121, 21);
+            this.cmbSexoHC.TabIndex = 47;
+            this.cmbSexoHC.Text = "-- Seleccione --";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(78, 161);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(39, 15);
+            this.label24.TabIndex = 46;
+            this.label24.Text = "Sexo:";
             // 
             // txtTelefono
             // 
@@ -546,12 +596,12 @@
             this.dgvSocio.Location = new System.Drawing.Point(10, 468);
             this.dgvSocio.Name = "dgvSocio";
             this.dgvSocio.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSocio.Size = new System.Drawing.Size(1129, 217);
             this.dgvSocio.TabIndex = 30;
             this.dgvSocio.DoubleClick += new System.EventHandler(this.dgvSocio_DoubleClick);
@@ -571,6 +621,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(432, 155);
             this.panel4.TabIndex = 43;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(14, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(248, 18);
+            this.label11.TabIndex = 54;
+            this.label11.Text = "CONTACTO DE EMERGENCIA:";
             // 
             // txtDireccionE
             // 
@@ -709,28 +771,7 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(129, 21);
             this.cmbStatus.TabIndex = 26;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(78, 161);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(39, 15);
-            this.label24.TabIndex = 46;
-            this.label24.Text = "Sexo:";
-            // 
-            // cmbSexoHC
-            // 
-            this.cmbSexoHC.FormattingEnabled = true;
-            this.cmbSexoHC.Items.AddRange(new object[] {
-            "FEMENINO",
-            "MASCULINO"});
-            this.cmbSexoHC.Location = new System.Drawing.Point(136, 161);
-            this.cmbSexoHC.Name = "cmbSexoHC";
-            this.cmbSexoHC.Size = new System.Drawing.Size(121, 21);
-            this.cmbSexoHC.TabIndex = 47;
-            this.cmbSexoHC.Text = "-- Seleccione --";
+            this.cmbStatus.Text = "-- Seleccione --";
             // 
             // label14
             // 
@@ -814,6 +855,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Beige;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtNombreMunicipio);
+            this.panel1.Controls.Add(this.txtNombreEstado);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.label18);
@@ -830,31 +873,25 @@
             this.panel1.Size = new System.Drawing.Size(461, 155);
             this.panel1.TabIndex = 29;
             // 
-            // label25
+            // label27
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label25.Location = new System.Drawing.Point(654, 163);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(77, 15);
-            this.label25.TabIndex = 49;
-            this.label25.Text = "Escolaridad:";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(101, 63);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(64, 15);
+            this.label27.TabIndex = 53;
+            this.label27.Text = "Municipio:";
             // 
-            // comboBox1
+            // label26
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "PRIMARIA",
-            "SECUNDARIA",
-            "PREPARATORIA",
-            "LICENCIATURA",
-            "POSGRADO",
-            "DOCTORADO"});
-            this.comboBox1.Location = new System.Drawing.Point(737, 159);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 21);
-            this.comboBox1.TabIndex = 50;
-            this.comboBox1.Text = "-- Seleccione --";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label26.Location = new System.Drawing.Point(113, 30);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(52, 15);
+            this.label26.TabIndex = 52;
+            this.label26.Text = "Estado: ";
             // 
             // label18
             // 
@@ -868,37 +905,21 @@
             this.label18.TabIndex = 51;
             this.label18.Text = "DOMICILIO";
             // 
-            // label26
+            // txtNombreEstado
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label26.Location = new System.Drawing.Point(113, 30);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 15);
-            this.label26.TabIndex = 52;
-            this.label26.Text = "Estado: ";
+            this.txtNombreEstado.Location = new System.Drawing.Point(360, 27);
+            this.txtNombreEstado.Name = "txtNombreEstado";
+            this.txtNombreEstado.Size = new System.Drawing.Size(96, 20);
+            this.txtNombreEstado.TabIndex = 54;
+            this.txtNombreEstado.Visible = false;
             // 
-            // label27
+            // txtNombreMunicipio
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label27.Location = new System.Drawing.Point(101, 63);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(64, 15);
-            this.label27.TabIndex = 53;
-            this.label27.Text = "Municipio:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(14, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(248, 18);
-            this.label11.TabIndex = 54;
-            this.label11.Text = "CONTACTO DE EMERGENCIA:";
+            this.txtNombreMunicipio.Location = new System.Drawing.Point(360, 58);
+            this.txtNombreMunicipio.Name = "txtNombreMunicipio";
+            this.txtNombreMunicipio.Size = new System.Drawing.Size(96, 20);
+            this.txtNombreMunicipio.TabIndex = 55;
+            this.txtNombreMunicipio.Visible = false;
             // 
             // FrmAgregarSocio
             // 
@@ -999,10 +1020,12 @@
         private System.Windows.Forms.TextBox txtIdEstado;
         private System.Windows.Forms.TextBox txtIdMunicipio;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbEscolaridadHC;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtNombreMunicipio;
+        private System.Windows.Forms.TextBox txtNombreEstado;
     }
 }

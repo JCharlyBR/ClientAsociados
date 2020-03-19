@@ -49,6 +49,21 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="categoriaTaller" nillable="true" type="tns:categoriaTaller" />
+  <xs:complexType name="ArrayOftaller">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="taller" nillable="true" type="tns:taller" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftaller" nillable="true" type="tns:ArrayOftaller" />
+  <xs:complexType name="taller">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="horario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+      <xs:element minOccurs="0" name="instructor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="taller" nillable="true" type="tns:taller" />
   <xs:complexType name="userLogin">
     <xs:sequence>
       <xs:element minOccurs="0" name="contrasenia" nillable="true" type="xs:string" />
@@ -86,6 +101,7 @@
       <xs:element minOccurs="0" name="curp" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direccionE" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="edad" type="xs:int" />
+      <xs:element minOccurs="0" name="escolaridad" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="estadoCivil" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="estatus" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
@@ -98,6 +114,7 @@
       <xs:element minOccurs="0" name="noSocio" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombreCompletoE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="telefonoE" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="tipoSangre" nillable="true" type="xs:string" />
@@ -264,22 +281,29 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="direccion" nillable="true" type="tns:direccion" />
-  <xs:complexType name="taller">
+  <xs:complexType name="medicamentos">
     <xs:sequence>
-      <xs:element minOccurs="0" name="horario" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
-      <xs:element minOccurs="0" name="instructor" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="taller" nillable="true" type="tns:taller" />
+  <xs:element name="medicamentos" nillable="true" type="tns:medicamentos" />
   <xs:complexType name="detalleTaller">
     <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
       <xs:element minOccurs="0" name="idSocio" type="xs:int" />
       <xs:element minOccurs="0" name="idTaller" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="detalleTaller" nillable="true" type="tns:detalleTaller" />
+  <xs:complexType name="detalleEnfermedad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="idEnfermedad" type="xs:int" />
+      <xs:element minOccurs="0" name="idSocio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="detalleEnfermedad" nillable="true" type="tns:detalleEnfermedad" />
   <xs:complexType name="mostrarSocios">
     <xs:sequence>
       <xs:element minOccurs="0" name="SocioTab" nillable="true">
@@ -298,6 +322,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="mostrarSocios" nillable="true" type="tns:mostrarSocios" />
+  <xs:complexType name="mostrarMedicamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MedicamentoTab" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="mostrarMedicamento" nillable="true" type="tns:mostrarMedicamento" />
   <xs:complexType name="mostrarHC">
     <xs:sequence>
       <xs:element minOccurs="0" name="HCTab" nillable="true">

@@ -32,6 +32,12 @@
   <wsdl:message name="IServerAsociados_cargarComboCategoriaT_OutputMessage">
     <wsdl:part name="parameters" element="tns:cargarComboCategoriaTResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboTaller_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboTaller" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_cargarComboTaller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargarComboTallerResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_registrarLogin_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarLogin" />
   </wsdl:message>
@@ -80,17 +86,35 @@
   <wsdl:message name="IServerAsociados_registrarTaller_OutputMessage">
     <wsdl:part name="parameters" element="tns:registrarTallerResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarMed_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarMed" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarMed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarMedResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_registrarDetalleTaller_InputMessage">
     <wsdl:part name="parameters" element="tns:registrarDetalleTaller" />
   </wsdl:message>
   <wsdl:message name="IServerAsociados_registrarDetalleTaller_OutputMessage">
     <wsdl:part name="parameters" element="tns:registrarDetalleTallerResponse" />
   </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDetalleEnfermedad_InputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDetalleEnfermedad" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_registrarDetalleEnfermedad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registrarDetalleEnfermedadResponse" />
+  </wsdl:message>
   <wsdl:message name="IServerAsociados_getSocio_InputMessage">
     <wsdl:part name="parameters" element="tns:getSocio" />
   </wsdl:message>
   <wsdl:message name="IServerAsociados_getSocio_OutputMessage">
     <wsdl:part name="parameters" element="tns:getSocioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getMedicamento_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMedicamento" />
+  </wsdl:message>
+  <wsdl:message name="IServerAsociados_getMedicamento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMedicamentoResponse" />
   </wsdl:message>
   <wsdl:message name="IServerAsociados_getHC_InputMessage">
     <wsdl:part name="parameters" element="tns:getHC" />
@@ -169,6 +193,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaT" message="tns:IServerAsociados_cargarComboCategoriaT_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboCategoriaTResponse" message="tns:IServerAsociados_cargarComboCategoriaT_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="cargarComboTaller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboTaller" message="tns:IServerAsociados_cargarComboTaller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/cargarComboTallerResponse" message="tns:IServerAsociados_cargarComboTaller_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="registrarLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarLogin" message="tns:IServerAsociados_registrarLogin_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarLoginResponse" message="tns:IServerAsociados_registrarLogin_OutputMessage" />
@@ -201,13 +229,25 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarTaller" message="tns:IServerAsociados_registrarTaller_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarTallerResponse" message="tns:IServerAsociados_registrarTaller_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="registrarMed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarMed" message="tns:IServerAsociados_registrarMed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarMedResponse" message="tns:IServerAsociados_registrarMed_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="registrarDetalleTaller">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleTaller" message="tns:IServerAsociados_registrarDetalleTaller_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleTallerResponse" message="tns:IServerAsociados_registrarDetalleTaller_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="registrarDetalleEnfermedad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedad" message="tns:IServerAsociados_registrarDetalleEnfermedad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedadResponse" message="tns:IServerAsociados_registrarDetalleEnfermedad_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="getSocio">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getSocio" message="tns:IServerAsociados_getSocio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getSocioResponse" message="tns:IServerAsociados_getSocio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMedicamento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getMedicamento" message="tns:IServerAsociados_getMedicamento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerAsociados/getMedicamentoResponse" message="tns:IServerAsociados_getMedicamento_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="getHC">
       <wsdl:input wsaw:Action="http://tempuri.org/IServerAsociados/getHC" message="tns:IServerAsociados_getHC_InputMessage" />
@@ -288,6 +328,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="cargarComboTaller">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/cargarComboTaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="registrarLogin">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarLogin" style="document" />
       <wsdl:input>
@@ -360,6 +409,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="registrarMed">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarMed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="registrarDetalleTaller">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarDetalleTaller" style="document" />
       <wsdl:input>
@@ -369,8 +427,26 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="registrarDetalleEnfermedad">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/registrarDetalleEnfermedad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getSocio">
       <soap:operation soapAction="http://tempuri.org/IServerAsociados/getSocio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedicamento">
+      <soap:operation soapAction="http://tempuri.org/IServerAsociados/getMedicamento" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

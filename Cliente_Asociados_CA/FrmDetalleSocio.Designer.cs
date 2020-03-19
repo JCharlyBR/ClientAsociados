@@ -196,7 +196,7 @@
             this.cmbEnfermedadPadecida.Name = "cmbEnfermedadPadecida";
             this.cmbEnfermedadPadecida.Size = new System.Drawing.Size(280, 21);
             this.cmbEnfermedadPadecida.TabIndex = 14;
-            this.cmbEnfermedadPadecida.Text = "SELECCIONE";
+            this.cmbEnfermedadPadecida.Text = "-- Seleccione --";
             // 
             // dgvEnfermedad
             // 
@@ -373,7 +373,8 @@
             this.cmbNombreTaller.Name = "cmbNombreTaller";
             this.cmbNombreTaller.Size = new System.Drawing.Size(158, 21);
             this.cmbNombreTaller.TabIndex = 11;
-            this.cmbNombreTaller.Text = "SELECCIONE";
+            this.cmbNombreTaller.Text = "-- Seleccione --";
+            this.cmbNombreTaller.SelectedIndexChanged += new System.EventHandler(this.cmbNombreTaller_SelectedIndexChanged);
             // 
             // txtInstructorTaller
             // 
@@ -411,7 +412,8 @@
             this.cmbCategoriaTaller.Name = "cmbCategoriaTaller";
             this.cmbCategoriaTaller.Size = new System.Drawing.Size(158, 21);
             this.cmbCategoriaTaller.TabIndex = 7;
-            this.cmbCategoriaTaller.Text = "SELECCIONE";
+            this.cmbCategoriaTaller.Text = "-- Seleccione --";
+            this.cmbCategoriaTaller.SelectedIndexChanged += new System.EventHandler(this.cmbCategoriaTaller_SelectedIndexChanged);
             // 
             // label8
             // 
