@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarSocio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -95,11 +95,11 @@
             this.txtIdEstado = new System.Windows.Forms.TextBox();
             this.txtIdMunicipio = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNombreMunicipio = new System.Windows.Forms.TextBox();
+            this.txtNombreEstado = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtNombreEstado = new System.Windows.Forms.TextBox();
-            this.txtNombreMunicipio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -225,16 +225,20 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardar.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(48, 108);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(36, 103);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(129, 32);
+            this.btnGuardar.Size = new System.Drawing.Size(141, 42);
             this.btnGuardar.TabIndex = 25;
-            this.btnGuardar.Text = "GUARDAR ";
+            this.btnGuardar.Text = "Guardar ";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -244,7 +248,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -254,13 +258,13 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(431, 9);
+            this.label13.Location = new System.Drawing.Point(383, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(260, 21);
+            this.label13.Size = new System.Drawing.Size(350, 19);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Registro y Consulta de Jubilados";
+            this.label13.Text = "REGISTRO Y CONSULTA DE SOCIOS JUBILADOS";
             // 
             // panel3
             // 
@@ -596,19 +600,19 @@
             this.dgvSocio.Location = new System.Drawing.Point(10, 468);
             this.dgvSocio.Name = "dgvSocio";
             this.dgvSocio.ReadOnly = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvSocio.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvSocio.Size = new System.Drawing.Size(1129, 217);
             this.dgvSocio.TabIndex = 30;
             this.dgvSocio.DoubleClick += new System.EventHandler(this.dgvSocio_DoubleClick);
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Moccasin;
+            this.panel4.BackColor = System.Drawing.Color.Beige;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.txtDireccionE);
@@ -691,15 +695,14 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel5.Controls.Add(this.btnBuscarPorNum);
             this.panel5.Controls.Add(this.txtBuscarNumSocio);
             this.panel5.Controls.Add(this.btnBuscarPorNombre);
             this.panel5.Controls.Add(this.txtBuscarNombreSocio);
-            this.panel5.Location = new System.Drawing.Point(10, 410);
+            this.panel5.Location = new System.Drawing.Point(0, 410);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1129, 51);
+            this.panel5.Size = new System.Drawing.Size(1151, 51);
             this.panel5.TabIndex = 44;
             // 
             // btnBuscarPorNum
@@ -741,7 +744,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Moccasin;
+            this.panel6.BackColor = System.Drawing.Color.Beige;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label23);
             this.panel6.Controls.Add(this.cmbStatus);
@@ -873,6 +876,22 @@
             this.panel1.Size = new System.Drawing.Size(461, 155);
             this.panel1.TabIndex = 29;
             // 
+            // txtNombreMunicipio
+            // 
+            this.txtNombreMunicipio.Location = new System.Drawing.Point(360, 58);
+            this.txtNombreMunicipio.Name = "txtNombreMunicipio";
+            this.txtNombreMunicipio.Size = new System.Drawing.Size(96, 20);
+            this.txtNombreMunicipio.TabIndex = 55;
+            this.txtNombreMunicipio.Visible = false;
+            // 
+            // txtNombreEstado
+            // 
+            this.txtNombreEstado.Location = new System.Drawing.Point(360, 27);
+            this.txtNombreEstado.Name = "txtNombreEstado";
+            this.txtNombreEstado.Size = new System.Drawing.Size(96, 20);
+            this.txtNombreEstado.TabIndex = 54;
+            this.txtNombreEstado.Visible = false;
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -904,22 +923,6 @@
             this.label18.Size = new System.Drawing.Size(93, 18);
             this.label18.TabIndex = 51;
             this.label18.Text = "DOMICILIO";
-            // 
-            // txtNombreEstado
-            // 
-            this.txtNombreEstado.Location = new System.Drawing.Point(360, 27);
-            this.txtNombreEstado.Name = "txtNombreEstado";
-            this.txtNombreEstado.Size = new System.Drawing.Size(96, 20);
-            this.txtNombreEstado.TabIndex = 54;
-            this.txtNombreEstado.Visible = false;
-            // 
-            // txtNombreMunicipio
-            // 
-            this.txtNombreMunicipio.Location = new System.Drawing.Point(360, 58);
-            this.txtNombreMunicipio.Name = "txtNombreMunicipio";
-            this.txtNombreMunicipio.Size = new System.Drawing.Size(96, 20);
-            this.txtNombreMunicipio.TabIndex = 55;
-            this.txtNombreMunicipio.Visible = false;
             // 
             // FrmAgregarSocio
             // 

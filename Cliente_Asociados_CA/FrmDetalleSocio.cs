@@ -17,6 +17,8 @@ namespace Cliente_Asociados_CA
         {
             InitializeComponent();
             cargarComboCategoria();
+            //CargarDatosTaller();
+            CargarDatosCategoriaTaller();
         }
         void cargarComboCategoria()
         {
@@ -28,13 +30,13 @@ namespace Cliente_Asociados_CA
         }
         void cargarComboTalleres()
         {
-            var categoria = cmbCategoriaTaller.SelectedIndex + 1;
+            var categoria = Convert.ToInt32(txtNombreC.Text);
 
             using (Server_Asociados.ServerAsociadosClient cat = new Server_Asociados.ServerAsociadosClient())
             {
                 cmbNombreTaller.DataSource = cat.cargarComboTaller(categoria);
                 cmbNombreTaller.DisplayMember = "nombre";
-
+               
 
             }
 
@@ -83,6 +85,7 @@ namespace Cliente_Asociados_CA
 
         private void cmbCategoriaTaller_SelectedIndexChanged(object sender, EventArgs e)
         {
+            CargarDatosCategoriaTaller();
             cargarComboTalleres();
         }
 
@@ -95,27 +98,67 @@ namespace Cliente_Asociados_CA
             return conn;
         }
 
-        void CargarDatosTaller()
+        void CargarDatosCategoriaTaller()
         {
-            var id = cmbNombreTaller.SelectedIndex+1;
+            var id = cmbCategoriaTaller.SelectedIndex + 1;
             using (MySqlConnection conn = GetNewConnection())
             {
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "SELECT horario, instructor FROM taller WHERE Id=@id";
+                    cmd.CommandText = "SELECT idCategoriaTaller from categoriataller WHERE idCategoriaTaller=@id";
                     cmd.Parameters.AddWithValue("@id", id);
                     MySqlDataReader consulta = cmd.ExecuteReader();
-                    if (consulta.Read())
-                    {
-                        txtInstructorTaller.Text = consulta["instructor"].ToString();
-                        txtHorarioTaller.Text = consulta["horario"].ToString();
+                    if (consulta.Read())                    {
+                        txtNombreC.Text = consulta["idCategoriaTaller"].ToString();
+                       
+                        
                     }
-
                     conn.Close();
 
 
                 }
+            }
+        }
+
+        void CargarDatosTaller()
+        {
+            var id = cmbNombreTaller.SelectedIndex+3;
+            using (MySqlConnection conn = GetNewConnection())
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT Id, horario, instructor FROM taller WHERE idCategoria=@id";
+                    cmd.Parameters.AddWithValue("@id", id);
+                    MySqlDataReader consulta = cmd.ExecuteReader();
+                    if (consulta.Read())
+                    {
+                        txtIdTaller.Text = consulta["Id"].ToString();
+                        txtInstructorTaller.Text = consulta["instructor"].ToString();
+                        txtHorarioTaller.Text = consulta["horario"].ToString();
+                    }
+                    conn.Close();
+
+
+                }
+            }
+        }
+
+        private void btnAgregarTaller_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(txtIdDetalleTaller.Text);
+            var idSocio = Convert.ToInt32(txtIdSocio.Text);
+            var idCategoria = cmbCategoriaTaller.SelectedIndex + 1;
+            var idTaller = cmbNombreTaller.SelectedIndex + 1;
+            
+            using (Server_Asociados.ServerAsociadosClient socio = new Server_Asociados.ServerAsociadosClient())
+            {
+                socio.registrarDetalleTaller(id, idSocio, idCategoria, idTaller);
+                MessageBox.Show("GUARDADO EXITOSAMENTE");
+                //limpiarCampos();
+                //cargarGrid();
+
             }
         }
     }

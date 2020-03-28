@@ -111,6 +111,19 @@
             this.label43 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.label143 = new System.Windows.Forms.Label();
+            this.txtAntineu = new System.Windows.Forms.TextBox();
+            this.label142 = new System.Windows.Forms.Label();
+            this.label141 = new System.Windows.Forms.Label();
+            this.label140 = new System.Windows.Forms.Label();
+            this.txtInfluencia = new System.Windows.Forms.TextBox();
+            this.txtTD3HC = new System.Windows.Forms.TextBox();
+            this.txtTD2HC = new System.Windows.Forms.TextBox();
+            this.txtTD1HC = new System.Windows.Forms.TextBox();
+            this.label139 = new System.Windows.Forms.Label();
+            this.txtCartillaVacunacionHC = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.txtPadecimientoActualHC = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -128,7 +141,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCartillaVacunacionHC = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTransfusionesHC = new System.Windows.Forms.ComboBox();
             this.cmbToxicomaniaHC = new System.Windows.Forms.ComboBox();
@@ -140,11 +152,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.txtCBDAgudoHC = new System.Windows.Forms.TextBox();
             this.txtRealizoDolorAgudoHC = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.txtCBDCronicoHC = new System.Windows.Forms.TextBox();
             this.txtRealizoDolorCronicoHC = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -404,20 +418,6 @@
             this.label138 = new System.Windows.Forms.Label();
             this.txtNoSocioSearchHC = new System.Windows.Forms.TextBox();
             this.btnGuardarHC = new System.Windows.Forms.Button();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label139 = new System.Windows.Forms.Label();
-            this.txtTD1HC = new System.Windows.Forms.TextBox();
-            this.txtTD2HC = new System.Windows.Forms.TextBox();
-            this.txtTD3HC = new System.Windows.Forms.TextBox();
-            this.txtInfluencia = new System.Windows.Forms.TextBox();
-            this.label140 = new System.Windows.Forms.Label();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.txtAntineu = new System.Windows.Forms.TextBox();
-            this.label143 = new System.Windows.Forms.Label();
-            this.txtCBDAgudoHC = new System.Windows.Forms.TextBox();
-            this.txtCBDCronicoHC = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -428,6 +428,7 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.panel46.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -474,7 +475,6 @@
             this.panel39.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHC)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel46.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -1333,6 +1333,135 @@
             this.tabPage2.Text = "HC -PARTE 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel46
+            // 
+            this.panel46.BackColor = System.Drawing.Color.Beige;
+            this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel46.Controls.Add(this.label143);
+            this.panel46.Controls.Add(this.txtAntineu);
+            this.panel46.Controls.Add(this.label142);
+            this.panel46.Controls.Add(this.label141);
+            this.panel46.Controls.Add(this.label140);
+            this.panel46.Controls.Add(this.txtInfluencia);
+            this.panel46.Controls.Add(this.txtTD3HC);
+            this.panel46.Controls.Add(this.txtTD2HC);
+            this.panel46.Controls.Add(this.txtTD1HC);
+            this.panel46.Controls.Add(this.label139);
+            this.panel46.Controls.Add(this.txtCartillaVacunacionHC);
+            this.panel46.Controls.Add(this.label6);
+            this.panel46.Location = new System.Drawing.Point(736, 6);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(363, 217);
+            this.panel46.TabIndex = 49;
+            // 
+            // label143
+            // 
+            this.label143.AutoSize = true;
+            this.label143.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label143.Location = new System.Drawing.Point(47, 182);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(55, 16);
+            this.label143.TabIndex = 63;
+            this.label143.Text = "Antineu:";
+            // 
+            // txtAntineu
+            // 
+            this.txtAntineu.Location = new System.Drawing.Point(108, 182);
+            this.txtAntineu.Name = "txtAntineu";
+            this.txtAntineu.Size = new System.Drawing.Size(121, 20);
+            this.txtAntineu.TabIndex = 62;
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label142.Location = new System.Drawing.Point(35, 157);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(67, 16);
+            this.label142.TabIndex = 61;
+            this.label142.Text = "Influencia:";
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label141.Location = new System.Drawing.Point(57, 132);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(45, 16);
+            this.label141.TabIndex = 60;
+            this.label141.Text = "TD3a:";
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label140.Location = new System.Drawing.Point(57, 108);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(45, 16);
+            this.label140.TabIndex = 59;
+            this.label140.Text = "TD2a:";
+            // 
+            // txtInfluencia
+            // 
+            this.txtInfluencia.Location = new System.Drawing.Point(108, 156);
+            this.txtInfluencia.Name = "txtInfluencia";
+            this.txtInfluencia.Size = new System.Drawing.Size(121, 20);
+            this.txtInfluencia.TabIndex = 58;
+            // 
+            // txtTD3HC
+            // 
+            this.txtTD3HC.Location = new System.Drawing.Point(108, 130);
+            this.txtTD3HC.Name = "txtTD3HC";
+            this.txtTD3HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD3HC.TabIndex = 57;
+            // 
+            // txtTD2HC
+            // 
+            this.txtTD2HC.Location = new System.Drawing.Point(108, 104);
+            this.txtTD2HC.Name = "txtTD2HC";
+            this.txtTD2HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD2HC.TabIndex = 56;
+            // 
+            // txtTD1HC
+            // 
+            this.txtTD1HC.Location = new System.Drawing.Point(108, 78);
+            this.txtTD1HC.Name = "txtTD1HC";
+            this.txtTD1HC.Size = new System.Drawing.Size(121, 20);
+            this.txtTD1HC.TabIndex = 55;
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label139.Location = new System.Drawing.Point(57, 80);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(45, 16);
+            this.label139.TabIndex = 39;
+            this.label139.Text = "TD1a:\r\n";
+            // 
+            // txtCartillaVacunacionHC
+            // 
+            this.txtCartillaVacunacionHC.FormattingEnabled = true;
+            this.txtCartillaVacunacionHC.Items.AddRange(new object[] {
+            "COMPLETA",
+            "IMCOMPLETA",
+            "NO TIENE"});
+            this.txtCartillaVacunacionHC.Location = new System.Drawing.Point(63, 39);
+            this.txtCartillaVacunacionHC.Name = "txtCartillaVacunacionHC";
+            this.txtCartillaVacunacionHC.Size = new System.Drawing.Size(166, 21);
+            this.txtCartillaVacunacionHC.TabIndex = 40;
+            this.txtCartillaVacunacionHC.Text = "--- SELECCIONE ---";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(183, 15);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "CARTILLA DE VACUNACIÓN\t\t\t\t\t\t\t\r\n";
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Beige;
@@ -1507,19 +1636,6 @@
             this.panel1.Size = new System.Drawing.Size(724, 125);
             this.panel1.TabIndex = 37;
             // 
-            // txtCartillaVacunacionHC
-            // 
-            this.txtCartillaVacunacionHC.FormattingEnabled = true;
-            this.txtCartillaVacunacionHC.Items.AddRange(new object[] {
-            "COMPLETA",
-            "IMCOMPLETA",
-            "NO TIENE"});
-            this.txtCartillaVacunacionHC.Location = new System.Drawing.Point(63, 39);
-            this.txtCartillaVacunacionHC.Name = "txtCartillaVacunacionHC";
-            this.txtCartillaVacunacionHC.Size = new System.Drawing.Size(166, 21);
-            this.txtCartillaVacunacionHC.TabIndex = 40;
-            this.txtCartillaVacunacionHC.Text = "--- SELECCIONE ---";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1647,6 +1763,14 @@
             this.panel15.Size = new System.Drawing.Size(1093, 90);
             this.panel15.TabIndex = 51;
             // 
+            // txtCBDAgudoHC
+            // 
+            this.txtCBDAgudoHC.Location = new System.Drawing.Point(273, 42);
+            this.txtCBDAgudoHC.Multiline = true;
+            this.txtCBDAgudoHC.Name = "txtCBDAgudoHC";
+            this.txtCBDAgudoHC.Size = new System.Drawing.Size(205, 25);
+            this.txtCBDAgudoHC.TabIndex = 35;
+            // 
             // txtRealizoDolorAgudoHC
             // 
             this.txtRealizoDolorAgudoHC.Location = new System.Drawing.Point(837, 42);
@@ -1698,6 +1822,14 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1093, 90);
             this.panel14.TabIndex = 50;
+            // 
+            // txtCBDCronicoHC
+            // 
+            this.txtCBDCronicoHC.Location = new System.Drawing.Point(273, 42);
+            this.txtCBDCronicoHC.Multiline = true;
+            this.txtCBDCronicoHC.Name = "txtCBDCronicoHC";
+            this.txtCBDCronicoHC.Size = new System.Drawing.Size(205, 25);
+            this.txtCBDCronicoHC.TabIndex = 36;
             // 
             // txtRealizoDolorCronicoHC
             // 
@@ -4386,138 +4518,6 @@
             this.btnGuardarHC.UseVisualStyleBackColor = true;
             this.btnGuardarHC.Click += new System.EventHandler(this.btnGuardarHC_Click);
             // 
-            // panel46
-            // 
-            this.panel46.BackColor = System.Drawing.Color.Beige;
-            this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.label143);
-            this.panel46.Controls.Add(this.txtAntineu);
-            this.panel46.Controls.Add(this.label142);
-            this.panel46.Controls.Add(this.label141);
-            this.panel46.Controls.Add(this.label140);
-            this.panel46.Controls.Add(this.txtInfluencia);
-            this.panel46.Controls.Add(this.txtTD3HC);
-            this.panel46.Controls.Add(this.txtTD2HC);
-            this.panel46.Controls.Add(this.txtTD1HC);
-            this.panel46.Controls.Add(this.label139);
-            this.panel46.Controls.Add(this.txtCartillaVacunacionHC);
-            this.panel46.Controls.Add(this.label6);
-            this.panel46.Location = new System.Drawing.Point(736, 6);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(363, 217);
-            this.panel46.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(183, 15);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "CARTILLA DE VACUNACIÓN\t\t\t\t\t\t\t\r\n";
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(57, 80);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(45, 16);
-            this.label139.TabIndex = 39;
-            this.label139.Text = "TD1a:\r\n";
-            // 
-            // txtTD1HC
-            // 
-            this.txtTD1HC.Location = new System.Drawing.Point(108, 78);
-            this.txtTD1HC.Name = "txtTD1HC";
-            this.txtTD1HC.Size = new System.Drawing.Size(121, 20);
-            this.txtTD1HC.TabIndex = 55;
-            // 
-            // txtTD2HC
-            // 
-            this.txtTD2HC.Location = new System.Drawing.Point(108, 104);
-            this.txtTD2HC.Name = "txtTD2HC";
-            this.txtTD2HC.Size = new System.Drawing.Size(121, 20);
-            this.txtTD2HC.TabIndex = 56;
-            // 
-            // txtTD3HC
-            // 
-            this.txtTD3HC.Location = new System.Drawing.Point(108, 130);
-            this.txtTD3HC.Name = "txtTD3HC";
-            this.txtTD3HC.Size = new System.Drawing.Size(121, 20);
-            this.txtTD3HC.TabIndex = 57;
-            // 
-            // txtInfluencia
-            // 
-            this.txtInfluencia.Location = new System.Drawing.Point(108, 156);
-            this.txtInfluencia.Name = "txtInfluencia";
-            this.txtInfluencia.Size = new System.Drawing.Size(121, 20);
-            this.txtInfluencia.TabIndex = 58;
-            // 
-            // label140
-            // 
-            this.label140.AutoSize = true;
-            this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.Location = new System.Drawing.Point(57, 108);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(45, 16);
-            this.label140.TabIndex = 59;
-            this.label140.Text = "TD2a:";
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label141.Location = new System.Drawing.Point(57, 132);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(45, 16);
-            this.label141.TabIndex = 60;
-            this.label141.Text = "TD3a:";
-            // 
-            // label142
-            // 
-            this.label142.AutoSize = true;
-            this.label142.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label142.Location = new System.Drawing.Point(35, 157);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(67, 16);
-            this.label142.TabIndex = 61;
-            this.label142.Text = "Influencia:";
-            // 
-            // txtAntineu
-            // 
-            this.txtAntineu.Location = new System.Drawing.Point(108, 182);
-            this.txtAntineu.Name = "txtAntineu";
-            this.txtAntineu.Size = new System.Drawing.Size(121, 20);
-            this.txtAntineu.TabIndex = 62;
-            // 
-            // label143
-            // 
-            this.label143.AutoSize = true;
-            this.label143.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label143.Location = new System.Drawing.Point(47, 182);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(55, 16);
-            this.label143.TabIndex = 63;
-            this.label143.Text = "Antineu:";
-            // 
-            // txtCBDAgudoHC
-            // 
-            this.txtCBDAgudoHC.Location = new System.Drawing.Point(273, 42);
-            this.txtCBDAgudoHC.Multiline = true;
-            this.txtCBDAgudoHC.Name = "txtCBDAgudoHC";
-            this.txtCBDAgudoHC.Size = new System.Drawing.Size(205, 25);
-            this.txtCBDAgudoHC.TabIndex = 35;
-            // 
-            // txtCBDCronicoHC
-            // 
-            this.txtCBDCronicoHC.Location = new System.Drawing.Point(273, 42);
-            this.txtCBDCronicoHC.Multiline = true;
-            this.txtCBDCronicoHC.Name = "txtCBDCronicoHC";
-            this.txtCBDCronicoHC.Size = new System.Drawing.Size(205, 25);
-            this.txtCBDCronicoHC.TabIndex = 36;
-            // 
             // FrmHC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4548,6 +4548,8 @@
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.panel46.ResumeLayout(false);
+            this.panel46.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -4633,8 +4635,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvHC)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel46.ResumeLayout(false);
-            this.panel46.PerformLayout();
             this.ResumeLayout(false);
 
         }
